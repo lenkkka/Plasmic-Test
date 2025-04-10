@@ -1,0 +1,188 @@
+.layoutFullWrap {
+  background: url("/plasmic/blank_website/images/layoutFullWrap2.jpg") bottom -182px left 0px / cover no-repeat,
+    url("/plasmic/blank_website/images/layoutFullWrap.jpg") center center / cover no-repeat;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  min-width: 0;
+}
+.layoutFullContain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-top: 112px;
+  max-width: var(--token-cSWYeh4IK_rr);
+  min-width: 0;
+  border-radius: 4px;
+}
+.layoutFullContentWrap {
+  background: rgba(238, 236, 232, 1);
+  backdrop-filter: blur(48px);
+  border-top-right-radius: 16px;
+  width: 825px;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  padding-left: 48px;
+  padding-top: 48px;
+  flex-shrink: 0;
+  -webkit-backdrop-filter: blur(48px);
+}
+.layoutFullContentWrap > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 48px);
+  height: calc(100% + 48px);
+}
+.layoutFullContentWrap > :global(.__wab_flex-container) > *,
+.layoutFullContentWrap
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.layoutFullContentWrap > :global(.__wab_flex-container) > picture > img,
+.layoutFullContentWrap
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 48px;
+}
+.layoutFullContent {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.layoutFullContent > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 24px);
+  height: calc(100% + 24px);
+}
+.layoutFullContent > :global(.__wab_flex-container) > *,
+.layoutFullContent > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.layoutFullContent > :global(.__wab_flex-container) > picture > img,
+.layoutFullContent
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 24px;
+}
+.textWrap {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-right: 48px;
+}
+.title {
+  display: block;
+  font-size: 33.18000030517578px;
+  font-family: "TT Hoves Pro";
+  font-weight: 500;
+  letter-spacing: -0.01159999966621399em;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+  width: 777px;
+  flex-shrink: 0;
+}
+.v03Divider {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.v03Divider > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.v03Divider > :global(.__wab_flex-container) > *,
+.v03Divider > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.v03Divider > :global(.__wab_flex-container) > picture > img,
+.v03Divider
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.hr {
+  background: rgba(39, 37, 37, 0.20000000298023224);
+  height: 2px;
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+.textWrap2 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-right: 48px;
+}
+.text {
+  display: block;
+  font-size: 16px;
+  font-family: "TT Hoves Pro";
+  font-weight: 500;
+  letter-spacing: -0.01159999966621399em;
+  line-height: 1.75;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+  width: 777px;
+  flex-shrink: 0;
+}
+.buttonMainOutline:global(.__wab_instance) {
+  position: relative;
+}
+.freeBox {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  color: #eeece8;
+  transform: scale(1, -1) rotate(-180deg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  transform-origin: top left;
+  position: absolute;
+  left: 24px;
+  top: 0px;
+}

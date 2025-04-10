@@ -1,0 +1,109 @@
+.gBtnWrap {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+}
+.gBtnWrap > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 48px);
+  width: calc(100% + 48px);
+}
+.gBtnWrap > :global(.__wab_flex-container) > *,
+.gBtnWrap > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.gBtnWrap > :global(.__wab_flex-container) > picture > img,
+.gBtnWrap
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 48px;
+}
+.btnMainWrap {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: inset 0px 0px 0px 1.5px rgba(53, 50, 51, 0.20000000298023224);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  border-radius: 2px 8px;
+  padding: 12px 24px;
+}
+.btnMainWrap > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 12px);
+  width: calc(100% + 12px);
+}
+.btnMainWrap > :global(.__wab_flex-container) > *,
+.btnMainWrap > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.btnMainWrap > :global(.__wab_flex-container) > picture > img,
+.btnMainWrap
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 12px;
+}
+.btnMainList {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+}
+.btnMainList > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 24px);
+  width: calc(100% + 24px);
+}
+.btnMainList > :global(.__wab_flex-container) > *,
+.btnMainList > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.btnMainList > :global(.__wab_flex-container) > picture > img,
+.btnMainList
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 24px;
+}
+.btnMainText {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  color: rgba(53, 50, 51, 1);
+  position: relative;
+}
+.btnMainIcon {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  color: #353233;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}

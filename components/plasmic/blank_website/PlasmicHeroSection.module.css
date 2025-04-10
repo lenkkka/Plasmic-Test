@@ -1,0 +1,1128 @@
+.heroSection {
+  background: url("/plasmic/blank_website/images/heroSection.jpg") left 0px bottom 0px / cover no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+.homeHeroCard {
+  background: rgba(238, 236, 232, 1);
+  border-top-right-radius: 16px;
+  width: 1052px;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 48px;
+  padding-top: 40px;
+  padding-bottom: 48px;
+  flex-shrink: 0;
+}
+.homeHeroTitleWrap {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 48px;
+}
+.title {
+  display: block;
+  font-size: 57.33000183105469px;
+  font-family: "TT Hoves Pro";
+  font-weight: 500;
+  letter-spacing: -0.01159999966621399em;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+}
+.gLayoutDivider {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.itemDivider {
+  background: rgba(39, 37, 37, 0.20000000298023224);
+  height: 2px;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0px;
+}
+.itemDivider > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.itemDivider > :global(.__wab_flex-container) > *,
+.itemDivider > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.itemDivider > :global(.__wab_flex-container) > picture > img,
+.itemDivider
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.overallFigureList {
+  background: rgba(238, 236, 232, 1);
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  padding-right: 48px;
+}
+.overallFigureList > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+}
+.overallFigureList > :global(.__wab_flex-container) > *,
+.overallFigureList > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.overallFigureList > :global(.__wab_flex-container) > picture > img,
+.overallFigureList
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 20px;
+}
+.overallFigureItem {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: column;
+}
+.overallFigureItem > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+.overallFigureItem > :global(.__wab_flex-container) > *,
+.overallFigureItem > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.overallFigureItem > :global(.__wab_flex-container) > picture > img,
+.overallFigureItem
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+.overallFigureText {
+  height: 66px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.overallFigureText > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 12px);
+  width: calc(100% + 12px);
+}
+.overallFigureText > :global(.__wab_flex-container) > *,
+.overallFigureText > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.overallFigureText > :global(.__wab_flex-container) > picture > img,
+.overallFigureText
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 12px;
+}
+.figure {
+  display: block;
+  font-size: 57.33000183105469px;
+  font-family: "TT Hoves Pro";
+  font-weight: 500;
+  letter-spacing: -0.01159999966621399em;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.unitWrap {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.unitWrap > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.unitWrap > :global(.__wab_flex-container) > *,
+.unitWrap > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.unitWrap > :global(.__wab_flex-container) > picture > img,
+.unitWrap
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.unit {
+  display: block;
+  font-size: 13.329999923706055px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.75;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+}
+.gLayoutDivider2 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.itemDivider2 {
+  background: rgba(242, 169, 0, 1);
+  height: 2px;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0px;
+}
+.itemDivider2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.itemDivider2 > :global(.__wab_flex-container) > *,
+.itemDivider2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.itemDivider2 > :global(.__wab_flex-container) > picture > img,
+.itemDivider2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.overallFigureContent {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.overallFigureContent > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 4px);
+  height: calc(100% + 4px);
+}
+.overallFigureContent > :global(.__wab_flex-container) > *,
+.overallFigureContent
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.overallFigureContent > :global(.__wab_flex-container) > picture > img,
+.overallFigureContent
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 4px;
+}
+.titleGoesHere {
+  display: block;
+  font-size: 13.329999923706055px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.75;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+}
+.overallFigureDateWrap {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+}
+.overallFigureDateWrap > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.overallFigureDateWrap > :global(.__wab_flex-container) > *,
+.overallFigureDateWrap
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.overallFigureDateWrap > :global(.__wab_flex-container) > picture > img,
+.overallFigureDateWrap
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.asOf {
+  display: block;
+  font-size: 11.109999656677246px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.date {
+  display: block;
+  font-size: 11.109999656677246px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.overallFigureItem2 {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: column;
+}
+.overallFigureItem2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+.overallFigureItem2 > :global(.__wab_flex-container) > *,
+.overallFigureItem2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.overallFigureItem2 > :global(.__wab_flex-container) > picture > img,
+.overallFigureItem2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+.overallFigureText2 {
+  height: 66px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.overallFigureText2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 12px);
+  width: calc(100% + 12px);
+}
+.overallFigureText2 > :global(.__wab_flex-container) > *,
+.overallFigureText2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.overallFigureText2 > :global(.__wab_flex-container) > picture > img,
+.overallFigureText2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 12px;
+}
+.figure2 {
+  display: block;
+  font-size: 57.33000183105469px;
+  font-family: "TT Hoves Pro";
+  font-weight: 500;
+  letter-spacing: -0.01159999966621399em;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.unitWrap2 {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.unitWrap2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.unitWrap2 > :global(.__wab_flex-container) > *,
+.unitWrap2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.unitWrap2 > :global(.__wab_flex-container) > picture > img,
+.unitWrap2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.unit2 {
+  display: block;
+  font-size: 13.329999923706055px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.75;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+}
+.gLayoutDivider3 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.itemDivider3 {
+  background: rgba(242, 169, 0, 1);
+  height: 2px;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0px;
+}
+.itemDivider3 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.itemDivider3 > :global(.__wab_flex-container) > *,
+.itemDivider3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.itemDivider3 > :global(.__wab_flex-container) > picture > img,
+.itemDivider3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.overallFigureContent2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.overallFigureContent2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 4px);
+  height: calc(100% + 4px);
+}
+.overallFigureContent2 > :global(.__wab_flex-container) > *,
+.overallFigureContent2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.overallFigureContent2 > :global(.__wab_flex-container) > picture > img,
+.overallFigureContent2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 4px;
+}
+.titleGoesHere2 {
+  display: block;
+  font-size: 13.329999923706055px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.75;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+}
+.overallFigureDateWrap2 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+}
+.overallFigureDateWrap2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.overallFigureDateWrap2 > :global(.__wab_flex-container) > *,
+.overallFigureDateWrap2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.overallFigureDateWrap2 > :global(.__wab_flex-container) > picture > img,
+.overallFigureDateWrap2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.asOf2 {
+  display: block;
+  font-size: 11.109999656677246px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.date2 {
+  display: block;
+  font-size: 11.109999656677246px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.overallFigureItem3 {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: column;
+}
+.overallFigureItem3 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+.overallFigureItem3 > :global(.__wab_flex-container) > *,
+.overallFigureItem3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.overallFigureItem3 > :global(.__wab_flex-container) > picture > img,
+.overallFigureItem3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+.overallFigureText3 {
+  height: 66px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.overallFigureText3 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 12px);
+  width: calc(100% + 12px);
+}
+.overallFigureText3 > :global(.__wab_flex-container) > *,
+.overallFigureText3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.overallFigureText3 > :global(.__wab_flex-container) > picture > img,
+.overallFigureText3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 12px;
+}
+.figure3 {
+  display: block;
+  font-size: 57.33000183105469px;
+  font-family: "TT Hoves Pro";
+  font-weight: 500;
+  letter-spacing: -0.01159999966621399em;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.unitWrap3 {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.unitWrap3 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.unitWrap3 > :global(.__wab_flex-container) > *,
+.unitWrap3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.unitWrap3 > :global(.__wab_flex-container) > picture > img,
+.unitWrap3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.unit3 {
+  display: block;
+  font-size: 13.329999923706055px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.75;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+}
+.gLayoutDivider4 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.itemDivider4 {
+  background: rgba(242, 169, 0, 1);
+  height: 2px;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: row;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.itemDivider4 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.itemDivider4 > :global(.__wab_flex-container) > *,
+.itemDivider4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.itemDivider4 > :global(.__wab_flex-container) > picture > img,
+.itemDivider4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.overallFigureContent3 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.overallFigureContent3 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 4px);
+  height: calc(100% + 4px);
+}
+.overallFigureContent3 > :global(.__wab_flex-container) > *,
+.overallFigureContent3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.overallFigureContent3 > :global(.__wab_flex-container) > picture > img,
+.overallFigureContent3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 4px;
+}
+.titleGoesHere3 {
+  display: block;
+  font-size: 13.329999923706055px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.75;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+}
+.overallFigureDateWrap3 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+}
+.overallFigureDateWrap3 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.overallFigureDateWrap3 > :global(.__wab_flex-container) > *,
+.overallFigureDateWrap3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.overallFigureDateWrap3 > :global(.__wab_flex-container) > picture > img,
+.overallFigureDateWrap3
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.asOf3 {
+  display: block;
+  font-size: 11.109999656677246px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.date3 {
+  display: block;
+  font-size: 11.109999656677246px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.overallFigureItem4 {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: column;
+}
+.overallFigureItem4 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+.overallFigureItem4 > :global(.__wab_flex-container) > *,
+.overallFigureItem4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.overallFigureItem4 > :global(.__wab_flex-container) > picture > img,
+.overallFigureItem4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+.overallFigureText4 {
+  height: 66px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.overallFigureText4 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 12px);
+  width: calc(100% + 12px);
+}
+.overallFigureText4 > :global(.__wab_flex-container) > *,
+.overallFigureText4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.overallFigureText4 > :global(.__wab_flex-container) > picture > img,
+.overallFigureText4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 12px;
+}
+.figure4 {
+  display: block;
+  font-size: 57.33000183105469px;
+  font-family: "TT Hoves Pro";
+  font-weight: 500;
+  letter-spacing: -0.01159999966621399em;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.unitWrap4 {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.unitWrap4 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.unitWrap4 > :global(.__wab_flex-container) > *,
+.unitWrap4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.unitWrap4 > :global(.__wab_flex-container) > picture > img,
+.unitWrap4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 10px;
+}
+.unit4 {
+  display: block;
+  font-size: 13.329999923706055px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.75;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+}
+.gLayoutDivider5 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.itemDivider5 {
+  background: rgba(242, 169, 0, 1);
+  height: 2px;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0px;
+}
+.itemDivider5 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.itemDivider5 > :global(.__wab_flex-container) > *,
+.itemDivider5 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.itemDivider5 > :global(.__wab_flex-container) > picture > img,
+.itemDivider5
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.overallFigureContent4 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.overallFigureContent4 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 4px);
+  height: calc(100% + 4px);
+}
+.overallFigureContent4 > :global(.__wab_flex-container) > *,
+.overallFigureContent4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.overallFigureContent4 > :global(.__wab_flex-container) > picture > img,
+.overallFigureContent4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 4px;
+}
+.titleGoesHere4 {
+  display: block;
+  font-size: 13.329999923706055px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.75;
+  color: rgba(39, 37, 37, 1);
+  align-self: stretch;
+  position: relative;
+}
+.overallFigureDateWrap4 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+}
+.overallFigureDateWrap4 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.overallFigureDateWrap4 > :global(.__wab_flex-container) > *,
+.overallFigureDateWrap4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.overallFigureDateWrap4 > :global(.__wab_flex-container) > picture > img,
+.overallFigureDateWrap4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 10px;
+}
+.asOf4 {
+  display: block;
+  font-size: 11.109999656677246px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.date4 {
+  display: block;
+  font-size: 11.109999656677246px;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.149999976158142;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.cta {
+  background: rgba(53, 50, 51, 0.009999999776482582);
+  box-shadow: inset 0px 1px 0px 0px rgba(73, 71, 72, 1);
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  padding-top: 8px;
+}
+.cta > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-left: calc(0px - 32px);
+  width: calc(100% + 32px);
+}
+.cta > :global(.__wab_flex-container) > *,
+.cta > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.cta > :global(.__wab_flex-container) > picture > img,
+.cta > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 32px;
+}
+.btnStd {
+  background: rgba(242, 169, 0, 1);
+  width: 284px;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-shrink: 0;
+  border-radius: 2px;
+  padding: 40px 16px 16px;
+}
+.btnStd > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: calc(0px - 15px);
+  width: calc(100% + 15px);
+}
+.btnStd > :global(.__wab_flex-container) > *,
+.btnStd > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.btnStd > :global(.__wab_flex-container) > picture > img,
+.btnStd
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 15px;
+}
+.label {
+  mix-blend-mode: normal;
+  display: block;
+  font-size: 16px;
+  font-family: "TT Hoves Pro Variable";
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 16px;
+  color: rgba(39, 37, 37, 1);
+  position: relative;
+}
+.img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  height: 20px;
+  display: flex !important;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.img > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.img > :global(.__wab_flex-container) > *,
+.img > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.img > :global(.__wab_flex-container) > picture > img,
+.img > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 10px;
+}
+.img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  height: 20px;
+  display: flex !important;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.freeBox {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  color: #eeece8;
+  transform: scale(1, -1) rotate(-180deg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  transform-origin: top left;
+  position: absolute;
+  left: 24px;
+  top: 0px;
+}
