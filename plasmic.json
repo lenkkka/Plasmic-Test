@@ -432,6 +432,45 @@
           "cssFilePath": "plasmic/blank_website/PlasmicButton2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Fvwf7HKIWogb",
+          "name": "NavDropdown",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicNavDropdown.tsx",
+          "importSpec": {
+            "modulePath": "NavDropdown.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicNavDropdown.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "uq5Q3NstJD05",
+          "name": "NavBarLink",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicNavBarLink.tsx",
+          "importSpec": {
+            "modulePath": "NavBarLink.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicNavBarLink.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "PAg8waIYOX54",
+          "name": "Navbar",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicNavbar.tsx",
+          "importSpec": {
+            "modulePath": "Navbar.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
