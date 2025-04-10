@@ -7,7 +7,7 @@
   align-items: flex-end;
   justify-content: flex-start;
   min-width: 100vh;
-  min-height: 100vh;
+  min-height: 90vh;
   overflow: visible;
 }
 @media (min-width: 0px) and (max-width: 768px) {

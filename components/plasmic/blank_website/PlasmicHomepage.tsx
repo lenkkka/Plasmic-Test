@@ -93,6 +93,7 @@ export type PlasmicHomepage__OverridesType = {
   homeDevelopmentComponents?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
   heroSection?: Flex__<typeof HeroSection>;
+  freeBox?: Flex__<"div">;
   layoutFullWrap?: Flex__<typeof LayoutFullWrap>;
   layoutSplitWrap?: Flex__<"div">;
   layoutContain?: Flex__<"div">;
@@ -272,6 +273,12 @@ function PlasmicHomepage__RenderFunc(props: {
               heroTitle={
                 "Leveraging digital asset compute to support the energy transformation"
               }
+            />
+
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
             />
 
             <LayoutFullWrap
@@ -1316,6 +1323,7 @@ const PlasmicDescendants = {
     "homeDevelopmentComponents",
     "navbar",
     "heroSection",
+    "freeBox",
     "layoutFullWrap",
     "layoutSplitWrap",
     "layoutContain",
@@ -1407,6 +1415,7 @@ const PlasmicDescendants = {
     "homeDevelopmentComponents",
     "navbar",
     "heroSection",
+    "freeBox",
     "layoutFullWrap",
     "layoutSplitWrap",
     "layoutContain",
@@ -1496,6 +1505,7 @@ const PlasmicDescendants = {
   ],
   navbar: ["navbar"],
   heroSection: ["heroSection"],
+  freeBox: ["freeBox"],
   layoutFullWrap: ["layoutFullWrap"],
   layoutSplitWrap: [
     "layoutSplitWrap",
@@ -1998,6 +2008,7 @@ type NodeDefaultElementType = {
   homeDevelopmentComponents: "div";
   navbar: typeof Navbar;
   heroSection: typeof HeroSection;
+  freeBox: "div";
   layoutFullWrap: typeof LayoutFullWrap;
   layoutSplitWrap: "div";
   layoutContain: "div";
@@ -2149,6 +2160,7 @@ export const PlasmicHomepage = Object.assign(
     homeDevelopmentComponents: makeNodeComponent("homeDevelopmentComponents"),
     navbar: makeNodeComponent("navbar"),
     heroSection: makeNodeComponent("heroSection"),
+    freeBox: makeNodeComponent("freeBox"),
     layoutFullWrap: makeNodeComponent("layoutFullWrap"),
     layoutSplitWrap: makeNodeComponent("layoutSplitWrap"),
     layoutContain: makeNodeComponent("layoutContain"),
