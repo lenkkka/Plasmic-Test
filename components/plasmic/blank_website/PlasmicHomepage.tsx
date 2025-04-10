@@ -63,6 +63,7 @@ import Navbar from "../../Navbar"; // plasmic-import: PAg8waIYOX54/component
 import HeroSection from "../../HeroSection"; // plasmic-import: mbkly9G2X3L1/component
 import LayoutFullWrap from "../../LayoutFullWrap"; // plasmic-import: _V8L3SCxePZg/component
 import ButtonMainOutline from "../../ButtonMainOutline"; // plasmic-import: pZPvFfGgHk8v/component
+import ArrowBtn from "../../ArrowBtn"; // plasmic-import: sQwZRK4CPdyK/component
 import FormWrap from "../../FormWrap"; // plasmic-import: xRTHJhz9VfiN/component
 import Footer from "../../Footer"; // plasmic-import: 4Ad_NJbeLZ66/component
 
@@ -75,7 +76,6 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: 6GgaEV8wA3NAjS
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: H1CWy2aw37Fp/css
 
 import GCurvedCornerIcon from "./icons/PlasmicIcon__GCurvedCorner"; // plasmic-import: xBHjxIupafBj/icon
-import ArrowRightIconWrapIcon from "./icons/PlasmicIcon__ArrowRightIconWrap"; // plasmic-import: 4HIycwZWkq14/icon
 
 createPlasmicElementProxy;
 
@@ -118,6 +118,7 @@ export type PlasmicHomepage__OverridesType = {
   layoutSplitText2?: Flex__<"div">;
   layoutFullWrap2?: Flex__<"div">;
   layoutFullContain2?: Flex__<"div">;
+  svg?: Flex__<"svg">;
   layoutFullContentWrap2?: Flex__<"div">;
   layoutFullContent2?: Flex__<"div">;
   title2?: Flex__<"div">;
@@ -141,7 +142,6 @@ export type PlasmicHomepage__OverridesType = {
   metaWrap?: Flex__<"div">;
   gChip?: Flex__<"div">;
   gChipText?: Flex__<"div">;
-  buttonArrowSmall?: Flex__<"div">;
   cardMedia2?: Flex__<"div">;
   cardMediaVisualWrap2?: Flex__<"div">;
   placeholder4?: Flex__<"div">;
@@ -153,7 +153,6 @@ export type PlasmicHomepage__OverridesType = {
   metaWrap2?: Flex__<"div">;
   gChip2?: Flex__<"div">;
   gChipText2?: Flex__<"div">;
-  buttonArrowSmall2?: Flex__<"div">;
   cardMedia3?: Flex__<"div">;
   cardMediaVisualWrap3?: Flex__<"div">;
   placeholder5?: Flex__<"div">;
@@ -165,7 +164,6 @@ export type PlasmicHomepage__OverridesType = {
   metaWrap3?: Flex__<"div">;
   gChip3?: Flex__<"div">;
   gChipText3?: Flex__<"div">;
-  buttonArrowSmall3?: Flex__<"div">;
   solutionsWrap?: Flex__<"div">;
   solutionsContain?: Flex__<"div">;
   gEyebrowWrap2?: Flex__<"div">;
@@ -518,7 +516,9 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.layoutFullContain2)}
               >
                 <GCurvedCornerIcon
-                  className={classNames(projectcss.all, sty.svg__o2Rz8)}
+                  data-plasmic-name={"svg"}
+                  data-plasmic-override={overrides.svg}
+                  className={classNames(projectcss.all, sty.svg)}
                   role={"img"}
                 />
 
@@ -756,22 +756,12 @@ function PlasmicHomepage__RenderFunc(props: {
                             </div>
                           </Stack__>
                         </Stack__>
-                        <div
-                          data-plasmic-name={"buttonArrowSmall"}
-                          data-plasmic-override={overrides.buttonArrowSmall}
+                        <ArrowBtn
                           className={classNames(
-                            projectcss.all,
-                            sty.buttonArrowSmall
+                            "__wab_instance",
+                            sty.arrowBtn__qpDMo
                           )}
-                        >
-                          <ArrowRightIconWrapIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__gA9M
-                            )}
-                            role={"img"}
-                          />
-                        </div>
+                        />
                       </Stack__>
                     </Stack__>
                   </Stack__>
@@ -895,22 +885,12 @@ function PlasmicHomepage__RenderFunc(props: {
                             </div>
                           </Stack__>
                         </Stack__>
-                        <div
-                          data-plasmic-name={"buttonArrowSmall2"}
-                          data-plasmic-override={overrides.buttonArrowSmall2}
+                        <ArrowBtn
                           className={classNames(
-                            projectcss.all,
-                            sty.buttonArrowSmall2
+                            "__wab_instance",
+                            sty.arrowBtn__lswuY
                           )}
-                        >
-                          <ArrowRightIconWrapIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__xu9EI
-                            )}
-                            role={"img"}
-                          />
-                        </div>
+                        />
                       </Stack__>
                     </Stack__>
                   </Stack__>
@@ -1034,22 +1014,12 @@ function PlasmicHomepage__RenderFunc(props: {
                             </div>
                           </Stack__>
                         </Stack__>
-                        <div
-                          data-plasmic-name={"buttonArrowSmall3"}
-                          data-plasmic-override={overrides.buttonArrowSmall3}
+                        <ArrowBtn
                           className={classNames(
-                            projectcss.all,
-                            sty.buttonArrowSmall3
+                            "__wab_instance",
+                            sty.arrowBtn__qNg32
                           )}
-                        >
-                          <ArrowRightIconWrapIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__hPddN
-                            )}
-                            role={"img"}
-                          />
-                        </div>
+                        />
                       </Stack__>
                     </Stack__>
                   </Stack__>
@@ -1209,6 +1179,7 @@ const PlasmicDescendants = {
     "layoutSplitText2",
     "layoutFullWrap2",
     "layoutFullContain2",
+    "svg",
     "layoutFullContentWrap2",
     "layoutFullContent2",
     "title2",
@@ -1232,7 +1203,6 @@ const PlasmicDescendants = {
     "metaWrap",
     "gChip",
     "gChipText",
-    "buttonArrowSmall",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1244,7 +1214,6 @@ const PlasmicDescendants = {
     "metaWrap2",
     "gChip2",
     "gChipText2",
-    "buttonArrowSmall2",
     "cardMedia3",
     "cardMediaVisualWrap3",
     "placeholder5",
@@ -1256,7 +1225,6 @@ const PlasmicDescendants = {
     "metaWrap3",
     "gChip3",
     "gChipText3",
-    "buttonArrowSmall3",
     "solutionsWrap",
     "solutionsContain",
     "gEyebrowWrap2",
@@ -1301,6 +1269,7 @@ const PlasmicDescendants = {
     "layoutSplitText2",
     "layoutFullWrap2",
     "layoutFullContain2",
+    "svg",
     "layoutFullContentWrap2",
     "layoutFullContent2",
     "title2",
@@ -1324,7 +1293,6 @@ const PlasmicDescendants = {
     "metaWrap",
     "gChip",
     "gChipText",
-    "buttonArrowSmall",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1336,7 +1304,6 @@ const PlasmicDescendants = {
     "metaWrap2",
     "gChip2",
     "gChipText2",
-    "buttonArrowSmall2",
     "cardMedia3",
     "cardMediaVisualWrap3",
     "placeholder5",
@@ -1348,7 +1315,6 @@ const PlasmicDescendants = {
     "metaWrap3",
     "gChip3",
     "gChipText3",
-    "buttonArrowSmall3",
     "solutionsWrap",
     "solutionsContain",
     "gEyebrowWrap2",
@@ -1505,6 +1471,7 @@ const PlasmicDescendants = {
   layoutFullWrap2: [
     "layoutFullWrap2",
     "layoutFullContain2",
+    "svg",
     "layoutFullContentWrap2",
     "layoutFullContent2",
     "title2",
@@ -1514,6 +1481,7 @@ const PlasmicDescendants = {
   ],
   layoutFullContain2: [
     "layoutFullContain2",
+    "svg",
     "layoutFullContentWrap2",
     "layoutFullContent2",
     "title2",
@@ -1521,6 +1489,7 @@ const PlasmicDescendants = {
     "hr2",
     "text2"
   ],
+  svg: ["svg"],
   layoutFullContentWrap2: [
     "layoutFullContentWrap2",
     "layoutFullContent2",
@@ -1558,7 +1527,6 @@ const PlasmicDescendants = {
     "metaWrap",
     "gChip",
     "gChipText",
-    "buttonArrowSmall",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1570,7 +1538,6 @@ const PlasmicDescendants = {
     "metaWrap2",
     "gChip2",
     "gChipText2",
-    "buttonArrowSmall2",
     "cardMedia3",
     "cardMediaVisualWrap3",
     "placeholder5",
@@ -1581,8 +1548,7 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3",
-    "buttonArrowSmall3"
+    "gChipText3"
   ],
   mediaContain: [
     "mediaContain",
@@ -1601,7 +1567,6 @@ const PlasmicDescendants = {
     "metaWrap",
     "gChip",
     "gChipText",
-    "buttonArrowSmall",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1613,7 +1578,6 @@ const PlasmicDescendants = {
     "metaWrap2",
     "gChip2",
     "gChipText2",
-    "buttonArrowSmall2",
     "cardMedia3",
     "cardMediaVisualWrap3",
     "placeholder5",
@@ -1624,8 +1588,7 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3",
-    "buttonArrowSmall3"
+    "gChipText3"
   ],
   gEyebrowWrap: ["gEyebrowWrap", "frame101692", "eyebrowText"],
   frame101692: ["frame101692"],
@@ -1643,7 +1606,6 @@ const PlasmicDescendants = {
     "metaWrap",
     "gChip",
     "gChipText",
-    "buttonArrowSmall",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1655,7 +1617,6 @@ const PlasmicDescendants = {
     "metaWrap2",
     "gChip2",
     "gChipText2",
-    "buttonArrowSmall2",
     "cardMedia3",
     "cardMediaVisualWrap3",
     "placeholder5",
@@ -1666,8 +1627,7 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3",
-    "buttonArrowSmall3"
+    "gChipText3"
   ],
   cardMedia: [
     "cardMedia",
@@ -1680,8 +1640,7 @@ const PlasmicDescendants = {
     "cardMediaFooter",
     "metaWrap",
     "gChip",
-    "gChipText",
-    "buttonArrowSmall"
+    "gChipText"
   ],
   cardMediaVisualWrap: ["cardMediaVisualWrap", "placeholder3"],
   placeholder3: ["placeholder3"],
@@ -1693,8 +1652,7 @@ const PlasmicDescendants = {
     "cardMediaFooter",
     "metaWrap",
     "gChip",
-    "gChipText",
-    "buttonArrowSmall"
+    "gChipText"
   ],
   cardMediaContent: [
     "cardMediaContent",
@@ -1706,17 +1664,10 @@ const PlasmicDescendants = {
     [
       "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique"
     ],
-  cardMediaFooter: [
-    "cardMediaFooter",
-    "metaWrap",
-    "gChip",
-    "gChipText",
-    "buttonArrowSmall"
-  ],
+  cardMediaFooter: ["cardMediaFooter", "metaWrap", "gChip", "gChipText"],
   metaWrap: ["metaWrap", "gChip", "gChipText"],
   gChip: ["gChip", "gChipText"],
   gChipText: ["gChipText"],
-  buttonArrowSmall: ["buttonArrowSmall"],
   cardMedia2: [
     "cardMedia2",
     "cardMediaVisualWrap2",
@@ -1728,8 +1679,7 @@ const PlasmicDescendants = {
     "cardMediaFooter2",
     "metaWrap2",
     "gChip2",
-    "gChipText2",
-    "buttonArrowSmall2"
+    "gChipText2"
   ],
   cardMediaVisualWrap2: ["cardMediaVisualWrap2", "placeholder4"],
   placeholder4: ["placeholder4"],
@@ -1741,8 +1691,7 @@ const PlasmicDescendants = {
     "cardMediaFooter2",
     "metaWrap2",
     "gChip2",
-    "gChipText2",
-    "buttonArrowSmall2"
+    "gChipText2"
   ],
   cardMediaContent2: [
     "cardMediaContent2",
@@ -1754,17 +1703,10 @@ const PlasmicDescendants = {
     [
       "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2"
     ],
-  cardMediaFooter2: [
-    "cardMediaFooter2",
-    "metaWrap2",
-    "gChip2",
-    "gChipText2",
-    "buttonArrowSmall2"
-  ],
+  cardMediaFooter2: ["cardMediaFooter2", "metaWrap2", "gChip2", "gChipText2"],
   metaWrap2: ["metaWrap2", "gChip2", "gChipText2"],
   gChip2: ["gChip2", "gChipText2"],
   gChipText2: ["gChipText2"],
-  buttonArrowSmall2: ["buttonArrowSmall2"],
   cardMedia3: [
     "cardMedia3",
     "cardMediaVisualWrap3",
@@ -1776,8 +1718,7 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3",
-    "buttonArrowSmall3"
+    "gChipText3"
   ],
   cardMediaVisualWrap3: ["cardMediaVisualWrap3", "placeholder5"],
   placeholder5: ["placeholder5"],
@@ -1789,8 +1730,7 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3",
-    "buttonArrowSmall3"
+    "gChipText3"
   ],
   cardMediaContent3: [
     "cardMediaContent3",
@@ -1802,17 +1742,10 @@ const PlasmicDescendants = {
     [
       "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3"
     ],
-  cardMediaFooter3: [
-    "cardMediaFooter3",
-    "metaWrap3",
-    "gChip3",
-    "gChipText3",
-    "buttonArrowSmall3"
-  ],
+  cardMediaFooter3: ["cardMediaFooter3", "metaWrap3", "gChip3", "gChipText3"],
   metaWrap3: ["metaWrap3", "gChip3", "gChipText3"],
   gChip3: ["gChip3", "gChipText3"],
   gChipText3: ["gChipText3"],
-  buttonArrowSmall3: ["buttonArrowSmall3"],
   solutionsWrap: [
     "solutionsWrap",
     "solutionsContain",
@@ -1894,6 +1827,7 @@ type NodeDefaultElementType = {
   layoutSplitText2: "div";
   layoutFullWrap2: "div";
   layoutFullContain2: "div";
+  svg: "svg";
   layoutFullContentWrap2: "div";
   layoutFullContent2: "div";
   title2: "div";
@@ -1917,7 +1851,6 @@ type NodeDefaultElementType = {
   metaWrap: "div";
   gChip: "div";
   gChipText: "div";
-  buttonArrowSmall: "div";
   cardMedia2: "div";
   cardMediaVisualWrap2: "div";
   placeholder4: "div";
@@ -1929,7 +1862,6 @@ type NodeDefaultElementType = {
   metaWrap2: "div";
   gChip2: "div";
   gChipText2: "div";
-  buttonArrowSmall2: "div";
   cardMedia3: "div";
   cardMediaVisualWrap3: "div";
   placeholder5: "div";
@@ -1941,7 +1873,6 @@ type NodeDefaultElementType = {
   metaWrap3: "div";
   gChip3: "div";
   gChipText3: "div";
-  buttonArrowSmall3: "div";
   solutionsWrap: "div";
   solutionsContain: "div";
   gEyebrowWrap2: "div";
@@ -2046,6 +1977,7 @@ export const PlasmicHomepage = Object.assign(
     layoutSplitText2: makeNodeComponent("layoutSplitText2"),
     layoutFullWrap2: makeNodeComponent("layoutFullWrap2"),
     layoutFullContain2: makeNodeComponent("layoutFullContain2"),
+    svg: makeNodeComponent("svg"),
     layoutFullContentWrap2: makeNodeComponent("layoutFullContentWrap2"),
     layoutFullContent2: makeNodeComponent("layoutFullContent2"),
     title2: makeNodeComponent("title2"),
@@ -2072,7 +2004,6 @@ export const PlasmicHomepage = Object.assign(
     metaWrap: makeNodeComponent("metaWrap"),
     gChip: makeNodeComponent("gChip"),
     gChipText: makeNodeComponent("gChipText"),
-    buttonArrowSmall: makeNodeComponent("buttonArrowSmall"),
     cardMedia2: makeNodeComponent("cardMedia2"),
     cardMediaVisualWrap2: makeNodeComponent("cardMediaVisualWrap2"),
     placeholder4: makeNodeComponent("placeholder4"),
@@ -2087,7 +2018,6 @@ export const PlasmicHomepage = Object.assign(
     metaWrap2: makeNodeComponent("metaWrap2"),
     gChip2: makeNodeComponent("gChip2"),
     gChipText2: makeNodeComponent("gChipText2"),
-    buttonArrowSmall2: makeNodeComponent("buttonArrowSmall2"),
     cardMedia3: makeNodeComponent("cardMedia3"),
     cardMediaVisualWrap3: makeNodeComponent("cardMediaVisualWrap3"),
     placeholder5: makeNodeComponent("placeholder5"),
@@ -2102,7 +2032,6 @@ export const PlasmicHomepage = Object.assign(
     metaWrap3: makeNodeComponent("metaWrap3"),
     gChip3: makeNodeComponent("gChip3"),
     gChipText3: makeNodeComponent("gChipText3"),
-    buttonArrowSmall3: makeNodeComponent("buttonArrowSmall3"),
     solutionsWrap: makeNodeComponent("solutionsWrap"),
     solutionsContain: makeNodeComponent("solutionsContain"),
     gEyebrowWrap2: makeNodeComponent("gEyebrowWrap2"),

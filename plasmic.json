@@ -227,7 +227,8 @@
           "componentImportPath": "@plasmicpkgs/react-aria/skinny/registerDialog"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "6GgaEV8wA3NAjSPNQQE37W",
@@ -468,6 +469,19 @@
             "modulePath": "SubmitButton.tsx"
           },
           "cssFilePath": "plasmic/blank_website/PlasmicSubmitButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "sQwZRK4CPdyK",
+          "name": "ArrowBtn",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicArrowBtn.tsx",
+          "importSpec": {
+            "modulePath": "ArrowBtn.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicArrowBtn.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

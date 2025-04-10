@@ -496,7 +496,7 @@
   flex-shrink: 0;
   border-radius: 4px;
 }
-.svg__o2Rz8 {
+.svg {
   object-fit: cover;
   max-width: 100%;
   color: #eeece8;
@@ -788,6 +788,7 @@
   flex-grow: 1;
   overflow: hidden;
   flex-direction: column;
+  width: auto;
   border-radius: 8px;
   padding: 12px;
 }
@@ -1017,29 +1018,8 @@
   color: rgba(39, 37, 37, 1);
   position: relative;
 }
-.buttonArrowSmall {
-  background: rgba(255, 255, 255, 0);
-  box-shadow: inset 0px 0px 0px 1.5px rgba(53, 50, 51, 0.20000000298023224);
-  width: 48px;
-  height: 48px;
-  display: flex;
+.arrowBtn__qpDMo:global(.__wab_instance) {
   position: relative;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border-radius: 2px 8px;
-}
-.svg__gA9M {
-  object-fit: cover;
-  max-width: 100%;
-  color: #353233;
-  width: 24px;
-  height: 24px;
-  display: block;
-  position: relative;
-  overflow: hidden;
   flex-shrink: 0;
 }
 .cardMedia2 {
@@ -1287,29 +1267,8 @@
   color: rgba(39, 37, 37, 1);
   position: relative;
 }
-.buttonArrowSmall2 {
-  background: rgba(255, 255, 255, 0);
-  box-shadow: inset 0px 0px 0px 1.5px rgba(53, 50, 51, 0.20000000298023224);
-  width: 48px;
-  height: 48px;
-  display: flex;
+.arrowBtn__lswuY:global(.__wab_instance) {
   position: relative;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border-radius: 2px 8px;
-}
-.svg__xu9EI {
-  object-fit: cover;
-  max-width: 100%;
-  color: #353233;
-  width: 24px;
-  height: 24px;
-  display: block;
-  position: relative;
-  overflow: hidden;
   flex-shrink: 0;
 }
 .cardMedia3 {
@@ -1557,29 +1516,8 @@
   color: rgba(39, 37, 37, 1);
   position: relative;
 }
-.buttonArrowSmall3 {
-  background: rgba(255, 255, 255, 0);
-  box-shadow: inset 0px 0px 0px 1.5px rgba(53, 50, 51, 0.20000000298023224);
-  width: 48px;
-  height: 48px;
-  display: flex;
+.arrowBtn__qNg32:global(.__wab_instance) {
   position: relative;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border-radius: 2px 8px;
-}
-.svg__hPddN {
-  object-fit: cover;
-  max-width: 100%;
-  color: #353233;
-  width: 24px;
-  height: 24px;
-  display: block;
-  position: relative;
-  overflow: hidden;
   flex-shrink: 0;
 }
 .solutionsWrap {
