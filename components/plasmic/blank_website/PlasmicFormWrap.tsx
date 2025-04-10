@@ -60,7 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import TextInput from "../../TextInput"; // plasmic-import: WFxcD-A0CuVm/component
-import BtnWrp from "../../BtnWrp"; // plasmic-import: FfPpxlM_Ttcg/component
+import SubmitButton from "../../SubmitButton"; // plasmic-import: FfPpxlM_Ttcg/component
 
 import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
@@ -91,14 +91,14 @@ export type PlasmicFormWrap__OverridesType = {
   ctaSplitLeft?: Flex__<"div">;
   ctaTitle?: Flex__<"div">;
   ctaText?: Flex__<"div">;
-  ctaContain?: Flex__<"div">;
+  ctaContain?: Flex__<"form">;
   ctaSplitRight?: Flex__<"div">;
   formInput?: Flex__<"div">;
-  ctaText2?: Flex__<"div">;
+  ctaText2?: Flex__<"label">;
   textInput?: Flex__<typeof TextInput>;
   formRow?: Flex__<"div">;
   ctaText3?: Flex__<"div">;
-  btnWrp?: Flex__<typeof BtnWrp>;
+  submitButton?: Flex__<typeof SubmitButton>;
 };
 
 export interface DefaultFormWrapProps {
@@ -255,7 +255,7 @@ function PlasmicFormWrap__RenderFunc(props: {
             </div>
           </Stack__>
           <Stack__
-            as={"div"}
+            as={"form"}
             data-plasmic-name={"ctaContain"}
             data-plasmic-override={overrides.ctaContain}
             hasGap={true}
@@ -275,7 +275,7 @@ function PlasmicFormWrap__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.formInput)}
               >
-                <div
+                <label
                   data-plasmic-name={"ctaText2"}
                   data-plasmic-override={overrides.ctaText2}
                   className={classNames(
@@ -285,7 +285,7 @@ function PlasmicFormWrap__RenderFunc(props: {
                   )}
                 >
                   {"Field Title:"}
-                </div>
+                </label>
                 <TextInput
                   data-plasmic-name={"textInput"}
                   data-plasmic-override={overrides.textInput}
@@ -327,10 +327,10 @@ function PlasmicFormWrap__RenderFunc(props: {
                     "By subscribing, you consent to the terms set forth in our Privacy Policy."
                   }
                 </div>
-                <BtnWrp
-                  data-plasmic-name={"btnWrp"}
-                  data-plasmic-override={overrides.btnWrp}
-                  className={classNames("__wab_instance", sty.btnWrp)}
+                <SubmitButton
+                  data-plasmic-name={"submitButton"}
+                  data-plasmic-override={overrides.submitButton}
+                  className={classNames("__wab_instance", sty.submitButton)}
                 />
               </Stack__>
             </Stack__>
@@ -356,7 +356,7 @@ const PlasmicDescendants = {
     "textInput",
     "formRow",
     "ctaText3",
-    "btnWrp"
+    "submitButton"
   ],
   column: [
     "column",
@@ -371,7 +371,7 @@ const PlasmicDescendants = {
     "textInput",
     "formRow",
     "ctaText3",
-    "btnWrp"
+    "submitButton"
   ],
   freeBox: [
     "freeBox",
@@ -385,7 +385,7 @@ const PlasmicDescendants = {
     "textInput",
     "formRow",
     "ctaText3",
-    "btnWrp"
+    "submitButton"
   ],
   ctaSplitLeft: ["ctaSplitLeft", "ctaTitle", "ctaText"],
   ctaTitle: ["ctaTitle"],
@@ -398,7 +398,7 @@ const PlasmicDescendants = {
     "textInput",
     "formRow",
     "ctaText3",
-    "btnWrp"
+    "submitButton"
   ],
   ctaSplitRight: [
     "ctaSplitRight",
@@ -407,14 +407,14 @@ const PlasmicDescendants = {
     "textInput",
     "formRow",
     "ctaText3",
-    "btnWrp"
+    "submitButton"
   ],
   formInput: ["formInput", "ctaText2", "textInput"],
   ctaText2: ["ctaText2"],
   textInput: ["textInput"],
-  formRow: ["formRow", "ctaText3", "btnWrp"],
+  formRow: ["formRow", "ctaText3", "submitButton"],
   ctaText3: ["ctaText3"],
-  btnWrp: ["btnWrp"]
+  submitButton: ["submitButton"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -426,14 +426,14 @@ type NodeDefaultElementType = {
   ctaSplitLeft: "div";
   ctaTitle: "div";
   ctaText: "div";
-  ctaContain: "div";
+  ctaContain: "form";
   ctaSplitRight: "div";
   formInput: "div";
-  ctaText2: "div";
+  ctaText2: "label";
   textInput: typeof TextInput;
   formRow: "div";
   ctaText3: "div";
-  btnWrp: typeof BtnWrp;
+  submitButton: typeof SubmitButton;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -508,7 +508,7 @@ export const PlasmicFormWrap = Object.assign(
     textInput: makeNodeComponent("textInput"),
     formRow: makeNodeComponent("formRow"),
     ctaText3: makeNodeComponent("ctaText3"),
-    btnWrp: makeNodeComponent("btnWrp"),
+    submitButton: makeNodeComponent("submitButton"),
 
     // Metadata about props expected for PlasmicFormWrap
     internalVariantProps: PlasmicFormWrap__VariantProps,

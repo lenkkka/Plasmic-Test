@@ -172,12 +172,12 @@ export type PlasmicHomepage__OverridesType = {
   frame101693?: Flex__<"div">;
   eyebrowText2?: Flex__<"div">;
   solutionsList?: Flex__<"div">;
-  technologyPortraitImg?: Flex__<"div">;
-  technologyPortraitImg2?: Flex__<"div">;
-  technologyPortraitImg3?: Flex__<"div">;
-  technologyPortraitImg4?: Flex__<"div">;
+  technologyPortraitImg7?: Flex__<"div">;
+  technologyPortraitImg8?: Flex__<"div">;
+  technologyPortraitImg10?: Flex__<"div">;
   technologyPortraitImg5?: Flex__<"div">;
-  technologyPortraitImg6?: Flex__<"div">;
+  technologyPortraitImg11?: Flex__<"div">;
+  technologyPortraitImg12?: Flex__<"div">;
   formWrap?: Flex__<typeof FormWrap>;
   footer?: Flex__<typeof Footer>;
 };
@@ -1101,197 +1101,58 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.solutionsList)}
                 >
                   <div
-                    className={classNames(projectcss.all, sty.column__oi5Fk)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"technologyPortraitImg"}
-                      data-plasmic-override={overrides.technologyPortraitImg}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.technologyPortraitImg
-                      )}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__rVeaV)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website/images/technologyPortraitImgPng.png",
-                          fullWidth: 422,
-                          fullHeight: 651,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </Stack__>
-                  </div>
+                    data-plasmic-name={"technologyPortraitImg7"}
+                    data-plasmic-override={overrides.technologyPortraitImg7}
+                    className={classNames(
+                      projectcss.all,
+                      sty.technologyPortraitImg7
+                    )}
+                  />
+
                   <div
-                    className={classNames(projectcss.all, sty.column__cTpkz)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"technologyPortraitImg2"}
-                      data-plasmic-override={overrides.technologyPortraitImg2}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.technologyPortraitImg2
-                      )}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img___1Mnmb)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website/images/technologyPortraitImg1Png.png",
-                          fullWidth: 415,
-                          fullHeight: 651,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </Stack__>
-                  </div>
+                    data-plasmic-name={"technologyPortraitImg8"}
+                    data-plasmic-override={overrides.technologyPortraitImg8}
+                    className={classNames(
+                      projectcss.all,
+                      sty.technologyPortraitImg8
+                    )}
+                  />
+
                   <div
-                    className={classNames(projectcss.all, sty.column__fnId9)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"technologyPortraitImg3"}
-                      data-plasmic-override={overrides.technologyPortraitImg3}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.technologyPortraitImg3
-                      )}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__wWp5I)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website/images/technologyPortraitImg2Png.png",
-                          fullWidth: 423,
-                          fullHeight: 651,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </Stack__>
-                  </div>
+                    data-plasmic-name={"technologyPortraitImg10"}
+                    data-plasmic-override={overrides.technologyPortraitImg10}
+                    className={classNames(
+                      projectcss.all,
+                      sty.technologyPortraitImg10
+                    )}
+                  />
+
                   <div
-                    className={classNames(projectcss.all, sty.column__tjSw1)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"technologyPortraitImg4"}
-                      data-plasmic-override={overrides.technologyPortraitImg4}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.technologyPortraitImg4
-                      )}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__zuxBl)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website/images/technologyPortraitImg3Png.png",
-                          fullWidth: 422,
-                          fullHeight: 651,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </Stack__>
-                  </div>
+                    data-plasmic-name={"technologyPortraitImg5"}
+                    data-plasmic-override={overrides.technologyPortraitImg5}
+                    className={classNames(
+                      projectcss.all,
+                      sty.technologyPortraitImg5
+                    )}
+                  />
+
                   <div
-                    className={classNames(projectcss.all, sty.column__rTolq)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"technologyPortraitImg5"}
-                      data-plasmic-override={overrides.technologyPortraitImg5}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.technologyPortraitImg5
-                      )}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__zgf1A)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website/images/technologyPortraitImg4Png.png",
-                          fullWidth: 423,
-                          fullHeight: 651,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </Stack__>
-                  </div>
+                    data-plasmic-name={"technologyPortraitImg11"}
+                    data-plasmic-override={overrides.technologyPortraitImg11}
+                    className={classNames(
+                      projectcss.all,
+                      sty.technologyPortraitImg11
+                    )}
+                  />
+
                   <div
-                    className={classNames(projectcss.all, sty.column__ttym7)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"technologyPortraitImg6"}
-                      data-plasmic-override={overrides.technologyPortraitImg6}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.technologyPortraitImg6
-                      )}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__njna7)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website/images/technologyPortraitImg5Png.png",
-                          fullWidth: 423,
-                          fullHeight: 651,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </Stack__>
-                  </div>
+                    data-plasmic-name={"technologyPortraitImg12"}
+                    data-plasmic-override={overrides.technologyPortraitImg12}
+                    className={classNames(
+                      projectcss.all,
+                      sty.technologyPortraitImg12
+                    )}
+                  />
                 </Stack__>
               </Stack__>
             </div>
@@ -1402,12 +1263,12 @@ const PlasmicDescendants = {
     "frame101693",
     "eyebrowText2",
     "solutionsList",
-    "technologyPortraitImg",
-    "technologyPortraitImg2",
-    "technologyPortraitImg3",
-    "technologyPortraitImg4",
+    "technologyPortraitImg7",
+    "technologyPortraitImg8",
+    "technologyPortraitImg10",
     "technologyPortraitImg5",
-    "technologyPortraitImg6",
+    "technologyPortraitImg11",
+    "technologyPortraitImg12",
     "formWrap",
     "footer"
   ],
@@ -1494,12 +1355,12 @@ const PlasmicDescendants = {
     "frame101693",
     "eyebrowText2",
     "solutionsList",
-    "technologyPortraitImg",
-    "technologyPortraitImg2",
-    "technologyPortraitImg3",
-    "technologyPortraitImg4",
+    "technologyPortraitImg7",
+    "technologyPortraitImg8",
+    "technologyPortraitImg10",
     "technologyPortraitImg5",
-    "technologyPortraitImg6",
+    "technologyPortraitImg11",
+    "technologyPortraitImg12",
     "formWrap",
     "footer"
   ],
@@ -1959,12 +1820,12 @@ const PlasmicDescendants = {
     "frame101693",
     "eyebrowText2",
     "solutionsList",
-    "technologyPortraitImg",
-    "technologyPortraitImg2",
-    "technologyPortraitImg3",
-    "technologyPortraitImg4",
+    "technologyPortraitImg7",
+    "technologyPortraitImg8",
+    "technologyPortraitImg10",
     "technologyPortraitImg5",
-    "technologyPortraitImg6"
+    "technologyPortraitImg11",
+    "technologyPortraitImg12"
   ],
   solutionsContain: [
     "solutionsContain",
@@ -1972,31 +1833,31 @@ const PlasmicDescendants = {
     "frame101693",
     "eyebrowText2",
     "solutionsList",
-    "technologyPortraitImg",
-    "technologyPortraitImg2",
-    "technologyPortraitImg3",
-    "technologyPortraitImg4",
+    "technologyPortraitImg7",
+    "technologyPortraitImg8",
+    "technologyPortraitImg10",
     "technologyPortraitImg5",
-    "technologyPortraitImg6"
+    "technologyPortraitImg11",
+    "technologyPortraitImg12"
   ],
   gEyebrowWrap2: ["gEyebrowWrap2", "frame101693", "eyebrowText2"],
   frame101693: ["frame101693"],
   eyebrowText2: ["eyebrowText2"],
   solutionsList: [
     "solutionsList",
-    "technologyPortraitImg",
-    "technologyPortraitImg2",
-    "technologyPortraitImg3",
-    "technologyPortraitImg4",
+    "technologyPortraitImg7",
+    "technologyPortraitImg8",
+    "technologyPortraitImg10",
     "technologyPortraitImg5",
-    "technologyPortraitImg6"
+    "technologyPortraitImg11",
+    "technologyPortraitImg12"
   ],
-  technologyPortraitImg: ["technologyPortraitImg"],
-  technologyPortraitImg2: ["technologyPortraitImg2"],
-  technologyPortraitImg3: ["technologyPortraitImg3"],
-  technologyPortraitImg4: ["technologyPortraitImg4"],
+  technologyPortraitImg7: ["technologyPortraitImg7"],
+  technologyPortraitImg8: ["technologyPortraitImg8"],
+  technologyPortraitImg10: ["technologyPortraitImg10"],
   technologyPortraitImg5: ["technologyPortraitImg5"],
-  technologyPortraitImg6: ["technologyPortraitImg6"],
+  technologyPortraitImg11: ["technologyPortraitImg11"],
+  technologyPortraitImg12: ["technologyPortraitImg12"],
   formWrap: ["formWrap"],
   footer: ["footer"]
 } as const;
@@ -2087,12 +1948,12 @@ type NodeDefaultElementType = {
   frame101693: "div";
   eyebrowText2: "div";
   solutionsList: "div";
-  technologyPortraitImg: "div";
-  technologyPortraitImg2: "div";
-  technologyPortraitImg3: "div";
-  technologyPortraitImg4: "div";
+  technologyPortraitImg7: "div";
+  technologyPortraitImg8: "div";
+  technologyPortraitImg10: "div";
   technologyPortraitImg5: "div";
-  technologyPortraitImg6: "div";
+  technologyPortraitImg11: "div";
+  technologyPortraitImg12: "div";
   formWrap: typeof FormWrap;
   footer: typeof Footer;
 };
@@ -2248,12 +2109,12 @@ export const PlasmicHomepage = Object.assign(
     frame101693: makeNodeComponent("frame101693"),
     eyebrowText2: makeNodeComponent("eyebrowText2"),
     solutionsList: makeNodeComponent("solutionsList"),
-    technologyPortraitImg: makeNodeComponent("technologyPortraitImg"),
-    technologyPortraitImg2: makeNodeComponent("technologyPortraitImg2"),
-    technologyPortraitImg3: makeNodeComponent("technologyPortraitImg3"),
-    technologyPortraitImg4: makeNodeComponent("technologyPortraitImg4"),
+    technologyPortraitImg7: makeNodeComponent("technologyPortraitImg7"),
+    technologyPortraitImg8: makeNodeComponent("technologyPortraitImg8"),
+    technologyPortraitImg10: makeNodeComponent("technologyPortraitImg10"),
     technologyPortraitImg5: makeNodeComponent("technologyPortraitImg5"),
-    technologyPortraitImg6: makeNodeComponent("technologyPortraitImg6"),
+    technologyPortraitImg11: makeNodeComponent("technologyPortraitImg11"),
+    technologyPortraitImg12: makeNodeComponent("technologyPortraitImg12"),
     formWrap: makeNodeComponent("formWrap"),
     footer: makeNodeComponent("footer"),
 

@@ -1,42 +1,27 @@
-.gBtnWrap {
+.root {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
   width: auto;
   height: auto;
-  display: inline-flex;
-  flex-direction: row;
-  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  justify-self: flex-start;
   cursor: pointer;
   padding: 0px;
   border-width: 1px;
   border-style: none;
 }
-.gBtnWrap > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(0px - 0px);
-  width: calc(100% + 0px);
-}
-.gBtnWrap > :global(.__wab_flex-container) > *,
-.gBtnWrap > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.gBtnWrap > :global(.__wab_flex-container) > picture > img,
-.gBtnWrap
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 0px;
-}
 .btnMainWrap {
-  background: rgba(255, 255, 255, 0);
-  box-shadow: none;
+  background: rgba(242, 169, 0, 1);
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  overflow: hidden;
   flex-direction: row;
   border-radius: 2px 8px;
   padding: 12px 24px;
-  border: 1px solid #35323333;
 }
 .btnMainWrap > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -55,10 +40,8 @@
   > img {
   margin-left: 12px;
 }
-.gBtnWrap:hover .btnMainWrap {
-  background: #f2a900;
-  box-shadow: none;
-  border: 1px solid #f2a900;
+.root:hover .btnMainWrap {
+  background: var(--token-Yq556PvPjGii);
 }
 .btnMainList {
   width: auto;

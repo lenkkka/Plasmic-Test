@@ -227,8 +227,7 @@
           "componentImportPath": "@plasmicpkgs/react-aria/skinny/registerDialog"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "6GgaEV8wA3NAjSPNQQE37W",
@@ -313,19 +312,6 @@
             "modulePath": "FormWrap.tsx"
           },
           "cssFilePath": "plasmic/blank_website/PlasmicFormWrap.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "FfPpxlM_Ttcg",
-          "name": "BtnWrp",
-          "type": "managed",
-          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicBtnWrp.tsx",
-          "importSpec": {
-            "modulePath": "BtnWrp.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicBtnWrp.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         },
@@ -469,6 +455,19 @@
             "modulePath": "Navbar.tsx"
           },
           "cssFilePath": "plasmic/blank_website/PlasmicNavbar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "FfPpxlM_Ttcg",
+          "name": "SubmitButton",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicSubmitButton.tsx",
+          "importSpec": {
+            "modulePath": "SubmitButton.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicSubmitButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

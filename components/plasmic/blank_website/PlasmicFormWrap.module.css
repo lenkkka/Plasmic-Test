@@ -303,6 +303,6 @@
   position: relative;
   padding-bottom: 0px;
 }
-.btnWrp:global(.__wab_instance) {
+.submitButton:global(.__wab_instance) {
   max-width: 100%;
 }

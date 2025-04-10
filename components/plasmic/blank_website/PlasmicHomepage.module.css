@@ -104,7 +104,24 @@
 }
 .layoutSplitList {
   position: relative;
+  display: flex;
+  flex-direction: row;
   padding: 0px var(--token-6xrunugRy1SP);
+}
+.layoutSplitList > :global(.__wab_flex-container) {
+  flex-direction: row;
+  margin-left: calc(0px - 32px);
+  width: calc(100% + 32px);
+}
+.layoutSplitList > :global(.__wab_flex-container) > *,
+.layoutSplitList > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.layoutSplitList > :global(.__wab_flex-container) > picture > img,
+.layoutSplitList
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 32px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .layoutSplitList {
@@ -1665,6 +1682,7 @@
   width: 100%;
   flex-shrink: 1;
   max-width: 100%;
+  min-height: 350px;
   min-width: 0;
   --plsmc-rc-col-gap: 0px;
   padding: 8px;
@@ -1717,7 +1735,7 @@
     width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
 }
-.column__oi5Fk {
+.technologyPortraitImg7 {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1726,44 +1744,11 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
+  background: url("/plasmic/blank_website/images/technologyPortraitImgPng.png") top 50% left 50% / cover repeat;
   min-width: 0;
-  padding: 8px;
+  padding: 0px;
 }
-.technologyPortraitImg {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-}
-.technologyPortraitImg > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: calc(0px - 61px);
-  height: calc(100% + 61px);
-}
-.technologyPortraitImg > :global(.__wab_flex-container) > *,
-.technologyPortraitImg
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > *,
-.technologyPortraitImg > :global(.__wab_flex-container) > picture > img,
-.technologyPortraitImg
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 61px;
-}
-.img__rVeaV {
-  object-fit: cover;
-  max-width: 100%;
-}
-.img__rVeaV > picture > img {
-  object-fit: cover;
-}
-.column__cTpkz {
+.technologyPortraitImg8 {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1772,45 +1757,11 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
+  background: url("/plasmic/blank_website/images/technologyPortraitImg1Png.png") top 50% left 50% / cover repeat;
   min-width: 0;
-  padding: 8px;
+  padding: 0px;
 }
-.technologyPortraitImg2 {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  overflow: hidden;
-  flex-direction: column;
-}
-.technologyPortraitImg2 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: calc(0px - 61px);
-  height: calc(100% + 61px);
-}
-.technologyPortraitImg2 > :global(.__wab_flex-container) > *,
-.technologyPortraitImg2
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > *,
-.technologyPortraitImg2 > :global(.__wab_flex-container) > picture > img,
-.technologyPortraitImg2
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 61px;
-}
-.img___1Mnmb {
-  object-fit: cover;
-  max-width: 100%;
-}
-.img___1Mnmb > picture > img {
-  object-fit: cover;
-}
-.column__fnId9 {
+.technologyPortraitImg10 {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1819,138 +1770,11 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
+  background: url("/plasmic/blank_website/images/technologyPortraitImg2Png.png") top 50% left 50% / cover repeat;
   min-width: 0;
-  padding: 8px;
-}
-.technologyPortraitImg3 {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-}
-.technologyPortraitImg3 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: calc(0px - 61px);
-  height: calc(100% + 61px);
-}
-.technologyPortraitImg3 > :global(.__wab_flex-container) > *,
-.technologyPortraitImg3
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > *,
-.technologyPortraitImg3 > :global(.__wab_flex-container) > picture > img,
-.technologyPortraitImg3
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 61px;
-}
-.img__wWp5I {
-  object-fit: cover;
-  max-width: 100%;
-}
-.img__wWp5I > picture > img {
-  object-fit: cover;
-}
-.column__tjSw1 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
-}
-.technologyPortraitImg4 {
-  height: 325px;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.technologyPortraitImg4 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: calc(0px - 61px);
-  height: calc(100% + 61px);
-}
-.technologyPortraitImg4 > :global(.__wab_flex-container) > *,
-.technologyPortraitImg4
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > *,
-.technologyPortraitImg4 > :global(.__wab_flex-container) > picture > img,
-.technologyPortraitImg4
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 61px;
-}
-.img__zuxBl {
-  object-fit: cover;
-  max-width: 100%;
-}
-.img__zuxBl > picture > img {
-  object-fit: cover;
-}
-.column__rTolq {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
+  padding: 0px;
 }
 .technologyPortraitImg5 {
-  height: 325px;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.technologyPortraitImg5 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: calc(0px - 61px);
-  height: calc(100% + 61px);
-}
-.technologyPortraitImg5 > :global(.__wab_flex-container) > *,
-.technologyPortraitImg5
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > *,
-.technologyPortraitImg5 > :global(.__wab_flex-container) > picture > img,
-.technologyPortraitImg5
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 61px;
-}
-.img__zgf1A {
-  object-fit: cover;
-  max-width: 100%;
-}
-.img__zgf1A > picture > img {
-  object-fit: cover;
-}
-.column__ttym7 {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1959,43 +1783,35 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
+  background: url("/plasmic/blank_website/images/technologyPortraitImg3Png.png") top 50% left 50% / cover repeat;
   min-width: 0;
-  padding: 8px;
+  padding: 0px;
 }
-.technologyPortraitImg6 {
-  height: 325px;
+.technologyPortraitImg11 {
   display: flex;
+  flex-direction: column;
   position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.technologyPortraitImg6 > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: calc(0px - 61px);
-  height: calc(100% + 61px);
-}
-.technologyPortraitImg6 > :global(.__wab_flex-container) > *,
-.technologyPortraitImg6
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > *,
-.technologyPortraitImg6 > :global(.__wab_flex-container) > picture > img,
-.technologyPortraitImg6
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 61px;
-}
-.img__njna7 {
-  object-fit: cover;
+  width: 100%;
+  height: auto;
   max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("/plasmic/blank_website/images/technologyPortraitImg4Png.png") top 50% left 50% / cover repeat;
+  min-width: 0;
+  padding: 0px;
 }
-.img__njna7 > picture > img {
-  object-fit: cover;
+.technologyPortraitImg12 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("/plasmic/blank_website/images/technologyPortraitImg5Png.png") top 50% left 50% / cover repeat;
+  min-width: 0;
+  padding: 0px;
 }
 .formWrap:global(.__wab_instance) {
   max-width: 100%;
