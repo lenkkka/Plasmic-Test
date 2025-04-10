@@ -1,0 +1,21 @@
+.root {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  background: none;
+  min-height: 350px;
+  min-width: 0;
+  padding: 0px;
+}
+.img {
+  object-fit: cover;
+  max-width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.img > picture > img {
+  object-fit: cover;
+}

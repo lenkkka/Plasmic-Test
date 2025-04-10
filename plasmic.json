@@ -484,6 +484,19 @@
           "cssFilePath": "plasmic/blank_website/PlasmicArrowBtn.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Xv-_qi6rIvF7",
+          "name": "TechnologyCard",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicTechnologyCard.tsx",
+          "importSpec": {
+            "modulePath": "TechnologyCard.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicTechnologyCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

@@ -64,6 +64,7 @@ import HeroSection from "../../HeroSection"; // plasmic-import: mbkly9G2X3L1/com
 import LayoutFullWrap from "../../LayoutFullWrap"; // plasmic-import: _V8L3SCxePZg/component
 import ButtonMainOutline from "../../ButtonMainOutline"; // plasmic-import: pZPvFfGgHk8v/component
 import ArrowBtn from "../../ArrowBtn"; // plasmic-import: sQwZRK4CPdyK/component
+import TechnologyCard from "../../TechnologyCard"; // plasmic-import: Xv-_qi6rIvF7/component
 import FormWrap from "../../FormWrap"; // plasmic-import: xRTHJhz9VfiN/component
 import Footer from "../../Footer"; // plasmic-import: 4Ad_NJbeLZ66/component
 
@@ -169,13 +170,7 @@ export type PlasmicHomepage__OverridesType = {
   gEyebrowWrap2?: Flex__<"div">;
   frame101693?: Flex__<"div">;
   eyebrowText2?: Flex__<"div">;
-  solutionsList?: Flex__<"div">;
-  technologyPortraitImg7?: Flex__<"div">;
-  technologyPortraitImg8?: Flex__<"div">;
-  technologyPortraitImg10?: Flex__<"div">;
-  technologyPortraitImg5?: Flex__<"div">;
-  technologyPortraitImg11?: Flex__<"div">;
-  technologyPortraitImg12?: Flex__<"div">;
+  solutionsList2?: Flex__<"div">;
   formWrap?: Flex__<typeof FormWrap>;
   footer?: Flex__<typeof Footer>;
 };
@@ -1065,62 +1060,56 @@ function PlasmicHomepage__RenderFunc(props: {
                 </Stack__>
                 <Stack__
                   as={"div"}
-                  data-plasmic-name={"solutionsList"}
-                  data-plasmic-override={overrides.solutionsList}
+                  data-plasmic-name={"solutionsList2"}
+                  data-plasmic-override={overrides.solutionsList2}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.solutionsList)}
+                  className={classNames(projectcss.all, sty.solutionsList2)}
                 >
-                  <div
-                    data-plasmic-name={"technologyPortraitImg7"}
-                    data-plasmic-override={overrides.technologyPortraitImg7}
+                  <TechnologyCard
+                    cards={["_2Pic"]}
                     className={classNames(
-                      projectcss.all,
-                      sty.technologyPortraitImg7
+                      "__wab_instance",
+                      sty.technologyCard__zxQdX
                     )}
                   />
 
-                  <div
-                    data-plasmic-name={"technologyPortraitImg8"}
-                    data-plasmic-override={overrides.technologyPortraitImg8}
+                  <TechnologyCard
+                    cards={["marafw"]}
                     className={classNames(
-                      projectcss.all,
-                      sty.technologyPortraitImg8
+                      "__wab_instance",
+                      sty.technologyCard__wa2Sa
                     )}
                   />
 
-                  <div
-                    data-plasmic-name={"technologyPortraitImg10"}
-                    data-plasmic-override={overrides.technologyPortraitImg10}
+                  <TechnologyCard
+                    cards={["slipstream"]}
                     className={classNames(
-                      projectcss.all,
-                      sty.technologyPortraitImg10
+                      "__wab_instance",
+                      sty.technologyCard__nIii
                     )}
                   />
 
-                  <div
-                    data-plasmic-name={"technologyPortraitImg5"}
-                    data-plasmic-override={overrides.technologyPortraitImg5}
+                  <TechnologyCard
+                    cards={["anduro"]}
                     className={classNames(
-                      projectcss.all,
-                      sty.technologyPortraitImg5
+                      "__wab_instance",
+                      sty.technologyCard___6Vyvc
                     )}
                   />
 
-                  <div
-                    data-plasmic-name={"technologyPortraitImg11"}
-                    data-plasmic-override={overrides.technologyPortraitImg11}
+                  <TechnologyCard
+                    cards={["alys"]}
                     className={classNames(
-                      projectcss.all,
-                      sty.technologyPortraitImg11
+                      "__wab_instance",
+                      sty.technologyCard__r18Pp
                     )}
                   />
 
-                  <div
-                    data-plasmic-name={"technologyPortraitImg12"}
-                    data-plasmic-override={overrides.technologyPortraitImg12}
+                  <TechnologyCard
+                    cards={["coordinate"]}
                     className={classNames(
-                      projectcss.all,
-                      sty.technologyPortraitImg12
+                      "__wab_instance",
+                      sty.technologyCard__iiZpO
                     )}
                   />
                 </Stack__>
@@ -1230,13 +1219,7 @@ const PlasmicDescendants = {
     "gEyebrowWrap2",
     "frame101693",
     "eyebrowText2",
-    "solutionsList",
-    "technologyPortraitImg7",
-    "technologyPortraitImg8",
-    "technologyPortraitImg10",
-    "technologyPortraitImg5",
-    "technologyPortraitImg11",
-    "technologyPortraitImg12",
+    "solutionsList2",
     "formWrap",
     "footer"
   ],
@@ -1320,13 +1303,7 @@ const PlasmicDescendants = {
     "gEyebrowWrap2",
     "frame101693",
     "eyebrowText2",
-    "solutionsList",
-    "technologyPortraitImg7",
-    "technologyPortraitImg8",
-    "technologyPortraitImg10",
-    "technologyPortraitImg5",
-    "technologyPortraitImg11",
-    "technologyPortraitImg12",
+    "solutionsList2",
     "formWrap",
     "footer"
   ],
@@ -1752,45 +1729,19 @@ const PlasmicDescendants = {
     "gEyebrowWrap2",
     "frame101693",
     "eyebrowText2",
-    "solutionsList",
-    "technologyPortraitImg7",
-    "technologyPortraitImg8",
-    "technologyPortraitImg10",
-    "technologyPortraitImg5",
-    "technologyPortraitImg11",
-    "technologyPortraitImg12"
+    "solutionsList2"
   ],
   solutionsContain: [
     "solutionsContain",
     "gEyebrowWrap2",
     "frame101693",
     "eyebrowText2",
-    "solutionsList",
-    "technologyPortraitImg7",
-    "technologyPortraitImg8",
-    "technologyPortraitImg10",
-    "technologyPortraitImg5",
-    "technologyPortraitImg11",
-    "technologyPortraitImg12"
+    "solutionsList2"
   ],
   gEyebrowWrap2: ["gEyebrowWrap2", "frame101693", "eyebrowText2"],
   frame101693: ["frame101693"],
   eyebrowText2: ["eyebrowText2"],
-  solutionsList: [
-    "solutionsList",
-    "technologyPortraitImg7",
-    "technologyPortraitImg8",
-    "technologyPortraitImg10",
-    "technologyPortraitImg5",
-    "technologyPortraitImg11",
-    "technologyPortraitImg12"
-  ],
-  technologyPortraitImg7: ["technologyPortraitImg7"],
-  technologyPortraitImg8: ["technologyPortraitImg8"],
-  technologyPortraitImg10: ["technologyPortraitImg10"],
-  technologyPortraitImg5: ["technologyPortraitImg5"],
-  technologyPortraitImg11: ["technologyPortraitImg11"],
-  technologyPortraitImg12: ["technologyPortraitImg12"],
+  solutionsList2: ["solutionsList2"],
   formWrap: ["formWrap"],
   footer: ["footer"]
 } as const;
@@ -1878,13 +1829,7 @@ type NodeDefaultElementType = {
   gEyebrowWrap2: "div";
   frame101693: "div";
   eyebrowText2: "div";
-  solutionsList: "div";
-  technologyPortraitImg7: "div";
-  technologyPortraitImg8: "div";
-  technologyPortraitImg10: "div";
-  technologyPortraitImg5: "div";
-  technologyPortraitImg11: "div";
-  technologyPortraitImg12: "div";
+  solutionsList2: "div";
   formWrap: typeof FormWrap;
   footer: typeof Footer;
 };
@@ -2037,13 +1982,7 @@ export const PlasmicHomepage = Object.assign(
     gEyebrowWrap2: makeNodeComponent("gEyebrowWrap2"),
     frame101693: makeNodeComponent("frame101693"),
     eyebrowText2: makeNodeComponent("eyebrowText2"),
-    solutionsList: makeNodeComponent("solutionsList"),
-    technologyPortraitImg7: makeNodeComponent("technologyPortraitImg7"),
-    technologyPortraitImg8: makeNodeComponent("technologyPortraitImg8"),
-    technologyPortraitImg10: makeNodeComponent("technologyPortraitImg10"),
-    technologyPortraitImg5: makeNodeComponent("technologyPortraitImg5"),
-    technologyPortraitImg11: makeNodeComponent("technologyPortraitImg11"),
-    technologyPortraitImg12: makeNodeComponent("technologyPortraitImg12"),
+    solutionsList2: makeNodeComponent("solutionsList2"),
     formWrap: makeNodeComponent("formWrap"),
     footer: makeNodeComponent("footer"),
 
