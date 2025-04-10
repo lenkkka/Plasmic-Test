@@ -107,6 +107,10 @@
   --plasmic-token-basic-border: var(--token-SJXFmsdwNDgK);
   --token-mRWyhH_V8F67: #e5e7eb;
   --plasmic-token-muted-muted-soft-hover: var(--token-mRWyhH_V8F67);
+  --token-_we0veiYaZuN: 1px;
+  --plasmic-token-unnamed-style-token-2: var(--token-_we0veiYaZuN);
+  --token-6xrunugRy1SP: 32px;
+  --plasmic-token-horizontal-padding: var(--token-6xrunugRy1SP);
 }
 
 .plasmic_tokens {

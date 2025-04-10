@@ -1481,6 +1481,16 @@
       }
     },
     {
+      "name": "Unnamed Style Token 2",
+      "type": "spacing",
+      "value": "1px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+        "id": "_we0veiYaZuN"
+      }
+    },
+    {
       "name": "Warning/Warning",
       "type": "color",
       "value": "#FACC15",
@@ -1538,6 +1548,16 @@
       "meta": {
         "projectId": "6GgaEV8wA3NAjSPNQQE37W",
         "id": "cSWYeh4IK_rr"
+      }
+    },
+    {
+      "name": "horizontal padding",
+      "type": "spacing",
+      "value": "32px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+        "id": "6xrunugRy1SP"
       }
     }
   ],

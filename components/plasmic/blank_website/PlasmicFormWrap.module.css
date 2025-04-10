@@ -13,7 +13,7 @@
   flex-wrap: nowrap;
   min-width: 0;
   --plsmc-rc-col-gap: 0px;
-  padding: 112px 0px;
+  padding: 112px var(--token-6xrunugRy1SP);
 }
 .formWrap > :nth-child(1n + 1) {
   width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);

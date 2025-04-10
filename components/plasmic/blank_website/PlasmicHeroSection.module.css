@@ -35,6 +35,7 @@
   .homeHeroCard {
     width: 100%;
     min-width: 0;
+    padding: var(--token-6xrunugRy1SP);
   }
 }
 .homeHeroTitleWrap {
@@ -47,6 +48,12 @@
   justify-content: flex-end;
   padding-right: 48px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .homeHeroTitleWrap {
+    width: 100%;
+    min-width: 0;
+  }
+}
 .title {
   display: block;
   font-size: 57.33000183105469px;
@@ -57,6 +64,11 @@
   color: rgba(39, 37, 37, 1);
   align-self: stretch;
   position: relative;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
 }
 .gLayoutDivider {
   height: auto;
@@ -181,6 +193,17 @@
   > picture
   > img {
   margin-top: 12px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .overallFigureItem {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .overallFigureItem > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
 }
 .overallFigureText {
   height: 66px;
@@ -405,6 +428,17 @@
   > img {
   margin-top: 12px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .overallFigureItem2 {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .overallFigureItem2 > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
 .overallFigureText2 {
   height: 66px;
   display: flex;
@@ -627,6 +661,17 @@
   > picture
   > img {
   margin-top: 12px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .overallFigureItem3 {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .overallFigureItem3 > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
 }
 .overallFigureText3 {
   height: 66px;
@@ -851,6 +896,17 @@
   > picture
   > img {
   margin-top: 12px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .overallFigureItem4 {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .overallFigureItem4 > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
 }
 .overallFigureText4 {
   height: 66px;
