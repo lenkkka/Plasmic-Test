@@ -13,7 +13,7 @@
   flex-wrap: nowrap;
   min-width: 0;
   --plsmc-rc-col-gap: 0px;
-  padding: 8px;
+  padding: 112px 0px;
 }
 .formWrap > :nth-child(1n + 1) {
   width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
@@ -49,17 +49,67 @@
     padding: 16px;
   }
 }
-.link {
+.freeBox {
   display: flex;
-  flex-direction: row;
   position: relative;
-  align-items: stretch;
-  justify-content: flex-start;
   width: 100%;
   height: auto;
   max-width: var(--token-cSWYeh4IK_rr);
+  flex-direction: row;
+  justify-content: space-between;
   min-width: 0;
   padding: 8px;
+}
+.ctaSplitLeft {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  overflow: hidden;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 0px;
+  min-width: 0;
+}
+.ctaSplitLeft > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 24px);
+  height: calc(100% + 24px);
+}
+.ctaSplitLeft > :global(.__wab_flex-container) > *,
+.ctaSplitLeft > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.ctaSplitLeft > :global(.__wab_flex-container) > picture > img,
+.ctaSplitLeft
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 24px;
+}
+.ctaTitle {
+  display: block;
+  font-size: 39.810001373291016px;
+  font-family: "TT Hoves Pro";
+  font-weight: 500;
+  letter-spacing: -0.01159999966621399em;
+  line-height: 1.149999976158142;
+  color: rgba(238, 236, 232, 1);
+  align-self: stretch;
+  position: relative;
+}
+.ctaText {
+  display: block;
+  font-size: 19.200000762939453px;
+  font-family: "TT Hoves Pro";
+  font-weight: 500;
+  letter-spacing: -0.01159999966621399em;
+  line-height: 1.75;
+  color: rgba(238, 236, 232, 1);
+  align-self: stretch;
+  position: relative;
 }
 .ctaContain {
   height: auto;
@@ -117,57 +167,6 @@
     margin-left: 0px;
     margin-top: 20px;
   }
-}
-.ctaSplitLeft {
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-grow: 1;
-  overflow: hidden;
-  flex-direction: column;
-  width: 100%;
-  margin-right: 0px;
-  min-width: 0;
-}
-.ctaSplitLeft > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 0;
-  margin-top: calc(0px - 24px);
-  height: calc(100% + 24px);
-}
-.ctaSplitLeft > :global(.__wab_flex-container) > *,
-.ctaSplitLeft > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.ctaSplitLeft > :global(.__wab_flex-container) > picture > img,
-.ctaSplitLeft
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 24px;
-}
-.ctaTitle {
-  display: block;
-  font-size: 39.810001373291016px;
-  font-family: "TT Hoves Pro";
-  font-weight: 500;
-  letter-spacing: -0.01159999966621399em;
-  line-height: 1.149999976158142;
-  color: rgba(238, 236, 232, 1);
-  align-self: stretch;
-  position: relative;
-}
-.ctaText {
-  display: block;
-  font-size: 19.200000762939453px;
-  font-family: "TT Hoves Pro";
-  font-weight: 500;
-  letter-spacing: -0.01159999966621399em;
-  line-height: 1.75;
-  color: rgba(238, 236, 232, 1);
-  align-self: stretch;
-  position: relative;
 }
 .ctaSplitRight {
   height: auto;

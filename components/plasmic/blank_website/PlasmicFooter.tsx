@@ -61,6 +61,7 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: 6GgaEV8wA3NAjSPNQQE37W/projectcss
 import sty from "./PlasmicFooter.module.css"; // plasmic-import: 4Ad_NJbeLZ66/css
 
@@ -84,7 +85,7 @@ export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFooter__OverridesType = {
   footer?: Flex__<"div">;
-  link?: Flex__<"a"> & Partial<LinkProps>;
+  freeBox?: Flex__<"div">;
   footerLinkWrap?: Flex__<"div">;
   footerColumnWrap?: Flex__<"div">;
   footerListItem?: Flex__<"div">;
@@ -213,15 +214,14 @@ function PlasmicFooter__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.footer
       )}
     >
-      <PlasmicLink__
-        data-plasmic-name={"link"}
-        data-plasmic-override={overrides.link}
-        className={classNames(projectcss.all, projectcss.a, sty.link)}
-        component={Link}
-        platform={"nextjs"}
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
         <Stack__
           as={"div"}
@@ -889,7 +889,7 @@ function PlasmicFooter__RenderFunc(props: {
             }}
           />
         </Stack__>
-      </PlasmicLink__>
+      </div>
     </Stack__>
   ) as React.ReactElement | null;
 }
@@ -897,7 +897,7 @@ function PlasmicFooter__RenderFunc(props: {
 const PlasmicDescendants = {
   footer: [
     "footer",
-    "link",
+    "freeBox",
     "footerLinkWrap",
     "footerColumnWrap",
     "footerListItem",
@@ -969,8 +969,8 @@ const PlasmicDescendants = {
     "legalCopyrightText",
     "img"
   ],
-  link: [
-    "link",
+  freeBox: [
+    "freeBox",
     "footerLinkWrap",
     "footerColumnWrap",
     "footerListItem",
@@ -1380,7 +1380,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   footer: "div";
-  link: "a";
+  freeBox: "div";
   footerLinkWrap: "div";
   footerColumnWrap: "div";
   footerListItem: "div";
@@ -1513,7 +1513,7 @@ export const PlasmicFooter = Object.assign(
   makeNodeComponent("footer"),
   {
     // Helper components rendering sub-elements
-    link: makeNodeComponent("link"),
+    freeBox: makeNodeComponent("freeBox"),
     footerLinkWrap: makeNodeComponent("footerLinkWrap"),
     footerColumnWrap: makeNodeComponent("footerColumnWrap"),
     footerListItem: makeNodeComponent("footerListItem"),

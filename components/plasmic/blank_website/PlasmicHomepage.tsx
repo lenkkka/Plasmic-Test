@@ -60,11 +60,22 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import HeroSection from "../../HeroSection"; // plasmic-import: mbkly9G2X3L1/component
+import LayoutFullWrap from "../../LayoutFullWrap"; // plasmic-import: _V8L3SCxePZg/component
+import ButtonMainOutline from "../../ButtonMainOutline"; // plasmic-import: pZPvFfGgHk8v/component
+import FormWrap from "../../FormWrap"; // plasmic-import: xRTHJhz9VfiN/component
+import Footer from "../../Footer"; // plasmic-import: 4Ad_NJbeLZ66/component
+
+import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: 6GgaEV8wA3NAjSPNQQE37W/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: H1CWy2aw37Fp/css
+
+import ChevronDownIconWrapIcon from "./icons/PlasmicIcon__ChevronDownIconWrap"; // plasmic-import: uBMHnK7097pW/icon
+import GCurvedCornerIcon from "./icons/PlasmicIcon__GCurvedCorner"; // plasmic-import: xBHjxIupafBj/icon
+import ArrowRightIconWrapIcon from "./icons/PlasmicIcon__ArrowRightIconWrap"; // plasmic-import: 4HIycwZWkq14/icon
 
 createPlasmicElementProxy;
 
@@ -79,7 +90,130 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  homeDevelopmentComponents?: Flex__<"div">;
+  navbar?: Flex__<"div">;
+  navContain?: Flex__<"div">;
+  navTopRow?: Flex__<"div">;
+  menuList?: Flex__<"div">;
+  menuItemsList?: Flex__<"div">;
+  rollover?: Flex__<"div">;
+  navItemDropdownList?: Flex__<"div">;
+  navText?: Flex__<"div">;
+  navIconWrap?: Flex__<"div">;
+  navItemDropdownList6?: Flex__<"div">;
+  navIconWrap7?: Flex__<"div">;
+  navIconWrap8?: Flex__<"div">;
+  navIconWrap9?: Flex__<"div">;
+  navIconWrap10?: Flex__<"div">;
+  navIconWrap11?: Flex__<"div">;
+  rollover2?: Flex__<"div">;
+  navItemDropdownList2?: Flex__<"div">;
+  navText2?: Flex__<"div">;
+  navIconWrap2?: Flex__<"div">;
+  rollover3?: Flex__<"div">;
+  navItemDropdownList3?: Flex__<"div">;
+  navText3?: Flex__<"div">;
+  navIconWrap3?: Flex__<"div">;
+  rollover4?: Flex__<"div">;
+  navItemDropdownList4?: Flex__<"div">;
+  navText4?: Flex__<"div">;
+  navIconWrap4?: Flex__<"div">;
+  rollover5?: Flex__<"div">;
+  navItemDropdownList5?: Flex__<"div">;
+  navText5?: Flex__<"div">;
+  navIconWrap5?: Flex__<"div">;
+  rollover6?: Flex__<"div">;
+  btnMainWrap6?: Flex__<"div">;
+  btnMainList6?: Flex__<"div">;
+  btnMainText6?: Flex__<"div">;
+  navIconWrap6?: Flex__<"div">;
   heroSection?: Flex__<typeof HeroSection>;
+  layoutFullWrap?: Flex__<typeof LayoutFullWrap>;
+  layoutSplitWrap?: Flex__<"div">;
+  layoutContain?: Flex__<"div">;
+  layoutSplitList?: Flex__<"div">;
+  cardPhoto?: Flex__<"div">;
+  cardPhotoTopRow?: Flex__<"div">;
+  cardPhotoVisualWrap?: Flex__<"div">;
+  placeholder?: Flex__<"div">;
+  cardPhotoContent?: Flex__<"div">;
+  layoutSplitTitle?: Flex__<"div">;
+  gLayoutDivider?: Flex__<"div">;
+  itemDivider?: Flex__<"div">;
+  layoutSplitText?: Flex__<"div">;
+  cardPhoto2?: Flex__<"div">;
+  cardPhotoTopRow2?: Flex__<"div">;
+  cardPhotoVisualWrap2?: Flex__<"div">;
+  placeholder2?: Flex__<"div">;
+  cardPhotoContent2?: Flex__<"div">;
+  layoutSplitTitle2?: Flex__<"div">;
+  gLayoutDivider2?: Flex__<"div">;
+  itemDivider2?: Flex__<"div">;
+  layoutSplitText2?: Flex__<"div">;
+  layoutFullWrap2?: Flex__<"div">;
+  layoutFullContain2?: Flex__<"div">;
+  layoutFullContentWrap2?: Flex__<"div">;
+  layoutFullContent2?: Flex__<"div">;
+  title2?: Flex__<"div">;
+  v03Divider2?: Flex__<"div">;
+  hr2?: Flex__<"div">;
+  text2?: Flex__<"div">;
+  sectionMediaWrap?: Flex__<"div">;
+  mediaContain?: Flex__<"div">;
+  gEyebrowWrap?: Flex__<"div">;
+  frame101692?: Flex__<"div">;
+  eyebrowText?: Flex__<"div">;
+  mediaList?: Flex__<"div">;
+  cardMedia?: Flex__<"div">;
+  cardMediaVisualWrap?: Flex__<"div">;
+  placeholder3?: Flex__<"div">;
+  cardMediaContentWrap?: Flex__<"div">;
+  cardMediaContent?: Flex__<"div">;
+  mediumHeadlineGoesHere?: Flex__<"div">;
+  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique?: Flex__<"div">;
+  cardMediaFooter?: Flex__<"div">;
+  metaWrap?: Flex__<"div">;
+  gChip?: Flex__<"div">;
+  gChipText?: Flex__<"div">;
+  buttonArrowSmall?: Flex__<"div">;
+  cardMedia2?: Flex__<"div">;
+  cardMediaVisualWrap2?: Flex__<"div">;
+  placeholder4?: Flex__<"div">;
+  cardMediaContentWrap2?: Flex__<"div">;
+  cardMediaContent2?: Flex__<"div">;
+  mediumHeadlineGoesHere2?: Flex__<"div">;
+  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2?: Flex__<"div">;
+  cardMediaFooter2?: Flex__<"div">;
+  metaWrap2?: Flex__<"div">;
+  gChip2?: Flex__<"div">;
+  gChipText2?: Flex__<"div">;
+  buttonArrowSmall2?: Flex__<"div">;
+  cardMedia3?: Flex__<"div">;
+  cardMediaVisualWrap3?: Flex__<"div">;
+  placeholder5?: Flex__<"div">;
+  cardMediaContentWrap3?: Flex__<"div">;
+  cardMediaContent3?: Flex__<"div">;
+  mediumHeadlineGoesHere3?: Flex__<"div">;
+  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3?: Flex__<"div">;
+  cardMediaFooter3?: Flex__<"div">;
+  metaWrap3?: Flex__<"div">;
+  gChip3?: Flex__<"div">;
+  gChipText3?: Flex__<"div">;
+  buttonArrowSmall3?: Flex__<"div">;
+  solutionsWrap?: Flex__<"div">;
+  solutionsContain?: Flex__<"div">;
+  gEyebrowWrap2?: Flex__<"div">;
+  frame101693?: Flex__<"div">;
+  eyebrowText2?: Flex__<"div">;
+  solutionsList?: Flex__<"div">;
+  technologyPortraitImg?: Flex__<"div">;
+  technologyPortraitImg2?: Flex__<"div">;
+  technologyPortraitImg3?: Flex__<"div">;
+  technologyPortraitImg4?: Flex__<"div">;
+  technologyPortraitImg5?: Flex__<"div">;
+  technologyPortraitImg6?: Flex__<"div">;
+  formWrap?: Flex__<typeof FormWrap>;
+  footer?: Flex__<typeof Footer>;
 };
 
 export interface DefaultHomepageProps {}
@@ -122,6 +256,10 @@ function PlasmicHomepage__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants_19VDikmmmbc3()
+  });
+
   return (
     <React.Fragment>
       <Head></Head>
@@ -144,14 +282,1537 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
-          <HeroSection
-            data-plasmic-name={"heroSection"}
-            data-plasmic-override={overrides.heroSection}
-            className={classNames("__wab_instance", sty.heroSection)}
-          />
+          <div
+            data-plasmic-name={"homeDevelopmentComponents"}
+            data-plasmic-override={overrides.homeDevelopmentComponents}
+            className={classNames(
+              projectcss.all,
+              sty.homeDevelopmentComponents
+            )}
+          >
+            <div
+              data-plasmic-name={"navbar"}
+              data-plasmic-override={overrides.navbar}
+              className={classNames(projectcss.all, sty.navbar)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navContain"}
+                data-plasmic-override={overrides.navContain}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navContain)}
+              >
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"navTopRow"}
+                  data-plasmic-override={overrides.navTopRow}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.navTopRow)}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__ob6Kx)}
+                    displayHeight={"44.880001068115234px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"144px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blank_website/images/logo2.svg",
+                      fullWidth: 144,
+                      fullHeight: 44.880001068115234,
+                      aspectRatio: 3.2
+                    }}
+                  />
+
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"menuList"}
+                    data-plasmic-override={overrides.menuList}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.menuList)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"menuItemsList"}
+                      data-plasmic-override={overrides.menuItemsList}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.menuItemsList)}
+                    >
+                      <div
+                        data-plasmic-name={"rollover"}
+                        data-plasmic-override={overrides.rollover}
+                        className={classNames(projectcss.all, sty.rollover)}
+                        onAnimationStart={async event => {
+                          const $steps = {};
+
+                          $steps["runElementAction"] = true
+                            ? (() => {
+                                const actionArgs = {};
+                                return (({ tplRef, action, args }) => {
+                                  return $refs?.[tplRef]?.[action]?.(
+                                    ...(args ?? [])
+                                  );
+                                })?.apply(null, [actionArgs]);
+                              })()
+                            : undefined;
+                          if (
+                            $steps["runElementAction"] != null &&
+                            typeof $steps["runElementAction"] === "object" &&
+                            typeof $steps["runElementAction"].then ===
+                              "function"
+                          ) {
+                            $steps["runElementAction"] = await $steps[
+                              "runElementAction"
+                            ];
+                          }
+                        }}
+                      >
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"navItemDropdownList"}
+                          data-plasmic-override={overrides.navItemDropdownList}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.navItemDropdownList
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"navText"}
+                            data-plasmic-override={overrides.navText}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.navText
+                            )}
+                          >
+                            {"About us"}
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap"}
+                            data-plasmic-override={overrides.navIconWrap}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap
+                            )}
+                          >
+                            <ChevronDownIconWrapIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg___4Wmy2
+                              )}
+                              role={"img"}
+                            />
+                          </Stack__>
+                        </Stack__>
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"navItemDropdownList6"}
+                          data-plasmic-override={overrides.navItemDropdownList6}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.navItemDropdownList6
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap7"}
+                            data-plasmic-override={overrides.navIconWrap7}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap7
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__nJ1KE
+                              )}
+                            >
+                              {"OUR PILLARS "}
+                            </div>
+                          </Stack__>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap8"}
+                            data-plasmic-override={overrides.navIconWrap8}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap8
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__ovLkP
+                              )}
+                            >
+                              {"CLIMATE, CULTURE, & COMMUNITY  "}
+                            </div>
+                          </Stack__>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap9"}
+                            data-plasmic-override={overrides.navIconWrap9}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap9
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___1WaQv
+                              )}
+                            >
+                              {"EXECUTIVE TEAM "}
+                            </div>
+                          </Stack__>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap10"}
+                            data-plasmic-override={overrides.navIconWrap10}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap10
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__n948
+                              )}
+                            >
+                              {"CAREERS  "}
+                            </div>
+                          </Stack__>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap11"}
+                            data-plasmic-override={overrides.navIconWrap11}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap11
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__nEdMe
+                              )}
+                            >
+                              {"CONTACT"}
+                            </div>
+                          </Stack__>
+                        </Stack__>
+                      </div>
+                      <div
+                        data-plasmic-name={"rollover2"}
+                        data-plasmic-override={overrides.rollover2}
+                        className={classNames(projectcss.all, sty.rollover2)}
+                      >
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"navItemDropdownList2"}
+                          data-plasmic-override={overrides.navItemDropdownList2}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.navItemDropdownList2
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"navText2"}
+                            data-plasmic-override={overrides.navText2}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.navText2
+                            )}
+                          >
+                            {"operations"}
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap2"}
+                            data-plasmic-override={overrides.navIconWrap2}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap2
+                            )}
+                          >
+                            <ChevronDownIconWrapIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__nM0Fo
+                              )}
+                              role={"img"}
+                            />
+                          </Stack__>
+                        </Stack__>
+                      </div>
+                      <div
+                        data-plasmic-name={"rollover3"}
+                        data-plasmic-override={overrides.rollover3}
+                        className={classNames(projectcss.all, sty.rollover3)}
+                      >
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"navItemDropdownList3"}
+                          data-plasmic-override={overrides.navItemDropdownList3}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.navItemDropdownList3
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"navText3"}
+                            data-plasmic-override={overrides.navText3}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.navText3
+                            )}
+                          >
+                            {"Technology"}
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap3"}
+                            data-plasmic-override={overrides.navIconWrap3}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap3
+                            )}
+                          >
+                            <ChevronDownIconWrapIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__wlT1X
+                              )}
+                              role={"img"}
+                            />
+                          </Stack__>
+                        </Stack__>
+                      </div>
+                      <div
+                        data-plasmic-name={"rollover4"}
+                        data-plasmic-override={overrides.rollover4}
+                        className={classNames(projectcss.all, sty.rollover4)}
+                      >
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"navItemDropdownList4"}
+                          data-plasmic-override={overrides.navItemDropdownList4}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.navItemDropdownList4
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"navText4"}
+                            data-plasmic-override={overrides.navText4}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.navText4
+                            )}
+                          >
+                            {"Investors"}
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap4"}
+                            data-plasmic-override={overrides.navIconWrap4}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap4
+                            )}
+                          >
+                            <ChevronDownIconWrapIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__dcqrx
+                              )}
+                              role={"img"}
+                            />
+                          </Stack__>
+                        </Stack__>
+                      </div>
+                      <div
+                        data-plasmic-name={"rollover5"}
+                        data-plasmic-override={overrides.rollover5}
+                        className={classNames(projectcss.all, sty.rollover5)}
+                      >
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"navItemDropdownList5"}
+                          data-plasmic-override={overrides.navItemDropdownList5}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.navItemDropdownList5
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"navText5"}
+                            data-plasmic-override={overrides.navText5}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.navText5
+                            )}
+                          >
+                            {"partnerships"}
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"navIconWrap5"}
+                            data-plasmic-override={overrides.navIconWrap5}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.navIconWrap5
+                            )}
+                          >
+                            <ChevronDownIconWrapIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__h5YB
+                              )}
+                              role={"img"}
+                            />
+                          </Stack__>
+                        </Stack__>
+                      </div>
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"rollover6"}
+                        data-plasmic-override={overrides.rollover6}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.rollover6)}
+                      >
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"btnMainWrap6"}
+                          data-plasmic-override={overrides.btnMainWrap6}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.btnMainWrap6
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"btnMainList6"}
+                            data-plasmic-override={overrides.btnMainList6}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.btnMainList6
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"btnMainText6"}
+                              data-plasmic-override={overrides.btnMainText6}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.btnMainText6
+                              )}
+                            >
+                              {"Media"}
+                            </div>
+                            <Stack__
+                              as={"div"}
+                              data-plasmic-name={"navIconWrap6"}
+                              data-plasmic-override={overrides.navIconWrap6}
+                              hasGap={true}
+                              className={classNames(
+                                projectcss.all,
+                                sty.navIconWrap6
+                              )}
+                            >
+                              <ChevronDownIconWrapIcon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__wqNAl
+                                )}
+                                role={"img"}
+                              />
+                            </Stack__>
+                          </Stack__>
+                        </Stack__>
+                      </Stack__>
+                    </Stack__>
+                  </Stack__>
+                </Stack__>
+              </Stack__>
+            </div>
+            <HeroSection
+              data-plasmic-name={"heroSection"}
+              data-plasmic-override={overrides.heroSection}
+              className={classNames("__wab_instance", sty.heroSection)}
+              heroTitle={
+                "Leveraging digital asset compute to support the energy transformation"
+              }
+            />
+
+            <LayoutFullWrap
+              data-plasmic-name={"layoutFullWrap"}
+              data-plasmic-override={overrides.layoutFullWrap}
+              className={classNames("__wab_instance", sty.layoutFullWrap)}
+              sectionContent={
+                "MARA (NASDAQ:MARA) is a global leader in digital asset compute that develops and deploys innovative technologies to build a more sustainable and inclusive future. MARA secures the world\u2019s preeminent blockchain ledger and supports the energy transformation by converting clean, stranded, or otherwise underutilized energy into economic value."
+              }
+              sectionTitle={"The MARA Difference"}
+            />
+
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"layoutSplitWrap"}
+              data-plasmic-override={overrides.layoutSplitWrap}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.layoutSplitWrap)}
+            >
+              <div
+                data-plasmic-name={"layoutContain"}
+                data-plasmic-override={overrides.layoutContain}
+                className={classNames(projectcss.all, sty.layoutContain)}
+              >
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"layoutSplitList"}
+                  data-plasmic-override={overrides.layoutSplitList}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.layoutSplitList)}
+                >
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"cardPhoto"}
+                    data-plasmic-override={overrides.cardPhoto}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.cardPhoto)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"cardPhotoTopRow"}
+                      data-plasmic-override={overrides.cardPhotoTopRow}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.cardPhotoTopRow
+                      )}
+                    >
+                      <div
+                        data-plasmic-name={"cardPhotoVisualWrap"}
+                        data-plasmic-override={overrides.cardPhotoVisualWrap}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardPhotoVisualWrap
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"placeholder"}
+                          data-plasmic-override={overrides.placeholder}
+                          className={classNames(
+                            projectcss.all,
+                            sty.placeholder
+                          )}
+                        />
+                      </div>
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"cardPhotoContent"}
+                        data-plasmic-override={overrides.cardPhotoContent}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardPhotoContent
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"layoutSplitTitle"}
+                          data-plasmic-override={overrides.layoutSplitTitle}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.layoutSplitTitle
+                          )}
+                        >
+                          {"Operations"}
+                        </div>
+                        <div
+                          data-plasmic-name={"gLayoutDivider"}
+                          data-plasmic-override={overrides.gLayoutDivider}
+                          className={classNames(
+                            projectcss.all,
+                            sty.gLayoutDivider
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"itemDivider"}
+                            data-plasmic-override={overrides.itemDivider}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.itemDivider
+                            )}
+                          />
+                        </div>
+                        <div
+                          data-plasmic-name={"layoutSplitText"}
+                          data-plasmic-override={overrides.layoutSplitText}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.layoutSplitText
+                          )}
+                        >
+                          {
+                            "Our digital asset compute portfolio spans multiple states and countries. We manage large grid-connected deployments that reduce energy waste and inefficiencies, as well as small, dispersed deployments that transform stranded or wasted energy resources into more productive and sustainable assets. At MARA, we excel in optimizing energy use on a global scale."
+                          }
+                        </div>
+                      </Stack__>
+                    </Stack__>
+                    <ButtonMainOutline
+                      className={classNames(
+                        "__wab_instance",
+                        sty.buttonMainOutline__mSsW
+                      )}
+                      ctaText={"Learn More"}
+                    />
+                  </Stack__>
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"cardPhoto2"}
+                    data-plasmic-override={overrides.cardPhoto2}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.cardPhoto2)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"cardPhotoTopRow2"}
+                      data-plasmic-override={overrides.cardPhotoTopRow2}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.cardPhotoTopRow2
+                      )}
+                    >
+                      <div
+                        data-plasmic-name={"cardPhotoVisualWrap2"}
+                        data-plasmic-override={overrides.cardPhotoVisualWrap2}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardPhotoVisualWrap2
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"placeholder2"}
+                          data-plasmic-override={overrides.placeholder2}
+                          className={classNames(
+                            projectcss.all,
+                            sty.placeholder2
+                          )}
+                        />
+                      </div>
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"cardPhotoContent2"}
+                        data-plasmic-override={overrides.cardPhotoContent2}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardPhotoContent2
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"layoutSplitTitle2"}
+                          data-plasmic-override={overrides.layoutSplitTitle2}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.layoutSplitTitle2
+                          )}
+                        >
+                          {"Investors"}
+                        </div>
+                        <div
+                          data-plasmic-name={"gLayoutDivider2"}
+                          data-plasmic-override={overrides.gLayoutDivider2}
+                          className={classNames(
+                            projectcss.all,
+                            sty.gLayoutDivider2
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"itemDivider2"}
+                            data-plasmic-override={overrides.itemDivider2}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.itemDivider2
+                            )}
+                          />
+                        </div>
+                        <div
+                          data-plasmic-name={"layoutSplitText2"}
+                          data-plasmic-override={overrides.layoutSplitText2}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.layoutSplitText2
+                          )}
+                        >
+                          {
+                            "MARA is a publicly traded company (NASDAQ: MARA). Our investor relations website includes detailed information on our financial performance, our latest corporate updates, SEC filings, and more."
+                          }
+                        </div>
+                      </Stack__>
+                    </Stack__>
+                    <ButtonMainOutline
+                      className={classNames(
+                        "__wab_instance",
+                        sty.buttonMainOutline__qdLy
+                      )}
+                      ctaText={"Learn More"}
+                    />
+                  </Stack__>
+                </Stack__>
+              </div>
+            </Stack__>
+            <div
+              data-plasmic-name={"layoutFullWrap2"}
+              data-plasmic-override={overrides.layoutFullWrap2}
+              className={classNames(projectcss.all, sty.layoutFullWrap2)}
+            >
+              <div
+                data-plasmic-name={"layoutFullContain2"}
+                data-plasmic-override={overrides.layoutFullContain2}
+                className={classNames(projectcss.all, sty.layoutFullContain2)}
+              >
+                <GCurvedCornerIcon
+                  className={classNames(projectcss.all, sty.svg__o2Rz8)}
+                  role={"img"}
+                />
+
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"layoutFullContentWrap2"}
+                  data-plasmic-override={overrides.layoutFullContentWrap2}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    sty.layoutFullContentWrap2
+                  )}
+                >
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"layoutFullContent2"}
+                    data-plasmic-override={overrides.layoutFullContent2}
+                    hasGap={true}
+                    className={classNames(
+                      projectcss.all,
+                      sty.layoutFullContent2
+                    )}
+                  >
+                    <div
+                      data-plasmic-name={"title2"}
+                      data-plasmic-override={overrides.title2}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.title2
+                      )}
+                    >
+                      {"Partner with MARA"}
+                    </div>
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"v03Divider2"}
+                      data-plasmic-override={overrides.v03Divider2}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.v03Divider2)}
+                    >
+                      <div
+                        data-plasmic-name={"hr2"}
+                        data-plasmic-override={overrides.hr2}
+                        className={classNames(projectcss.all, sty.hr2)}
+                      />
+                    </Stack__>
+                    <div
+                      data-plasmic-name={"text2"}
+                      data-plasmic-override={overrides.text2}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text2
+                      )}
+                    >
+                      {
+                        "Our technologies empower energy companies, nation-states, and institutions to accelerate the energy transformation. By deploying highly adaptable, flexible, and scalable data centers, we help optimize unused or underutilized energy. Partner with us to leverage our unique expertise in data center operations. Together, let\u2019s build a more sustainable and inclusive future."
+                      }
+                    </div>
+                  </Stack__>
+                  <ButtonMainOutline
+                    className={classNames(
+                      "__wab_instance",
+                      sty.buttonMainOutline__qCIc6
+                    )}
+                    ctaText={"Learn More"}
+                  />
+                </Stack__>
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"sectionMediaWrap"}
+              data-plasmic-override={overrides.sectionMediaWrap}
+              className={classNames(projectcss.all, sty.sectionMediaWrap)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"mediaContain"}
+                data-plasmic-override={overrides.mediaContain}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.mediaContain)}
+              >
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"gEyebrowWrap"}
+                  data-plasmic-override={overrides.gEyebrowWrap}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.gEyebrowWrap)}
+                >
+                  <div
+                    data-plasmic-name={"frame101692"}
+                    data-plasmic-override={overrides.frame101692}
+                    className={classNames(projectcss.all, sty.frame101692)}
+                  />
+
+                  <div
+                    data-plasmic-name={"eyebrowText"}
+                    data-plasmic-override={overrides.eyebrowText}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.eyebrowText
+                    )}
+                  >
+                    {"media"}
+                  </div>
+                </Stack__>
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"mediaList"}
+                  data-plasmic-override={overrides.mediaList}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.mediaList)}
+                >
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"cardMedia"}
+                    data-plasmic-override={overrides.cardMedia}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.cardMedia)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"cardMediaVisualWrap"}
+                      data-plasmic-override={overrides.cardMediaVisualWrap}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.cardMediaVisualWrap
+                      )}
+                    >
+                      <div
+                        data-plasmic-name={"placeholder3"}
+                        data-plasmic-override={overrides.placeholder3}
+                        className={classNames(projectcss.all, sty.placeholder3)}
+                      />
+                    </Stack__>
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"cardMediaContentWrap"}
+                      data-plasmic-override={overrides.cardMediaContentWrap}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.cardMediaContentWrap
+                      )}
+                    >
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"cardMediaContent"}
+                        data-plasmic-override={overrides.cardMediaContent}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardMediaContent
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"mediumHeadlineGoesHere"}
+                          data-plasmic-override={
+                            overrides.mediumHeadlineGoesHere
+                          }
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.mediumHeadlineGoesHere
+                          )}
+                        >
+                          {
+                            "MARA Stock: Bitcoin Miner Marathon Digital's Solutions to the World's Energy Problems | Adam Swick"
+                          }
+                        </div>
+                        <div
+                          data-plasmic-name={
+                            "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique"
+                          }
+                          data-plasmic-override={
+                            overrides.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique
+                          }
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique
+                          )}
+                        >
+                          {
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. "
+                          }
+                        </div>
+                      </Stack__>
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"cardMediaFooter"}
+                        data-plasmic-override={overrides.cardMediaFooter}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardMediaFooter
+                        )}
+                      >
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"metaWrap"}
+                          data-plasmic-override={overrides.metaWrap}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.metaWrap)}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__ti9XY
+                            )}
+                          >
+                            {"XX.XX.XXXX"}
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"gChip"}
+                            data-plasmic-override={overrides.gChip}
+                            hasGap={true}
+                            className={classNames(projectcss.all, sty.gChip)}
+                          >
+                            <div
+                              data-plasmic-name={"gChipText"}
+                              data-plasmic-override={overrides.gChipText}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.gChipText
+                              )}
+                            >
+                              {"Chip"}
+                            </div>
+                          </Stack__>
+                        </Stack__>
+                        <div
+                          data-plasmic-name={"buttonArrowSmall"}
+                          data-plasmic-override={overrides.buttonArrowSmall}
+                          className={classNames(
+                            projectcss.all,
+                            sty.buttonArrowSmall
+                          )}
+                        >
+                          <ArrowRightIconWrapIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__gA9M
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                      </Stack__>
+                    </Stack__>
+                  </Stack__>
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"cardMedia2"}
+                    data-plasmic-override={overrides.cardMedia2}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.cardMedia2)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"cardMediaVisualWrap2"}
+                      data-plasmic-override={overrides.cardMediaVisualWrap2}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.cardMediaVisualWrap2
+                      )}
+                    >
+                      <div
+                        data-plasmic-name={"placeholder4"}
+                        data-plasmic-override={overrides.placeholder4}
+                        className={classNames(projectcss.all, sty.placeholder4)}
+                      />
+                    </Stack__>
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"cardMediaContentWrap2"}
+                      data-plasmic-override={overrides.cardMediaContentWrap2}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.cardMediaContentWrap2
+                      )}
+                    >
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"cardMediaContent2"}
+                        data-plasmic-override={overrides.cardMediaContent2}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardMediaContent2
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"mediumHeadlineGoesHere2"}
+                          data-plasmic-override={
+                            overrides.mediumHeadlineGoesHere2
+                          }
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.mediumHeadlineGoesHere2
+                          )}
+                        >
+                          {"Heating with Hashes: Digital Asset Compute..."}
+                        </div>
+                        <div
+                          data-plasmic-name={
+                            "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2"
+                          }
+                          data-plasmic-override={
+                            overrides.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2
+                          }
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2
+                          )}
+                        >
+                          {
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. "
+                          }
+                        </div>
+                      </Stack__>
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"cardMediaFooter2"}
+                        data-plasmic-override={overrides.cardMediaFooter2}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardMediaFooter2
+                        )}
+                      >
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"metaWrap2"}
+                          data-plasmic-override={overrides.metaWrap2}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.metaWrap2)}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__ni8Mf
+                            )}
+                          >
+                            {"XX.XX.XXXX"}
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"gChip2"}
+                            data-plasmic-override={overrides.gChip2}
+                            hasGap={true}
+                            className={classNames(projectcss.all, sty.gChip2)}
+                          >
+                            <div
+                              data-plasmic-name={"gChipText2"}
+                              data-plasmic-override={overrides.gChipText2}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.gChipText2
+                              )}
+                            >
+                              {"Chip"}
+                            </div>
+                          </Stack__>
+                        </Stack__>
+                        <div
+                          data-plasmic-name={"buttonArrowSmall2"}
+                          data-plasmic-override={overrides.buttonArrowSmall2}
+                          className={classNames(
+                            projectcss.all,
+                            sty.buttonArrowSmall2
+                          )}
+                        >
+                          <ArrowRightIconWrapIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__xu9EI
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                      </Stack__>
+                    </Stack__>
+                  </Stack__>
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"cardMedia3"}
+                    data-plasmic-override={overrides.cardMedia3}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.cardMedia3)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"cardMediaVisualWrap3"}
+                      data-plasmic-override={overrides.cardMediaVisualWrap3}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.cardMediaVisualWrap3
+                      )}
+                    >
+                      <div
+                        data-plasmic-name={"placeholder5"}
+                        data-plasmic-override={overrides.placeholder5}
+                        className={classNames(projectcss.all, sty.placeholder5)}
+                      />
+                    </Stack__>
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"cardMediaContentWrap3"}
+                      data-plasmic-override={overrides.cardMediaContentWrap3}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.cardMediaContentWrap3
+                      )}
+                    >
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"cardMediaContent3"}
+                        data-plasmic-override={overrides.cardMediaContent3}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardMediaContent3
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"mediumHeadlineGoesHere3"}
+                          data-plasmic-override={
+                            overrides.mediumHeadlineGoesHere3
+                          }
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.mediumHeadlineGoesHere3
+                          )}
+                        >
+                          {"Fred Thiel on The Future Convergence..."}
+                        </div>
+                        <div
+                          data-plasmic-name={
+                            "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3"
+                          }
+                          data-plasmic-override={
+                            overrides.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3
+                          }
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3
+                          )}
+                        >
+                          {
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. "
+                          }
+                        </div>
+                      </Stack__>
+                      <Stack__
+                        as={"div"}
+                        data-plasmic-name={"cardMediaFooter3"}
+                        data-plasmic-override={overrides.cardMediaFooter3}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.cardMediaFooter3
+                        )}
+                      >
+                        <Stack__
+                          as={"div"}
+                          data-plasmic-name={"metaWrap3"}
+                          data-plasmic-override={overrides.metaWrap3}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.metaWrap3)}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__oiXkD
+                            )}
+                          >
+                            {"XX.XX.XXXX"}
+                          </div>
+                          <Stack__
+                            as={"div"}
+                            data-plasmic-name={"gChip3"}
+                            data-plasmic-override={overrides.gChip3}
+                            hasGap={true}
+                            className={classNames(projectcss.all, sty.gChip3)}
+                          >
+                            <div
+                              data-plasmic-name={"gChipText3"}
+                              data-plasmic-override={overrides.gChipText3}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.gChipText3
+                              )}
+                            >
+                              {"Chip"}
+                            </div>
+                          </Stack__>
+                        </Stack__>
+                        <div
+                          data-plasmic-name={"buttonArrowSmall3"}
+                          data-plasmic-override={overrides.buttonArrowSmall3}
+                          className={classNames(
+                            projectcss.all,
+                            sty.buttonArrowSmall3
+                          )}
+                        >
+                          <ArrowRightIconWrapIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__hPddN
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                      </Stack__>
+                    </Stack__>
+                  </Stack__>
+                </Stack__>
+              </Stack__>
+            </div>
+            <div
+              data-plasmic-name={"solutionsWrap"}
+              data-plasmic-override={overrides.solutionsWrap}
+              className={classNames(projectcss.all, sty.solutionsWrap)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"solutionsContain"}
+                data-plasmic-override={overrides.solutionsContain}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.solutionsContain)}
+              >
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"gEyebrowWrap2"}
+                  data-plasmic-override={overrides.gEyebrowWrap2}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.gEyebrowWrap2)}
+                >
+                  <div
+                    data-plasmic-name={"frame101693"}
+                    data-plasmic-override={overrides.frame101693}
+                    className={classNames(projectcss.all, sty.frame101693)}
+                  />
+
+                  <div
+                    data-plasmic-name={"eyebrowText2"}
+                    data-plasmic-override={overrides.eyebrowText2}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.eyebrowText2
+                    )}
+                  >
+                    {"Technology"}
+                  </div>
+                </Stack__>
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"solutionsList"}
+                  data-plasmic-override={overrides.solutionsList}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.solutionsList)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__oi5Fk)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"technologyPortraitImg"}
+                      data-plasmic-override={overrides.technologyPortraitImg}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.technologyPortraitImg
+                      )}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__rVeaV)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website/images/technologyPortraitImgPng.png",
+                          fullWidth: 422,
+                          fullHeight: 651,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </Stack__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__cTpkz)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"technologyPortraitImg2"}
+                      data-plasmic-override={overrides.technologyPortraitImg2}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.technologyPortraitImg2
+                      )}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___1Mnmb)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website/images/technologyPortraitImg1Png.png",
+                          fullWidth: 415,
+                          fullHeight: 651,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </Stack__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__fnId9)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"technologyPortraitImg3"}
+                      data-plasmic-override={overrides.technologyPortraitImg3}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.technologyPortraitImg3
+                      )}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__wWp5I)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website/images/technologyPortraitImg2Png.png",
+                          fullWidth: 423,
+                          fullHeight: 651,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </Stack__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__tjSw1)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"technologyPortraitImg4"}
+                      data-plasmic-override={overrides.technologyPortraitImg4}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.technologyPortraitImg4
+                      )}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__zuxBl)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website/images/technologyPortraitImg3Png.png",
+                          fullWidth: 422,
+                          fullHeight: 651,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </Stack__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__rTolq)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"technologyPortraitImg5"}
+                      data-plasmic-override={overrides.technologyPortraitImg5}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.technologyPortraitImg5
+                      )}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__zgf1A)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website/images/technologyPortraitImg4Png.png",
+                          fullWidth: 423,
+                          fullHeight: 651,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </Stack__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__ttym7)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      data-plasmic-name={"technologyPortraitImg6"}
+                      data-plasmic-override={overrides.technologyPortraitImg6}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.technologyPortraitImg6
+                      )}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__njna7)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website/images/technologyPortraitImg5Png.png",
+                          fullWidth: 423,
+                          fullHeight: 651,
+                          aspectRatio: undefined
+                        }}
+                      />
+                    </Stack__>
+                  </div>
+                </Stack__>
+              </Stack__>
+            </div>
+            <FormWrap
+              data-plasmic-name={"formWrap"}
+              data-plasmic-override={overrides.formWrap}
+              className={classNames("__wab_instance", sty.formWrap)}
+              subtitle={
+                "Sign up for our newsletter and stay up to date on all things MARA."
+              }
+              title={"Be the First to Know"}
+            />
+
+            <Footer
+              data-plasmic-name={"footer"}
+              data-plasmic-override={overrides.footer}
+              className={classNames("__wab_instance", sty.footer)}
+            />
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -159,15 +1820,1123 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "heroSection"],
-  heroSection: ["heroSection"]
+  root: [
+    "root",
+    "homeDevelopmentComponents",
+    "navbar",
+    "navContain",
+    "navTopRow",
+    "menuList",
+    "menuItemsList",
+    "rollover",
+    "navItemDropdownList",
+    "navText",
+    "navIconWrap",
+    "navItemDropdownList6",
+    "navIconWrap7",
+    "navIconWrap8",
+    "navIconWrap9",
+    "navIconWrap10",
+    "navIconWrap11",
+    "rollover2",
+    "navItemDropdownList2",
+    "navText2",
+    "navIconWrap2",
+    "rollover3",
+    "navItemDropdownList3",
+    "navText3",
+    "navIconWrap3",
+    "rollover4",
+    "navItemDropdownList4",
+    "navText4",
+    "navIconWrap4",
+    "rollover5",
+    "navItemDropdownList5",
+    "navText5",
+    "navIconWrap5",
+    "rollover6",
+    "btnMainWrap6",
+    "btnMainList6",
+    "btnMainText6",
+    "navIconWrap6",
+    "heroSection",
+    "layoutFullWrap",
+    "layoutSplitWrap",
+    "layoutContain",
+    "layoutSplitList",
+    "cardPhoto",
+    "cardPhotoTopRow",
+    "cardPhotoVisualWrap",
+    "placeholder",
+    "cardPhotoContent",
+    "layoutSplitTitle",
+    "gLayoutDivider",
+    "itemDivider",
+    "layoutSplitText",
+    "cardPhoto2",
+    "cardPhotoTopRow2",
+    "cardPhotoVisualWrap2",
+    "placeholder2",
+    "cardPhotoContent2",
+    "layoutSplitTitle2",
+    "gLayoutDivider2",
+    "itemDivider2",
+    "layoutSplitText2",
+    "layoutFullWrap2",
+    "layoutFullContain2",
+    "layoutFullContentWrap2",
+    "layoutFullContent2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "text2",
+    "sectionMediaWrap",
+    "mediaContain",
+    "gEyebrowWrap",
+    "frame101692",
+    "eyebrowText",
+    "mediaList",
+    "cardMedia",
+    "cardMediaVisualWrap",
+    "placeholder3",
+    "cardMediaContentWrap",
+    "cardMediaContent",
+    "mediumHeadlineGoesHere",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
+    "cardMediaFooter",
+    "metaWrap",
+    "gChip",
+    "gChipText",
+    "buttonArrowSmall",
+    "cardMedia2",
+    "cardMediaVisualWrap2",
+    "placeholder4",
+    "cardMediaContentWrap2",
+    "cardMediaContent2",
+    "mediumHeadlineGoesHere2",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
+    "cardMediaFooter2",
+    "metaWrap2",
+    "gChip2",
+    "gChipText2",
+    "buttonArrowSmall2",
+    "cardMedia3",
+    "cardMediaVisualWrap3",
+    "placeholder5",
+    "cardMediaContentWrap3",
+    "cardMediaContent3",
+    "mediumHeadlineGoesHere3",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
+    "cardMediaFooter3",
+    "metaWrap3",
+    "gChip3",
+    "gChipText3",
+    "buttonArrowSmall3",
+    "solutionsWrap",
+    "solutionsContain",
+    "gEyebrowWrap2",
+    "frame101693",
+    "eyebrowText2",
+    "solutionsList",
+    "technologyPortraitImg",
+    "technologyPortraitImg2",
+    "technologyPortraitImg3",
+    "technologyPortraitImg4",
+    "technologyPortraitImg5",
+    "technologyPortraitImg6",
+    "formWrap",
+    "footer"
+  ],
+  homeDevelopmentComponents: [
+    "homeDevelopmentComponents",
+    "navbar",
+    "navContain",
+    "navTopRow",
+    "menuList",
+    "menuItemsList",
+    "rollover",
+    "navItemDropdownList",
+    "navText",
+    "navIconWrap",
+    "navItemDropdownList6",
+    "navIconWrap7",
+    "navIconWrap8",
+    "navIconWrap9",
+    "navIconWrap10",
+    "navIconWrap11",
+    "rollover2",
+    "navItemDropdownList2",
+    "navText2",
+    "navIconWrap2",
+    "rollover3",
+    "navItemDropdownList3",
+    "navText3",
+    "navIconWrap3",
+    "rollover4",
+    "navItemDropdownList4",
+    "navText4",
+    "navIconWrap4",
+    "rollover5",
+    "navItemDropdownList5",
+    "navText5",
+    "navIconWrap5",
+    "rollover6",
+    "btnMainWrap6",
+    "btnMainList6",
+    "btnMainText6",
+    "navIconWrap6",
+    "heroSection",
+    "layoutFullWrap",
+    "layoutSplitWrap",
+    "layoutContain",
+    "layoutSplitList",
+    "cardPhoto",
+    "cardPhotoTopRow",
+    "cardPhotoVisualWrap",
+    "placeholder",
+    "cardPhotoContent",
+    "layoutSplitTitle",
+    "gLayoutDivider",
+    "itemDivider",
+    "layoutSplitText",
+    "cardPhoto2",
+    "cardPhotoTopRow2",
+    "cardPhotoVisualWrap2",
+    "placeholder2",
+    "cardPhotoContent2",
+    "layoutSplitTitle2",
+    "gLayoutDivider2",
+    "itemDivider2",
+    "layoutSplitText2",
+    "layoutFullWrap2",
+    "layoutFullContain2",
+    "layoutFullContentWrap2",
+    "layoutFullContent2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "text2",
+    "sectionMediaWrap",
+    "mediaContain",
+    "gEyebrowWrap",
+    "frame101692",
+    "eyebrowText",
+    "mediaList",
+    "cardMedia",
+    "cardMediaVisualWrap",
+    "placeholder3",
+    "cardMediaContentWrap",
+    "cardMediaContent",
+    "mediumHeadlineGoesHere",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
+    "cardMediaFooter",
+    "metaWrap",
+    "gChip",
+    "gChipText",
+    "buttonArrowSmall",
+    "cardMedia2",
+    "cardMediaVisualWrap2",
+    "placeholder4",
+    "cardMediaContentWrap2",
+    "cardMediaContent2",
+    "mediumHeadlineGoesHere2",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
+    "cardMediaFooter2",
+    "metaWrap2",
+    "gChip2",
+    "gChipText2",
+    "buttonArrowSmall2",
+    "cardMedia3",
+    "cardMediaVisualWrap3",
+    "placeholder5",
+    "cardMediaContentWrap3",
+    "cardMediaContent3",
+    "mediumHeadlineGoesHere3",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
+    "cardMediaFooter3",
+    "metaWrap3",
+    "gChip3",
+    "gChipText3",
+    "buttonArrowSmall3",
+    "solutionsWrap",
+    "solutionsContain",
+    "gEyebrowWrap2",
+    "frame101693",
+    "eyebrowText2",
+    "solutionsList",
+    "technologyPortraitImg",
+    "technologyPortraitImg2",
+    "technologyPortraitImg3",
+    "technologyPortraitImg4",
+    "technologyPortraitImg5",
+    "technologyPortraitImg6",
+    "formWrap",
+    "footer"
+  ],
+  navbar: [
+    "navbar",
+    "navContain",
+    "navTopRow",
+    "menuList",
+    "menuItemsList",
+    "rollover",
+    "navItemDropdownList",
+    "navText",
+    "navIconWrap",
+    "navItemDropdownList6",
+    "navIconWrap7",
+    "navIconWrap8",
+    "navIconWrap9",
+    "navIconWrap10",
+    "navIconWrap11",
+    "rollover2",
+    "navItemDropdownList2",
+    "navText2",
+    "navIconWrap2",
+    "rollover3",
+    "navItemDropdownList3",
+    "navText3",
+    "navIconWrap3",
+    "rollover4",
+    "navItemDropdownList4",
+    "navText4",
+    "navIconWrap4",
+    "rollover5",
+    "navItemDropdownList5",
+    "navText5",
+    "navIconWrap5",
+    "rollover6",
+    "btnMainWrap6",
+    "btnMainList6",
+    "btnMainText6",
+    "navIconWrap6"
+  ],
+  navContain: [
+    "navContain",
+    "navTopRow",
+    "menuList",
+    "menuItemsList",
+    "rollover",
+    "navItemDropdownList",
+    "navText",
+    "navIconWrap",
+    "navItemDropdownList6",
+    "navIconWrap7",
+    "navIconWrap8",
+    "navIconWrap9",
+    "navIconWrap10",
+    "navIconWrap11",
+    "rollover2",
+    "navItemDropdownList2",
+    "navText2",
+    "navIconWrap2",
+    "rollover3",
+    "navItemDropdownList3",
+    "navText3",
+    "navIconWrap3",
+    "rollover4",
+    "navItemDropdownList4",
+    "navText4",
+    "navIconWrap4",
+    "rollover5",
+    "navItemDropdownList5",
+    "navText5",
+    "navIconWrap5",
+    "rollover6",
+    "btnMainWrap6",
+    "btnMainList6",
+    "btnMainText6",
+    "navIconWrap6"
+  ],
+  navTopRow: [
+    "navTopRow",
+    "menuList",
+    "menuItemsList",
+    "rollover",
+    "navItemDropdownList",
+    "navText",
+    "navIconWrap",
+    "navItemDropdownList6",
+    "navIconWrap7",
+    "navIconWrap8",
+    "navIconWrap9",
+    "navIconWrap10",
+    "navIconWrap11",
+    "rollover2",
+    "navItemDropdownList2",
+    "navText2",
+    "navIconWrap2",
+    "rollover3",
+    "navItemDropdownList3",
+    "navText3",
+    "navIconWrap3",
+    "rollover4",
+    "navItemDropdownList4",
+    "navText4",
+    "navIconWrap4",
+    "rollover5",
+    "navItemDropdownList5",
+    "navText5",
+    "navIconWrap5",
+    "rollover6",
+    "btnMainWrap6",
+    "btnMainList6",
+    "btnMainText6",
+    "navIconWrap6"
+  ],
+  menuList: [
+    "menuList",
+    "menuItemsList",
+    "rollover",
+    "navItemDropdownList",
+    "navText",
+    "navIconWrap",
+    "navItemDropdownList6",
+    "navIconWrap7",
+    "navIconWrap8",
+    "navIconWrap9",
+    "navIconWrap10",
+    "navIconWrap11",
+    "rollover2",
+    "navItemDropdownList2",
+    "navText2",
+    "navIconWrap2",
+    "rollover3",
+    "navItemDropdownList3",
+    "navText3",
+    "navIconWrap3",
+    "rollover4",
+    "navItemDropdownList4",
+    "navText4",
+    "navIconWrap4",
+    "rollover5",
+    "navItemDropdownList5",
+    "navText5",
+    "navIconWrap5",
+    "rollover6",
+    "btnMainWrap6",
+    "btnMainList6",
+    "btnMainText6",
+    "navIconWrap6"
+  ],
+  menuItemsList: [
+    "menuItemsList",
+    "rollover",
+    "navItemDropdownList",
+    "navText",
+    "navIconWrap",
+    "navItemDropdownList6",
+    "navIconWrap7",
+    "navIconWrap8",
+    "navIconWrap9",
+    "navIconWrap10",
+    "navIconWrap11",
+    "rollover2",
+    "navItemDropdownList2",
+    "navText2",
+    "navIconWrap2",
+    "rollover3",
+    "navItemDropdownList3",
+    "navText3",
+    "navIconWrap3",
+    "rollover4",
+    "navItemDropdownList4",
+    "navText4",
+    "navIconWrap4",
+    "rollover5",
+    "navItemDropdownList5",
+    "navText5",
+    "navIconWrap5",
+    "rollover6",
+    "btnMainWrap6",
+    "btnMainList6",
+    "btnMainText6",
+    "navIconWrap6"
+  ],
+  rollover: [
+    "rollover",
+    "navItemDropdownList",
+    "navText",
+    "navIconWrap",
+    "navItemDropdownList6",
+    "navIconWrap7",
+    "navIconWrap8",
+    "navIconWrap9",
+    "navIconWrap10",
+    "navIconWrap11"
+  ],
+  navItemDropdownList: ["navItemDropdownList", "navText", "navIconWrap"],
+  navText: ["navText"],
+  navIconWrap: ["navIconWrap"],
+  navItemDropdownList6: [
+    "navItemDropdownList6",
+    "navIconWrap7",
+    "navIconWrap8",
+    "navIconWrap9",
+    "navIconWrap10",
+    "navIconWrap11"
+  ],
+  navIconWrap7: ["navIconWrap7"],
+  navIconWrap8: ["navIconWrap8"],
+  navIconWrap9: ["navIconWrap9"],
+  navIconWrap10: ["navIconWrap10"],
+  navIconWrap11: ["navIconWrap11"],
+  rollover2: ["rollover2", "navItemDropdownList2", "navText2", "navIconWrap2"],
+  navItemDropdownList2: ["navItemDropdownList2", "navText2", "navIconWrap2"],
+  navText2: ["navText2"],
+  navIconWrap2: ["navIconWrap2"],
+  rollover3: ["rollover3", "navItemDropdownList3", "navText3", "navIconWrap3"],
+  navItemDropdownList3: ["navItemDropdownList3", "navText3", "navIconWrap3"],
+  navText3: ["navText3"],
+  navIconWrap3: ["navIconWrap3"],
+  rollover4: ["rollover4", "navItemDropdownList4", "navText4", "navIconWrap4"],
+  navItemDropdownList4: ["navItemDropdownList4", "navText4", "navIconWrap4"],
+  navText4: ["navText4"],
+  navIconWrap4: ["navIconWrap4"],
+  rollover5: ["rollover5", "navItemDropdownList5", "navText5", "navIconWrap5"],
+  navItemDropdownList5: ["navItemDropdownList5", "navText5", "navIconWrap5"],
+  navText5: ["navText5"],
+  navIconWrap5: ["navIconWrap5"],
+  rollover6: [
+    "rollover6",
+    "btnMainWrap6",
+    "btnMainList6",
+    "btnMainText6",
+    "navIconWrap6"
+  ],
+  btnMainWrap6: [
+    "btnMainWrap6",
+    "btnMainList6",
+    "btnMainText6",
+    "navIconWrap6"
+  ],
+  btnMainList6: ["btnMainList6", "btnMainText6", "navIconWrap6"],
+  btnMainText6: ["btnMainText6"],
+  navIconWrap6: ["navIconWrap6"],
+  heroSection: ["heroSection"],
+  layoutFullWrap: ["layoutFullWrap"],
+  layoutSplitWrap: [
+    "layoutSplitWrap",
+    "layoutContain",
+    "layoutSplitList",
+    "cardPhoto",
+    "cardPhotoTopRow",
+    "cardPhotoVisualWrap",
+    "placeholder",
+    "cardPhotoContent",
+    "layoutSplitTitle",
+    "gLayoutDivider",
+    "itemDivider",
+    "layoutSplitText",
+    "cardPhoto2",
+    "cardPhotoTopRow2",
+    "cardPhotoVisualWrap2",
+    "placeholder2",
+    "cardPhotoContent2",
+    "layoutSplitTitle2",
+    "gLayoutDivider2",
+    "itemDivider2",
+    "layoutSplitText2"
+  ],
+  layoutContain: [
+    "layoutContain",
+    "layoutSplitList",
+    "cardPhoto",
+    "cardPhotoTopRow",
+    "cardPhotoVisualWrap",
+    "placeholder",
+    "cardPhotoContent",
+    "layoutSplitTitle",
+    "gLayoutDivider",
+    "itemDivider",
+    "layoutSplitText",
+    "cardPhoto2",
+    "cardPhotoTopRow2",
+    "cardPhotoVisualWrap2",
+    "placeholder2",
+    "cardPhotoContent2",
+    "layoutSplitTitle2",
+    "gLayoutDivider2",
+    "itemDivider2",
+    "layoutSplitText2"
+  ],
+  layoutSplitList: [
+    "layoutSplitList",
+    "cardPhoto",
+    "cardPhotoTopRow",
+    "cardPhotoVisualWrap",
+    "placeholder",
+    "cardPhotoContent",
+    "layoutSplitTitle",
+    "gLayoutDivider",
+    "itemDivider",
+    "layoutSplitText",
+    "cardPhoto2",
+    "cardPhotoTopRow2",
+    "cardPhotoVisualWrap2",
+    "placeholder2",
+    "cardPhotoContent2",
+    "layoutSplitTitle2",
+    "gLayoutDivider2",
+    "itemDivider2",
+    "layoutSplitText2"
+  ],
+  cardPhoto: [
+    "cardPhoto",
+    "cardPhotoTopRow",
+    "cardPhotoVisualWrap",
+    "placeholder",
+    "cardPhotoContent",
+    "layoutSplitTitle",
+    "gLayoutDivider",
+    "itemDivider",
+    "layoutSplitText"
+  ],
+  cardPhotoTopRow: [
+    "cardPhotoTopRow",
+    "cardPhotoVisualWrap",
+    "placeholder",
+    "cardPhotoContent",
+    "layoutSplitTitle",
+    "gLayoutDivider",
+    "itemDivider",
+    "layoutSplitText"
+  ],
+  cardPhotoVisualWrap: ["cardPhotoVisualWrap", "placeholder"],
+  placeholder: ["placeholder"],
+  cardPhotoContent: [
+    "cardPhotoContent",
+    "layoutSplitTitle",
+    "gLayoutDivider",
+    "itemDivider",
+    "layoutSplitText"
+  ],
+  layoutSplitTitle: ["layoutSplitTitle"],
+  gLayoutDivider: ["gLayoutDivider", "itemDivider"],
+  itemDivider: ["itemDivider"],
+  layoutSplitText: ["layoutSplitText"],
+  cardPhoto2: [
+    "cardPhoto2",
+    "cardPhotoTopRow2",
+    "cardPhotoVisualWrap2",
+    "placeholder2",
+    "cardPhotoContent2",
+    "layoutSplitTitle2",
+    "gLayoutDivider2",
+    "itemDivider2",
+    "layoutSplitText2"
+  ],
+  cardPhotoTopRow2: [
+    "cardPhotoTopRow2",
+    "cardPhotoVisualWrap2",
+    "placeholder2",
+    "cardPhotoContent2",
+    "layoutSplitTitle2",
+    "gLayoutDivider2",
+    "itemDivider2",
+    "layoutSplitText2"
+  ],
+  cardPhotoVisualWrap2: ["cardPhotoVisualWrap2", "placeholder2"],
+  placeholder2: ["placeholder2"],
+  cardPhotoContent2: [
+    "cardPhotoContent2",
+    "layoutSplitTitle2",
+    "gLayoutDivider2",
+    "itemDivider2",
+    "layoutSplitText2"
+  ],
+  layoutSplitTitle2: ["layoutSplitTitle2"],
+  gLayoutDivider2: ["gLayoutDivider2", "itemDivider2"],
+  itemDivider2: ["itemDivider2"],
+  layoutSplitText2: ["layoutSplitText2"],
+  layoutFullWrap2: [
+    "layoutFullWrap2",
+    "layoutFullContain2",
+    "layoutFullContentWrap2",
+    "layoutFullContent2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "text2"
+  ],
+  layoutFullContain2: [
+    "layoutFullContain2",
+    "layoutFullContentWrap2",
+    "layoutFullContent2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "text2"
+  ],
+  layoutFullContentWrap2: [
+    "layoutFullContentWrap2",
+    "layoutFullContent2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "text2"
+  ],
+  layoutFullContent2: [
+    "layoutFullContent2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "text2"
+  ],
+  title2: ["title2"],
+  v03Divider2: ["v03Divider2", "hr2"],
+  hr2: ["hr2"],
+  text2: ["text2"],
+  sectionMediaWrap: [
+    "sectionMediaWrap",
+    "mediaContain",
+    "gEyebrowWrap",
+    "frame101692",
+    "eyebrowText",
+    "mediaList",
+    "cardMedia",
+    "cardMediaVisualWrap",
+    "placeholder3",
+    "cardMediaContentWrap",
+    "cardMediaContent",
+    "mediumHeadlineGoesHere",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
+    "cardMediaFooter",
+    "metaWrap",
+    "gChip",
+    "gChipText",
+    "buttonArrowSmall",
+    "cardMedia2",
+    "cardMediaVisualWrap2",
+    "placeholder4",
+    "cardMediaContentWrap2",
+    "cardMediaContent2",
+    "mediumHeadlineGoesHere2",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
+    "cardMediaFooter2",
+    "metaWrap2",
+    "gChip2",
+    "gChipText2",
+    "buttonArrowSmall2",
+    "cardMedia3",
+    "cardMediaVisualWrap3",
+    "placeholder5",
+    "cardMediaContentWrap3",
+    "cardMediaContent3",
+    "mediumHeadlineGoesHere3",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
+    "cardMediaFooter3",
+    "metaWrap3",
+    "gChip3",
+    "gChipText3",
+    "buttonArrowSmall3"
+  ],
+  mediaContain: [
+    "mediaContain",
+    "gEyebrowWrap",
+    "frame101692",
+    "eyebrowText",
+    "mediaList",
+    "cardMedia",
+    "cardMediaVisualWrap",
+    "placeholder3",
+    "cardMediaContentWrap",
+    "cardMediaContent",
+    "mediumHeadlineGoesHere",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
+    "cardMediaFooter",
+    "metaWrap",
+    "gChip",
+    "gChipText",
+    "buttonArrowSmall",
+    "cardMedia2",
+    "cardMediaVisualWrap2",
+    "placeholder4",
+    "cardMediaContentWrap2",
+    "cardMediaContent2",
+    "mediumHeadlineGoesHere2",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
+    "cardMediaFooter2",
+    "metaWrap2",
+    "gChip2",
+    "gChipText2",
+    "buttonArrowSmall2",
+    "cardMedia3",
+    "cardMediaVisualWrap3",
+    "placeholder5",
+    "cardMediaContentWrap3",
+    "cardMediaContent3",
+    "mediumHeadlineGoesHere3",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
+    "cardMediaFooter3",
+    "metaWrap3",
+    "gChip3",
+    "gChipText3",
+    "buttonArrowSmall3"
+  ],
+  gEyebrowWrap: ["gEyebrowWrap", "frame101692", "eyebrowText"],
+  frame101692: ["frame101692"],
+  eyebrowText: ["eyebrowText"],
+  mediaList: [
+    "mediaList",
+    "cardMedia",
+    "cardMediaVisualWrap",
+    "placeholder3",
+    "cardMediaContentWrap",
+    "cardMediaContent",
+    "mediumHeadlineGoesHere",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
+    "cardMediaFooter",
+    "metaWrap",
+    "gChip",
+    "gChipText",
+    "buttonArrowSmall",
+    "cardMedia2",
+    "cardMediaVisualWrap2",
+    "placeholder4",
+    "cardMediaContentWrap2",
+    "cardMediaContent2",
+    "mediumHeadlineGoesHere2",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
+    "cardMediaFooter2",
+    "metaWrap2",
+    "gChip2",
+    "gChipText2",
+    "buttonArrowSmall2",
+    "cardMedia3",
+    "cardMediaVisualWrap3",
+    "placeholder5",
+    "cardMediaContentWrap3",
+    "cardMediaContent3",
+    "mediumHeadlineGoesHere3",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
+    "cardMediaFooter3",
+    "metaWrap3",
+    "gChip3",
+    "gChipText3",
+    "buttonArrowSmall3"
+  ],
+  cardMedia: [
+    "cardMedia",
+    "cardMediaVisualWrap",
+    "placeholder3",
+    "cardMediaContentWrap",
+    "cardMediaContent",
+    "mediumHeadlineGoesHere",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
+    "cardMediaFooter",
+    "metaWrap",
+    "gChip",
+    "gChipText",
+    "buttonArrowSmall"
+  ],
+  cardMediaVisualWrap: ["cardMediaVisualWrap", "placeholder3"],
+  placeholder3: ["placeholder3"],
+  cardMediaContentWrap: [
+    "cardMediaContentWrap",
+    "cardMediaContent",
+    "mediumHeadlineGoesHere",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
+    "cardMediaFooter",
+    "metaWrap",
+    "gChip",
+    "gChipText",
+    "buttonArrowSmall"
+  ],
+  cardMediaContent: [
+    "cardMediaContent",
+    "mediumHeadlineGoesHere",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique"
+  ],
+  mediumHeadlineGoesHere: ["mediumHeadlineGoesHere"],
+  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique:
+    [
+      "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique"
+    ],
+  cardMediaFooter: [
+    "cardMediaFooter",
+    "metaWrap",
+    "gChip",
+    "gChipText",
+    "buttonArrowSmall"
+  ],
+  metaWrap: ["metaWrap", "gChip", "gChipText"],
+  gChip: ["gChip", "gChipText"],
+  gChipText: ["gChipText"],
+  buttonArrowSmall: ["buttonArrowSmall"],
+  cardMedia2: [
+    "cardMedia2",
+    "cardMediaVisualWrap2",
+    "placeholder4",
+    "cardMediaContentWrap2",
+    "cardMediaContent2",
+    "mediumHeadlineGoesHere2",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
+    "cardMediaFooter2",
+    "metaWrap2",
+    "gChip2",
+    "gChipText2",
+    "buttonArrowSmall2"
+  ],
+  cardMediaVisualWrap2: ["cardMediaVisualWrap2", "placeholder4"],
+  placeholder4: ["placeholder4"],
+  cardMediaContentWrap2: [
+    "cardMediaContentWrap2",
+    "cardMediaContent2",
+    "mediumHeadlineGoesHere2",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
+    "cardMediaFooter2",
+    "metaWrap2",
+    "gChip2",
+    "gChipText2",
+    "buttonArrowSmall2"
+  ],
+  cardMediaContent2: [
+    "cardMediaContent2",
+    "mediumHeadlineGoesHere2",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2"
+  ],
+  mediumHeadlineGoesHere2: ["mediumHeadlineGoesHere2"],
+  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2:
+    [
+      "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2"
+    ],
+  cardMediaFooter2: [
+    "cardMediaFooter2",
+    "metaWrap2",
+    "gChip2",
+    "gChipText2",
+    "buttonArrowSmall2"
+  ],
+  metaWrap2: ["metaWrap2", "gChip2", "gChipText2"],
+  gChip2: ["gChip2", "gChipText2"],
+  gChipText2: ["gChipText2"],
+  buttonArrowSmall2: ["buttonArrowSmall2"],
+  cardMedia3: [
+    "cardMedia3",
+    "cardMediaVisualWrap3",
+    "placeholder5",
+    "cardMediaContentWrap3",
+    "cardMediaContent3",
+    "mediumHeadlineGoesHere3",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
+    "cardMediaFooter3",
+    "metaWrap3",
+    "gChip3",
+    "gChipText3",
+    "buttonArrowSmall3"
+  ],
+  cardMediaVisualWrap3: ["cardMediaVisualWrap3", "placeholder5"],
+  placeholder5: ["placeholder5"],
+  cardMediaContentWrap3: [
+    "cardMediaContentWrap3",
+    "cardMediaContent3",
+    "mediumHeadlineGoesHere3",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
+    "cardMediaFooter3",
+    "metaWrap3",
+    "gChip3",
+    "gChipText3",
+    "buttonArrowSmall3"
+  ],
+  cardMediaContent3: [
+    "cardMediaContent3",
+    "mediumHeadlineGoesHere3",
+    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3"
+  ],
+  mediumHeadlineGoesHere3: ["mediumHeadlineGoesHere3"],
+  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3:
+    [
+      "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3"
+    ],
+  cardMediaFooter3: [
+    "cardMediaFooter3",
+    "metaWrap3",
+    "gChip3",
+    "gChipText3",
+    "buttonArrowSmall3"
+  ],
+  metaWrap3: ["metaWrap3", "gChip3", "gChipText3"],
+  gChip3: ["gChip3", "gChipText3"],
+  gChipText3: ["gChipText3"],
+  buttonArrowSmall3: ["buttonArrowSmall3"],
+  solutionsWrap: [
+    "solutionsWrap",
+    "solutionsContain",
+    "gEyebrowWrap2",
+    "frame101693",
+    "eyebrowText2",
+    "solutionsList",
+    "technologyPortraitImg",
+    "technologyPortraitImg2",
+    "technologyPortraitImg3",
+    "technologyPortraitImg4",
+    "technologyPortraitImg5",
+    "technologyPortraitImg6"
+  ],
+  solutionsContain: [
+    "solutionsContain",
+    "gEyebrowWrap2",
+    "frame101693",
+    "eyebrowText2",
+    "solutionsList",
+    "technologyPortraitImg",
+    "technologyPortraitImg2",
+    "technologyPortraitImg3",
+    "technologyPortraitImg4",
+    "technologyPortraitImg5",
+    "technologyPortraitImg6"
+  ],
+  gEyebrowWrap2: ["gEyebrowWrap2", "frame101693", "eyebrowText2"],
+  frame101693: ["frame101693"],
+  eyebrowText2: ["eyebrowText2"],
+  solutionsList: [
+    "solutionsList",
+    "technologyPortraitImg",
+    "technologyPortraitImg2",
+    "technologyPortraitImg3",
+    "technologyPortraitImg4",
+    "technologyPortraitImg5",
+    "technologyPortraitImg6"
+  ],
+  technologyPortraitImg: ["technologyPortraitImg"],
+  technologyPortraitImg2: ["technologyPortraitImg2"],
+  technologyPortraitImg3: ["technologyPortraitImg3"],
+  technologyPortraitImg4: ["technologyPortraitImg4"],
+  technologyPortraitImg5: ["technologyPortraitImg5"],
+  technologyPortraitImg6: ["technologyPortraitImg6"],
+  formWrap: ["formWrap"],
+  footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  homeDevelopmentComponents: "div";
+  navbar: "div";
+  navContain: "div";
+  navTopRow: "div";
+  menuList: "div";
+  menuItemsList: "div";
+  rollover: "div";
+  navItemDropdownList: "div";
+  navText: "div";
+  navIconWrap: "div";
+  navItemDropdownList6: "div";
+  navIconWrap7: "div";
+  navIconWrap8: "div";
+  navIconWrap9: "div";
+  navIconWrap10: "div";
+  navIconWrap11: "div";
+  rollover2: "div";
+  navItemDropdownList2: "div";
+  navText2: "div";
+  navIconWrap2: "div";
+  rollover3: "div";
+  navItemDropdownList3: "div";
+  navText3: "div";
+  navIconWrap3: "div";
+  rollover4: "div";
+  navItemDropdownList4: "div";
+  navText4: "div";
+  navIconWrap4: "div";
+  rollover5: "div";
+  navItemDropdownList5: "div";
+  navText5: "div";
+  navIconWrap5: "div";
+  rollover6: "div";
+  btnMainWrap6: "div";
+  btnMainList6: "div";
+  btnMainText6: "div";
+  navIconWrap6: "div";
   heroSection: typeof HeroSection;
+  layoutFullWrap: typeof LayoutFullWrap;
+  layoutSplitWrap: "div";
+  layoutContain: "div";
+  layoutSplitList: "div";
+  cardPhoto: "div";
+  cardPhotoTopRow: "div";
+  cardPhotoVisualWrap: "div";
+  placeholder: "div";
+  cardPhotoContent: "div";
+  layoutSplitTitle: "div";
+  gLayoutDivider: "div";
+  itemDivider: "div";
+  layoutSplitText: "div";
+  cardPhoto2: "div";
+  cardPhotoTopRow2: "div";
+  cardPhotoVisualWrap2: "div";
+  placeholder2: "div";
+  cardPhotoContent2: "div";
+  layoutSplitTitle2: "div";
+  gLayoutDivider2: "div";
+  itemDivider2: "div";
+  layoutSplitText2: "div";
+  layoutFullWrap2: "div";
+  layoutFullContain2: "div";
+  layoutFullContentWrap2: "div";
+  layoutFullContent2: "div";
+  title2: "div";
+  v03Divider2: "div";
+  hr2: "div";
+  text2: "div";
+  sectionMediaWrap: "div";
+  mediaContain: "div";
+  gEyebrowWrap: "div";
+  frame101692: "div";
+  eyebrowText: "div";
+  mediaList: "div";
+  cardMedia: "div";
+  cardMediaVisualWrap: "div";
+  placeholder3: "div";
+  cardMediaContentWrap: "div";
+  cardMediaContent: "div";
+  mediumHeadlineGoesHere: "div";
+  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique: "div";
+  cardMediaFooter: "div";
+  metaWrap: "div";
+  gChip: "div";
+  gChipText: "div";
+  buttonArrowSmall: "div";
+  cardMedia2: "div";
+  cardMediaVisualWrap2: "div";
+  placeholder4: "div";
+  cardMediaContentWrap2: "div";
+  cardMediaContent2: "div";
+  mediumHeadlineGoesHere2: "div";
+  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2: "div";
+  cardMediaFooter2: "div";
+  metaWrap2: "div";
+  gChip2: "div";
+  gChipText2: "div";
+  buttonArrowSmall2: "div";
+  cardMedia3: "div";
+  cardMediaVisualWrap3: "div";
+  placeholder5: "div";
+  cardMediaContentWrap3: "div";
+  cardMediaContent3: "div";
+  mediumHeadlineGoesHere3: "div";
+  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3: "div";
+  cardMediaFooter3: "div";
+  metaWrap3: "div";
+  gChip3: "div";
+  gChipText3: "div";
+  buttonArrowSmall3: "div";
+  solutionsWrap: "div";
+  solutionsContain: "div";
+  gEyebrowWrap2: "div";
+  frame101693: "div";
+  eyebrowText2: "div";
+  solutionsList: "div";
+  technologyPortraitImg: "div";
+  technologyPortraitImg2: "div";
+  technologyPortraitImg3: "div";
+  technologyPortraitImg4: "div";
+  technologyPortraitImg5: "div";
+  technologyPortraitImg6: "div";
+  formWrap: typeof FormWrap;
+  footer: typeof Footer;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -230,7 +2999,139 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    homeDevelopmentComponents: makeNodeComponent("homeDevelopmentComponents"),
+    navbar: makeNodeComponent("navbar"),
+    navContain: makeNodeComponent("navContain"),
+    navTopRow: makeNodeComponent("navTopRow"),
+    menuList: makeNodeComponent("menuList"),
+    menuItemsList: makeNodeComponent("menuItemsList"),
+    rollover: makeNodeComponent("rollover"),
+    navItemDropdownList: makeNodeComponent("navItemDropdownList"),
+    navText: makeNodeComponent("navText"),
+    navIconWrap: makeNodeComponent("navIconWrap"),
+    navItemDropdownList6: makeNodeComponent("navItemDropdownList6"),
+    navIconWrap7: makeNodeComponent("navIconWrap7"),
+    navIconWrap8: makeNodeComponent("navIconWrap8"),
+    navIconWrap9: makeNodeComponent("navIconWrap9"),
+    navIconWrap10: makeNodeComponent("navIconWrap10"),
+    navIconWrap11: makeNodeComponent("navIconWrap11"),
+    rollover2: makeNodeComponent("rollover2"),
+    navItemDropdownList2: makeNodeComponent("navItemDropdownList2"),
+    navText2: makeNodeComponent("navText2"),
+    navIconWrap2: makeNodeComponent("navIconWrap2"),
+    rollover3: makeNodeComponent("rollover3"),
+    navItemDropdownList3: makeNodeComponent("navItemDropdownList3"),
+    navText3: makeNodeComponent("navText3"),
+    navIconWrap3: makeNodeComponent("navIconWrap3"),
+    rollover4: makeNodeComponent("rollover4"),
+    navItemDropdownList4: makeNodeComponent("navItemDropdownList4"),
+    navText4: makeNodeComponent("navText4"),
+    navIconWrap4: makeNodeComponent("navIconWrap4"),
+    rollover5: makeNodeComponent("rollover5"),
+    navItemDropdownList5: makeNodeComponent("navItemDropdownList5"),
+    navText5: makeNodeComponent("navText5"),
+    navIconWrap5: makeNodeComponent("navIconWrap5"),
+    rollover6: makeNodeComponent("rollover6"),
+    btnMainWrap6: makeNodeComponent("btnMainWrap6"),
+    btnMainList6: makeNodeComponent("btnMainList6"),
+    btnMainText6: makeNodeComponent("btnMainText6"),
+    navIconWrap6: makeNodeComponent("navIconWrap6"),
     heroSection: makeNodeComponent("heroSection"),
+    layoutFullWrap: makeNodeComponent("layoutFullWrap"),
+    layoutSplitWrap: makeNodeComponent("layoutSplitWrap"),
+    layoutContain: makeNodeComponent("layoutContain"),
+    layoutSplitList: makeNodeComponent("layoutSplitList"),
+    cardPhoto: makeNodeComponent("cardPhoto"),
+    cardPhotoTopRow: makeNodeComponent("cardPhotoTopRow"),
+    cardPhotoVisualWrap: makeNodeComponent("cardPhotoVisualWrap"),
+    placeholder: makeNodeComponent("placeholder"),
+    cardPhotoContent: makeNodeComponent("cardPhotoContent"),
+    layoutSplitTitle: makeNodeComponent("layoutSplitTitle"),
+    gLayoutDivider: makeNodeComponent("gLayoutDivider"),
+    itemDivider: makeNodeComponent("itemDivider"),
+    layoutSplitText: makeNodeComponent("layoutSplitText"),
+    cardPhoto2: makeNodeComponent("cardPhoto2"),
+    cardPhotoTopRow2: makeNodeComponent("cardPhotoTopRow2"),
+    cardPhotoVisualWrap2: makeNodeComponent("cardPhotoVisualWrap2"),
+    placeholder2: makeNodeComponent("placeholder2"),
+    cardPhotoContent2: makeNodeComponent("cardPhotoContent2"),
+    layoutSplitTitle2: makeNodeComponent("layoutSplitTitle2"),
+    gLayoutDivider2: makeNodeComponent("gLayoutDivider2"),
+    itemDivider2: makeNodeComponent("itemDivider2"),
+    layoutSplitText2: makeNodeComponent("layoutSplitText2"),
+    layoutFullWrap2: makeNodeComponent("layoutFullWrap2"),
+    layoutFullContain2: makeNodeComponent("layoutFullContain2"),
+    layoutFullContentWrap2: makeNodeComponent("layoutFullContentWrap2"),
+    layoutFullContent2: makeNodeComponent("layoutFullContent2"),
+    title2: makeNodeComponent("title2"),
+    v03Divider2: makeNodeComponent("v03Divider2"),
+    hr2: makeNodeComponent("hr2"),
+    text2: makeNodeComponent("text2"),
+    sectionMediaWrap: makeNodeComponent("sectionMediaWrap"),
+    mediaContain: makeNodeComponent("mediaContain"),
+    gEyebrowWrap: makeNodeComponent("gEyebrowWrap"),
+    frame101692: makeNodeComponent("frame101692"),
+    eyebrowText: makeNodeComponent("eyebrowText"),
+    mediaList: makeNodeComponent("mediaList"),
+    cardMedia: makeNodeComponent("cardMedia"),
+    cardMediaVisualWrap: makeNodeComponent("cardMediaVisualWrap"),
+    placeholder3: makeNodeComponent("placeholder3"),
+    cardMediaContentWrap: makeNodeComponent("cardMediaContentWrap"),
+    cardMediaContent: makeNodeComponent("cardMediaContent"),
+    mediumHeadlineGoesHere: makeNodeComponent("mediumHeadlineGoesHere"),
+    loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique:
+      makeNodeComponent(
+        "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique"
+      ),
+    cardMediaFooter: makeNodeComponent("cardMediaFooter"),
+    metaWrap: makeNodeComponent("metaWrap"),
+    gChip: makeNodeComponent("gChip"),
+    gChipText: makeNodeComponent("gChipText"),
+    buttonArrowSmall: makeNodeComponent("buttonArrowSmall"),
+    cardMedia2: makeNodeComponent("cardMedia2"),
+    cardMediaVisualWrap2: makeNodeComponent("cardMediaVisualWrap2"),
+    placeholder4: makeNodeComponent("placeholder4"),
+    cardMediaContentWrap2: makeNodeComponent("cardMediaContentWrap2"),
+    cardMediaContent2: makeNodeComponent("cardMediaContent2"),
+    mediumHeadlineGoesHere2: makeNodeComponent("mediumHeadlineGoesHere2"),
+    loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2:
+      makeNodeComponent(
+        "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2"
+      ),
+    cardMediaFooter2: makeNodeComponent("cardMediaFooter2"),
+    metaWrap2: makeNodeComponent("metaWrap2"),
+    gChip2: makeNodeComponent("gChip2"),
+    gChipText2: makeNodeComponent("gChipText2"),
+    buttonArrowSmall2: makeNodeComponent("buttonArrowSmall2"),
+    cardMedia3: makeNodeComponent("cardMedia3"),
+    cardMediaVisualWrap3: makeNodeComponent("cardMediaVisualWrap3"),
+    placeholder5: makeNodeComponent("placeholder5"),
+    cardMediaContentWrap3: makeNodeComponent("cardMediaContentWrap3"),
+    cardMediaContent3: makeNodeComponent("cardMediaContent3"),
+    mediumHeadlineGoesHere3: makeNodeComponent("mediumHeadlineGoesHere3"),
+    loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3:
+      makeNodeComponent(
+        "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3"
+      ),
+    cardMediaFooter3: makeNodeComponent("cardMediaFooter3"),
+    metaWrap3: makeNodeComponent("metaWrap3"),
+    gChip3: makeNodeComponent("gChip3"),
+    gChipText3: makeNodeComponent("gChipText3"),
+    buttonArrowSmall3: makeNodeComponent("buttonArrowSmall3"),
+    solutionsWrap: makeNodeComponent("solutionsWrap"),
+    solutionsContain: makeNodeComponent("solutionsContain"),
+    gEyebrowWrap2: makeNodeComponent("gEyebrowWrap2"),
+    frame101693: makeNodeComponent("frame101693"),
+    eyebrowText2: makeNodeComponent("eyebrowText2"),
+    solutionsList: makeNodeComponent("solutionsList"),
+    technologyPortraitImg: makeNodeComponent("technologyPortraitImg"),
+    technologyPortraitImg2: makeNodeComponent("technologyPortraitImg2"),
+    technologyPortraitImg3: makeNodeComponent("technologyPortraitImg3"),
+    technologyPortraitImg4: makeNodeComponent("technologyPortraitImg4"),
+    technologyPortraitImg5: makeNodeComponent("technologyPortraitImg5"),
+    technologyPortraitImg6: makeNodeComponent("technologyPortraitImg6"),
+    formWrap: makeNodeComponent("formWrap"),
+    footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

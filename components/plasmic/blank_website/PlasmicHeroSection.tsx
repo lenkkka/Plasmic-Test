@@ -59,8 +59,13 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { Video } from "@plasmicpkgs/plasmic-basic-components";
+
+import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: 6GgaEV8wA3NAjSPNQQE37W/projectcss
 import sty from "./PlasmicHeroSection.module.css"; // plasmic-import: mbkly9G2X3L1/css
 
@@ -139,6 +144,7 @@ export type PlasmicHeroSection__OverridesType = {
   img?: Flex__<typeof PlasmicImg__>;
   freeBox?: Flex__<"div">;
   svg?: Flex__<"svg">;
+  htmlVideo?: Flex__<typeof Video>;
 };
 
 export interface DefaultHeroSectionProps {
@@ -186,6 +192,10 @@ function PlasmicHeroSection__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants_19VDikmmmbc3()
+  });
+
   return (
     <div
       data-plasmic-name={"heroSection"}
@@ -198,6 +208,7 @@ function PlasmicHeroSection__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.heroSection
       )}
     >
@@ -769,6 +780,18 @@ function PlasmicHeroSection__RenderFunc(props: {
           role={"img"}
         />
       </div>
+      <Video
+        data-plasmic-name={"htmlVideo"}
+        data-plasmic-override={overrides.htmlVideo}
+        autoPlay={true}
+        className={classNames("__wab_instance", sty.htmlVideo)}
+        controls={false}
+        loop={true}
+        muted={true}
+        src={
+          "https://maraweb.s3.amazonaws.com/1302-2024-MARA-Hype-Video-2024-Web_Cutdown-v02.mp4"
+        }
+      />
     </div>
   ) as React.ReactElement | null;
 }
@@ -835,7 +858,8 @@ const PlasmicDescendants = {
     "label",
     "img",
     "freeBox",
-    "svg"
+    "svg",
+    "htmlVideo"
   ],
   homeHeroCard: [
     "homeHeroCard",
@@ -1081,7 +1105,8 @@ const PlasmicDescendants = {
   label: ["label"],
   img: ["img"],
   freeBox: ["freeBox", "svg"],
-  svg: ["svg"]
+  svg: ["svg"],
+  htmlVideo: ["htmlVideo"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1148,6 +1173,7 @@ type NodeDefaultElementType = {
   img: typeof PlasmicImg__;
   freeBox: "div";
   svg: "svg";
+  htmlVideo: typeof Video;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1270,6 +1296,7 @@ export const PlasmicHeroSection = Object.assign(
     img: makeNodeComponent("img"),
     freeBox: makeNodeComponent("freeBox"),
     svg: makeNodeComponent("svg"),
+    htmlVideo: makeNodeComponent("htmlVideo"),
 
     // Metadata about props expected for PlasmicHeroSection
     internalVariantProps: PlasmicHeroSection__VariantProps,

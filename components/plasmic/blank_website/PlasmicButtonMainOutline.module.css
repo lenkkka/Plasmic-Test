@@ -24,7 +24,7 @@
 }
 .btnMainWrap {
   background: rgba(255, 255, 255, 0);
-  box-shadow: inset 0px 0px 0px 1.5px rgba(53, 50, 51, 0.20000000298023224);
+  box-shadow: none;
   width: auto;
   height: auto;
   display: flex;
@@ -32,6 +32,7 @@
   flex-direction: row;
   border-radius: 2px 8px;
   padding: 12px 24px;
+  border: 1px solid #35323333;
 }
 .btnMainWrap > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -49,6 +50,11 @@
   > picture
   > img {
   margin-left: 12px;
+}
+.gBtnWrap:hover .btnMainWrap {
+  background: #f2a900;
+  box-shadow: none;
+  border: 1px solid #f2a900;
 }
 .btnMainList {
   width: auto;

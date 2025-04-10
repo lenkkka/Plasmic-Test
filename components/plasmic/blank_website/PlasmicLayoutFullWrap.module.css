@@ -8,7 +8,7 @@
   justify-content: flex-end;
   position: relative;
   width: 100%;
-  min-height: 600px;
+  min-height: 768px;
   min-width: 0;
 }
 .layoutFullContain {
@@ -27,7 +27,6 @@
 .layoutFullContentWrap {
   background: rgba(238, 236, 232, 1);
   backdrop-filter: blur(48px);
-  border-top-right-radius: 16px;
   width: 825px;
   height: auto;
   display: flex;
@@ -38,6 +37,7 @@
   padding-top: 48px;
   flex-shrink: 0;
   -webkit-backdrop-filter: blur(48px);
+  border-radius: 16px 16px 0px 0px;
 }
 .layoutFullContentWrap > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -58,6 +58,17 @@
   > picture
   > img {
   margin-top: 48px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .layoutFullContentWrap {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .layoutFullContentWrap > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
 }
 .layoutFullContent {
   height: auto;
@@ -149,6 +160,11 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding-right: 48px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .textWrap2 {
+    width: auto;
+  }
 }
 .text {
   display: block;

@@ -61,6 +61,7 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: 6GgaEV8wA3NAjSPNQQE37W/projectcss
 import sty from "./PlasmicButtonMainOutline.module.css"; // plasmic-import: pZPvFfGgHk8v/css
 
@@ -148,6 +149,7 @@ function PlasmicButtonMainOutline__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.gBtnWrap
       )}
     >

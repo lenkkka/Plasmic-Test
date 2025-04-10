@@ -67,6 +67,7 @@ import Description from "../../Description"; // plasmic-import: MM3CHCkctW97/com
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: 6GgaEV8wA3NAjSPNQQE37W/projectcss
 import sty from "./PlasmicTextField.module.css"; // plasmic-import: 9yVZznAgixZb/css
 
@@ -421,6 +422,7 @@ function PlasmicTextField__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
+        plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.ariaTextField,
         {
           [sty.ariaTextFieldiconEnd]: hasVariant($state, "iconEnd", "iconEnd"),
