@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import TextInput from "../../TextInput"; // plasmic-import: WFxcD-A0CuVm/component
 import BtnWrp from "../../BtnWrp"; // plasmic-import: FfPpxlM_Ttcg/component
 
 import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
@@ -94,7 +95,7 @@ export type PlasmicFormWrap__OverridesType = {
   ctaSplitRight?: Flex__<"div">;
   formInput?: Flex__<"div">;
   ctaText2?: Flex__<"div">;
-  text?: Flex__<"div">;
+  textInput?: Flex__<typeof TextInput>;
   formRow?: Flex__<"div">;
   ctaText3?: Flex__<"div">;
   btnWrp?: Flex__<typeof BtnWrp>;
@@ -146,6 +147,24 @@ function PlasmicFormWrap__RenderFunc(props: {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_19VDikmmmbc3()
@@ -267,17 +286,26 @@ function PlasmicFormWrap__RenderFunc(props: {
                 >
                   {"Field Title:"}
                 </div>
-                <div
-                  data-plasmic-name={"text"}
-                  data-plasmic-override={overrides.text}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text
-                  )}
-                >
-                  {"Placeholder text goes here"}
-                </div>
+                <TextInput
+                  data-plasmic-name={"textInput"}
+                  data-plasmic-override={overrides.textInput}
+                  className={classNames("__wab_instance", sty.textInput)}
+                  onChange={async (...eventArgs: any) => {
+                    generateStateOnChangeProp($state, [
+                      "textInput",
+                      "value"
+                    ]).apply(null, eventArgs);
+
+                    if (
+                      eventArgs.length > 1 &&
+                      eventArgs[1] &&
+                      eventArgs[1]._plasmic_state_init_
+                    ) {
+                      return;
+                    }
+                  }}
+                  placeholder={"Placeholder text goes here"}
+                />
               </Stack__>
               <Stack__
                 as={"div"}
@@ -325,7 +353,7 @@ const PlasmicDescendants = {
     "ctaSplitRight",
     "formInput",
     "ctaText2",
-    "text",
+    "textInput",
     "formRow",
     "ctaText3",
     "btnWrp"
@@ -340,7 +368,7 @@ const PlasmicDescendants = {
     "ctaSplitRight",
     "formInput",
     "ctaText2",
-    "text",
+    "textInput",
     "formRow",
     "ctaText3",
     "btnWrp"
@@ -354,7 +382,7 @@ const PlasmicDescendants = {
     "ctaSplitRight",
     "formInput",
     "ctaText2",
-    "text",
+    "textInput",
     "formRow",
     "ctaText3",
     "btnWrp"
@@ -367,7 +395,7 @@ const PlasmicDescendants = {
     "ctaSplitRight",
     "formInput",
     "ctaText2",
-    "text",
+    "textInput",
     "formRow",
     "ctaText3",
     "btnWrp"
@@ -376,14 +404,14 @@ const PlasmicDescendants = {
     "ctaSplitRight",
     "formInput",
     "ctaText2",
-    "text",
+    "textInput",
     "formRow",
     "ctaText3",
     "btnWrp"
   ],
-  formInput: ["formInput", "ctaText2", "text"],
+  formInput: ["formInput", "ctaText2", "textInput"],
   ctaText2: ["ctaText2"],
-  text: ["text"],
+  textInput: ["textInput"],
   formRow: ["formRow", "ctaText3", "btnWrp"],
   ctaText3: ["ctaText3"],
   btnWrp: ["btnWrp"]
@@ -402,7 +430,7 @@ type NodeDefaultElementType = {
   ctaSplitRight: "div";
   formInput: "div";
   ctaText2: "div";
-  text: "div";
+  textInput: typeof TextInput;
   formRow: "div";
   ctaText3: "div";
   btnWrp: typeof BtnWrp;
@@ -477,7 +505,7 @@ export const PlasmicFormWrap = Object.assign(
     ctaSplitRight: makeNodeComponent("ctaSplitRight"),
     formInput: makeNodeComponent("formInput"),
     ctaText2: makeNodeComponent("ctaText2"),
-    text: makeNodeComponent("text"),
+    textInput: makeNodeComponent("textInput"),
     formRow: makeNodeComponent("formRow"),
     ctaText3: makeNodeComponent("ctaText3"),
     btnWrp: makeNodeComponent("btnWrp"),

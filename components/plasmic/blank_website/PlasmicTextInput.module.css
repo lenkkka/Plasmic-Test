@@ -1,13 +1,14 @@
 .ariaInput:global(.__wab_instance) {
   box-sizing: border-box;
-  box-shadow: inset 0px 0px 0px 1px var(--token-SJXFmsdwNDgK);
-  color: var(--token-x9Rqqw3tEegp);
+  box-shadow: none;
+  color: var(--token-Yq556PvPjGii);
   font-family: var(--token-1CMwVYlTJcYT);
   font-size: var(--token-QSZS433F2dsA);
   line-height: var(--token-lSslBbC9VRDX);
   width: 100%;
   position: relative;
   outline-style: none;
+  background: none;
   min-width: 0;
   border-radius: var(--token-S9EocpFvnmLV);
   padding: var(--token-S9EocpFvnmLV) var(--token-cxvh1ZRqqxBL);
