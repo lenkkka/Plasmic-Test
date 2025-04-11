@@ -1551,6 +1551,16 @@
       }
     },
     {
+      "name": "hor-padding-mob",
+      "type": "spacing",
+      "value": "1px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+        "id": "UqDwXiVu5nZZ"
+      }
+    },
+    {
       "name": "horizontal padding",
       "type": "spacing",
       "value": "32px",

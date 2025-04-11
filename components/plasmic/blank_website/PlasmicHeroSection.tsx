@@ -59,7 +59,14 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import {
+  executePlasmicDataOp,
+  usePlasmicDataOp,
+  usePlasmicInvalidate
+} from "@plasmicapp/react-web/lib/data-sources";
+
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
+import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
@@ -192,6 +199,28 @@ function PlasmicHeroSection__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  let [$queries, setDollarQueries] = React.useState<
+    Record<string, ReturnType<typeof usePlasmicDataOp>>
+  >({});
+
+  const new$Queries: Record<string, ReturnType<typeof usePlasmicDataOp>> = {
+    homePage: usePlasmicDataOp(() => {
+      return {
+        sourceId: "iXUWeGRWCapAK64SA1ChkG",
+        opId: "d9b7123f-0417-47b2-a496-29f38a4755f1",
+        userArgs: {},
+        cacheKey: `plasmic.$.d9b7123f-0417-47b2-a496-29f38a4755f1.$.`,
+        invalidatedKeys: null,
+        roleId: null
+      };
+    })
+  };
+  if (Object.keys(new$Queries).some(k => new$Queries[k] !== $queries[k])) {
+    setDollarQueries(new$Queries);
+
+    $queries = new$Queries;
+  }
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_19VDikmmmbc3()
   });
@@ -291,7 +320,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                   sty.figure
                 )}
               >
-                {"4"}
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return $queries.homePage.data[0]["Col-01-Value"];
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "4";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
               </div>
               <Stack__
                 as={"div"}
@@ -300,19 +343,17 @@ function PlasmicHeroSection__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.unitWrap)}
               >
-                {false ? (
-                  <div
-                    data-plasmic-name={"unit"}
-                    data-plasmic-override={overrides.unit}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.unit
-                    )}
-                  >
-                    {"xx"}
-                  </div>
-                ) : null}
+                <div
+                  data-plasmic-name={"unit"}
+                  data-plasmic-override={overrides.unit}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.unit
+                  )}
+                >
+                  {"xx"}
+                </div>
               </Stack__>
             </Stack__>
             <div
@@ -344,7 +385,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                   sty.titleGoesHere
                 )}
               >
-                {"Title goes here"}
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return $queries.homePage.data[0]["Col-01-Label"];
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "Title goes here";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
               </div>
               <Stack__
                 as={"div"}
@@ -376,7 +431,29 @@ function PlasmicHeroSection__RenderFunc(props: {
                     sty.date
                   )}
                 >
-                  {"07.31.2024"}
+                  <React.Fragment>
+                    {(() => {
+                      try {
+                        return $queries.homePage.data[0]["Col-01-Date"]
+                          ?.split("-")
+                          .slice(1)
+                          .concat(
+                            $queries.homePage.data[0]["Col-01-Date"]?.split(
+                              "-"
+                            )[0]
+                          )
+                          .join(".");
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "04.01.2025";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  </React.Fragment>
                 </div>
               </Stack__>
             </Stack__>
@@ -404,7 +481,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                   sty.figure2
                 )}
               >
-                {"13"}
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return $queries.homePage.data[0]["Col-02-Value"];
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "13";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
               </div>
               <Stack__
                 as={"div"}
@@ -457,7 +548,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                   sty.titleGoesHere2
                 )}
               >
-                {"Title goes here"}
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return $queries.homePage.data[0]["Col-02-Label"];
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "Title goes here";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
               </div>
               <Stack__
                 as={"div"}
@@ -489,7 +594,29 @@ function PlasmicHeroSection__RenderFunc(props: {
                     sty.date2
                   )}
                 >
-                  {"07.31.2024"}
+                  <React.Fragment>
+                    {(() => {
+                      try {
+                        return $queries.homePage.data[0]["Col-02-Date"]
+                          ?.split("-")
+                          .slice(1)
+                          .concat(
+                            $queries.homePage.data[0]["Col-02-Date"]?.split(
+                              "-"
+                            )[0]
+                          )
+                          .join(".");
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "07.31.2024";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  </React.Fragment>
                 </div>
               </Stack__>
             </Stack__>
@@ -517,7 +644,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                   sty.figure3
                 )}
               >
-                {"31.8"}
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return $queries.homePage.data[0]["Col-03-Value"];
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "31.8";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
               </div>
               <Stack__
                 as={"div"}
@@ -535,7 +676,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                     sty.unit3
                   )}
                 >
-                  {"EH/s"}
+                  <React.Fragment>
+                    {(() => {
+                      try {
+                        return $queries.homePage.data[0]["Col-03-Unit"];
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "EH/s";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  </React.Fragment>
                 </div>
               </Stack__>
             </Stack__>
@@ -568,7 +723,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                   sty.titleGoesHere3
                 )}
               >
-                {"Title goes here"}
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return $queries.homePage.data[0]["Col-03-Label"];
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "Title goes here";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
               </div>
               <Stack__
                 as={"div"}
@@ -600,7 +769,29 @@ function PlasmicHeroSection__RenderFunc(props: {
                     sty.date3
                   )}
                 >
-                  {"07.31.2024"}
+                  <React.Fragment>
+                    {(() => {
+                      try {
+                        return $queries.homePage.data[0]["Col-03-Date"]
+                          ?.split("-")
+                          .slice(1)
+                          .concat(
+                            $queries.homePage.data[0]["Col-03-Date"]?.split(
+                              "-"
+                            )[0]
+                          )
+                          .join(".");
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "07.31.2024";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  </React.Fragment>
                 </div>
               </Stack__>
             </Stack__>
@@ -628,7 +819,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                   sty.figure4
                 )}
               >
-                {"1,100"}
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return $queries.homePage.data[0]["Col-04-Value"];
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "1,100";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
               </div>
               <Stack__
                 as={"div"}
@@ -646,7 +851,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                     sty.unit4
                   )}
                 >
-                  {"MW"}
+                  <React.Fragment>
+                    {(() => {
+                      try {
+                        return $queries.homePage.data[0]["Col-04-Unit"];
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "MW";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  </React.Fragment>
                 </div>
               </Stack__>
             </Stack__>
@@ -679,7 +898,21 @@ function PlasmicHeroSection__RenderFunc(props: {
                   sty.titleGoesHere4
                 )}
               >
-                {"AVAILABLE COMPUTE CAPACITY"}
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return $queries.homePage.data[0]["Col-04-Label"];
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "AVAILABLE COMPUTE CAPACITY";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
               </div>
               <Stack__
                 as={"div"}
@@ -711,7 +944,29 @@ function PlasmicHeroSection__RenderFunc(props: {
                     sty.date4
                   )}
                 >
-                  {"07.31.2024"}
+                  <React.Fragment>
+                    {(() => {
+                      try {
+                        return $queries.homePage.data[0]["Col-04-Date"]
+                          ?.split("-")
+                          .slice(1)
+                          .concat(
+                            $queries.homePage.data[0]["Col-04-Date"]?.split(
+                              "-"
+                            )[0]
+                          )
+                          .join(".");
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "07.31.2024";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  </React.Fragment>
                 </div>
               </Stack__>
             </Stack__>

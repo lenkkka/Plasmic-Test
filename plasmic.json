@@ -497,6 +497,32 @@
           "cssFilePath": "plasmic/blank_website/PlasmicTechnologyCard.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "Pg__fiCAmTSR",
+          "name": "AirtableData",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicAirtableData.tsx",
+          "importSpec": {
+            "modulePath": "AirtableData.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicAirtableData.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "NXy1tI1D044n",
+          "name": "SubscriptionForm",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicSubscriptionForm.tsx",
+          "importSpec": {
+            "modulePath": "SubscriptionForm.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicSubscriptionForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1281,6 +1307,21 @@
       ],
       "customFunctions": [],
       "jsBundleThemes": []
+    },
+    {
+      "projectId": "77tPPMY1MAED1Fqwv1T1ig",
+      "projectApiToken": "60MehhP6aEDwqf8XbEm9WWQKH4cyhVSsf40L3I1hLBpbRsQxim51tZKy1SvCsWN6RIz7lrBTK6c3FDyTA",
+      "projectName": "date-fns",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/date_fns/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [],
+      "customFunctions": []
     }
   ],
   "globalVariants": {

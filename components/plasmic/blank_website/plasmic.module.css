@@ -111,6 +111,15 @@
   --plasmic-token-unnamed-style-token-2: var(--token-_we0veiYaZuN);
   --token-6xrunugRy1SP: 32px;
   --plasmic-token-horizontal-padding: var(--token-6xrunugRy1SP);
+  --token-UqDwXiVu5nZZ: 1px;
+  --plasmic-token-hor-padding-mob: var(--token-UqDwXiVu5nZZ);
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .plasmic_tokens {
+    --token-UqDwXiVu5nZZ: 1rem;
+    --plasmic-token-hor-padding-mob: var(--token-UqDwXiVu5nZZ);
+  }
 }
 
 .plasmic_tokens {

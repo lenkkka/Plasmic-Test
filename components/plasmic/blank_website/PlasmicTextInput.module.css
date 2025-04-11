@@ -16,10 +16,15 @@
 }
 .ariaInput[data-disabled]:global(.__wab_instance) {
   cursor: not-allowed;
+  color: var(--token-jgohepLVeKvh);
+}
+.ariaInput[data-hovered]:global(.__wab_instance) {
+  color: var(--token-zy6xhYnWF8Y7);
 }
 .ariaInput[data-focused]:global(.__wab_instance) {
   border-bottom-color: var(--token-Qr9qriADXjcU);
   border-bottom-width: 1px;
+  color: var(--token-zy6xhYnWF8Y7);
 }
 .ariaInputtype_soft:global(.__wab_instance) {
   background: var(--token-u5B_FcpaOq3q);

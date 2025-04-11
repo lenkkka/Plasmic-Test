@@ -59,8 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import TextInput from "../../TextInput"; // plasmic-import: WFxcD-A0CuVm/component
-import SubmitButton from "../../SubmitButton"; // plasmic-import: FfPpxlM_Ttcg/component
+import SubscriptionForm from "../../SubscriptionForm"; // plasmic-import: NXy1tI1D044n/component
 
 import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
@@ -91,14 +90,7 @@ export type PlasmicFormWrap__OverridesType = {
   ctaSplitLeft?: Flex__<"div">;
   ctaTitle?: Flex__<"div">;
   ctaText?: Flex__<"div">;
-  ctaContain?: Flex__<"form">;
-  ctaSplitRight?: Flex__<"div">;
-  formInput?: Flex__<"div">;
-  ctaText2?: Flex__<"label">;
-  textInput?: Flex__<typeof TextInput>;
-  formRow?: Flex__<"div">;
-  ctaText3?: Flex__<"div">;
-  submitButton?: Flex__<typeof SubmitButton>;
+  subscriptionForm?: Flex__<typeof SubscriptionForm>;
 };
 
 export interface DefaultFormWrapProps {
@@ -148,24 +140,6 @@ function PlasmicFormWrap__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
-    () => [
-      {
-        path: "textInput.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      }
-    ],
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
-
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_19VDikmmmbc3()
   });
@@ -191,9 +165,11 @@ function PlasmicFormWrap__RenderFunc(props: {
         data-plasmic-override={overrides.column}
         className={classNames(projectcss.all, sty.column)}
       >
-        <div
+        <Stack__
+          as={"div"}
           data-plasmic-name={"freeBox"}
           data-plasmic-override={overrides.freeBox}
+          hasGap={true}
           className={classNames(projectcss.all, sty.freeBox)}
         >
           <Stack__
@@ -254,88 +230,12 @@ function PlasmicFormWrap__RenderFunc(props: {
               </React.Fragment>
             </div>
           </Stack__>
-          <Stack__
-            as={"form"}
-            data-plasmic-name={"ctaContain"}
-            data-plasmic-override={overrides.ctaContain}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.ctaContain)}
-          >
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"ctaSplitRight"}
-              data-plasmic-override={overrides.ctaSplitRight}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.ctaSplitRight)}
-            >
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"formInput"}
-                data-plasmic-override={overrides.formInput}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.formInput)}
-              >
-                <label
-                  data-plasmic-name={"ctaText2"}
-                  data-plasmic-override={overrides.ctaText2}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.ctaText2
-                  )}
-                >
-                  {"Field Title:"}
-                </label>
-                <TextInput
-                  data-plasmic-name={"textInput"}
-                  data-plasmic-override={overrides.textInput}
-                  className={classNames("__wab_instance", sty.textInput)}
-                  onChange={async (...eventArgs: any) => {
-                    generateStateOnChangeProp($state, [
-                      "textInput",
-                      "value"
-                    ]).apply(null, eventArgs);
-
-                    if (
-                      eventArgs.length > 1 &&
-                      eventArgs[1] &&
-                      eventArgs[1]._plasmic_state_init_
-                    ) {
-                      return;
-                    }
-                  }}
-                  placeholder={"Placeholder text goes here"}
-                />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"formRow"}
-                data-plasmic-override={overrides.formRow}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.formRow)}
-              >
-                <div
-                  data-plasmic-name={"ctaText3"}
-                  data-plasmic-override={overrides.ctaText3}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.ctaText3
-                  )}
-                >
-                  {
-                    "By subscribing, you consent to the terms set forth in our Privacy Policy."
-                  }
-                </div>
-                <SubmitButton
-                  data-plasmic-name={"submitButton"}
-                  data-plasmic-override={overrides.submitButton}
-                  className={classNames("__wab_instance", sty.submitButton)}
-                />
-              </Stack__>
-            </Stack__>
-          </Stack__>
-        </div>
+          <SubscriptionForm
+            data-plasmic-name={"subscriptionForm"}
+            data-plasmic-override={overrides.subscriptionForm}
+            className={classNames("__wab_instance", sty.subscriptionForm)}
+          />
+        </Stack__>
       </div>
     </div>
   ) as React.ReactElement | null;
@@ -349,14 +249,7 @@ const PlasmicDescendants = {
     "ctaSplitLeft",
     "ctaTitle",
     "ctaText",
-    "ctaContain",
-    "ctaSplitRight",
-    "formInput",
-    "ctaText2",
-    "textInput",
-    "formRow",
-    "ctaText3",
-    "submitButton"
+    "subscriptionForm"
   ],
   column: [
     "column",
@@ -364,57 +257,19 @@ const PlasmicDescendants = {
     "ctaSplitLeft",
     "ctaTitle",
     "ctaText",
-    "ctaContain",
-    "ctaSplitRight",
-    "formInput",
-    "ctaText2",
-    "textInput",
-    "formRow",
-    "ctaText3",
-    "submitButton"
+    "subscriptionForm"
   ],
   freeBox: [
     "freeBox",
     "ctaSplitLeft",
     "ctaTitle",
     "ctaText",
-    "ctaContain",
-    "ctaSplitRight",
-    "formInput",
-    "ctaText2",
-    "textInput",
-    "formRow",
-    "ctaText3",
-    "submitButton"
+    "subscriptionForm"
   ],
   ctaSplitLeft: ["ctaSplitLeft", "ctaTitle", "ctaText"],
   ctaTitle: ["ctaTitle"],
   ctaText: ["ctaText"],
-  ctaContain: [
-    "ctaContain",
-    "ctaSplitRight",
-    "formInput",
-    "ctaText2",
-    "textInput",
-    "formRow",
-    "ctaText3",
-    "submitButton"
-  ],
-  ctaSplitRight: [
-    "ctaSplitRight",
-    "formInput",
-    "ctaText2",
-    "textInput",
-    "formRow",
-    "ctaText3",
-    "submitButton"
-  ],
-  formInput: ["formInput", "ctaText2", "textInput"],
-  ctaText2: ["ctaText2"],
-  textInput: ["textInput"],
-  formRow: ["formRow", "ctaText3", "submitButton"],
-  ctaText3: ["ctaText3"],
-  submitButton: ["submitButton"]
+  subscriptionForm: ["subscriptionForm"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -426,14 +281,7 @@ type NodeDefaultElementType = {
   ctaSplitLeft: "div";
   ctaTitle: "div";
   ctaText: "div";
-  ctaContain: "form";
-  ctaSplitRight: "div";
-  formInput: "div";
-  ctaText2: "label";
-  textInput: typeof TextInput;
-  formRow: "div";
-  ctaText3: "div";
-  submitButton: typeof SubmitButton;
+  subscriptionForm: typeof SubscriptionForm;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -501,14 +349,7 @@ export const PlasmicFormWrap = Object.assign(
     ctaSplitLeft: makeNodeComponent("ctaSplitLeft"),
     ctaTitle: makeNodeComponent("ctaTitle"),
     ctaText: makeNodeComponent("ctaText"),
-    ctaContain: makeNodeComponent("ctaContain"),
-    ctaSplitRight: makeNodeComponent("ctaSplitRight"),
-    formInput: makeNodeComponent("formInput"),
-    ctaText2: makeNodeComponent("ctaText2"),
-    textInput: makeNodeComponent("textInput"),
-    formRow: makeNodeComponent("formRow"),
-    ctaText3: makeNodeComponent("ctaText3"),
-    submitButton: makeNodeComponent("submitButton"),
+    subscriptionForm: makeNodeComponent("subscriptionForm"),
 
     // Metadata about props expected for PlasmicFormWrap
     internalVariantProps: PlasmicFormWrap__VariantProps,

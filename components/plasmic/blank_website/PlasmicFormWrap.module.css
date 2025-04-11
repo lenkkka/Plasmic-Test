@@ -25,6 +25,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 0;
+    padding: var(--token-UqDwXiVu5nZZ);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -46,7 +47,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .column {
-    padding: 16px;
+    padding: 0px;
   }
 }
 .freeBox {
@@ -56,9 +57,41 @@
   height: auto;
   max-width: var(--token-cSWYeh4IK_rr);
   flex-direction: row;
-  justify-content: space-between;
   min-width: 0;
   padding: 8px;
+}
+.freeBox > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox > :global(.__wab_flex-container) {
+    flex-direction: column;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - var(--token-4lZ1tnMYP4X0));
+    height: calc(100% + var(--token-4lZ1tnMYP4X0));
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox > :global(.__wab_flex-container) > *,
+  .freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .freeBox > :global(.__wab_flex-container) > picture > img,
+  .freeBox
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 0px;
+    margin-top: var(--token-4lZ1tnMYP4X0);
+  }
 }
 .ctaSplitLeft {
   display: flex;
@@ -111,198 +144,7 @@
   align-self: stretch;
   position: relative;
 }
-.ctaContain {
-  height: auto;
-  display: flex;
+.subscriptionForm:global(.__wab_instance) {
   position: relative;
   align-self: stretch;
-  flex-direction: row;
-  width: 100%;
-  min-width: 0;
-  padding: 48px;
-}
-.ctaContain > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  min-width: 0;
-  margin-left: calc(0px - 20px);
-  width: calc(100% + 20px);
-}
-.ctaContain > :global(.__wab_flex-container) > *,
-.ctaContain > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.ctaContain > :global(.__wab_flex-container) > picture > img,
-.ctaContain
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 20px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .ctaContain {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .ctaContain > :global(.__wab_flex-container) {
-    flex-direction: column;
-    margin-left: calc(0px - 0px);
-    width: calc(100% + 0px);
-    margin-top: calc(0px - 20px);
-    height: calc(100% + 20px);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .ctaContain > :global(.__wab_flex-container) > *,
-  .ctaContain > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-  .ctaContain > :global(.__wab_flex-container) > picture > img,
-  .ctaContain
-    > :global(.__wab_flex-container)
-    > :global(.__wab_slot)
-    > picture
-    > img {
-    margin-left: 0px;
-    margin-top: 20px;
-  }
-}
-.ctaSplitRight {
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  width: 100%;
-  min-width: 0;
-}
-.ctaSplitRight > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  min-width: 0;
-  margin-top: calc(0px - 48px);
-  height: calc(100% + 48px);
-}
-.ctaSplitRight > :global(.__wab_flex-container) > *,
-.ctaSplitRight > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.ctaSplitRight > :global(.__wab_flex-container) > picture > img,
-.ctaSplitRight
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 48px;
-}
-.formInput {
-  background: rgba(53, 50, 51, 1);
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  border-radius: 4px;
-  padding: 12px 24px;
-}
-.formInput > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: calc(0px - 12px);
-  height: calc(100% + 12px);
-}
-.formInput > :global(.__wab_flex-container) > *,
-.formInput > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.formInput > :global(.__wab_flex-container) > picture > img,
-.formInput
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 12px;
-}
-.ctaText2 {
-  display: block;
-  font-size: 13.329999923706055px;
-  text-transform: uppercase;
-  font-family: "JetBrains Mono";
-  font-weight: 700;
-  letter-spacing: 0px;
-  line-height: 1.75;
-  color: rgba(238, 236, 232, 1);
-  align-self: stretch;
-  position: relative;
-}
-.textInput:global(.__wab_instance):global(.__wab_instance) {
-  max-width: 100%;
-}
-.formRow {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-}
-.formRow > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: calc(0px - 24px);
-  width: calc(100% + 24px);
-}
-.formRow > :global(.__wab_flex-container) > *,
-.formRow > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.formRow > :global(.__wab_flex-container) > picture > img,
-.formRow
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 24px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .formRow {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .formRow > :global(.__wab_flex-container) {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: calc(0px - 0px);
-    width: calc(100% + 0px);
-    margin-top: calc(0px - 24px);
-    height: calc(100% + 24px);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .formRow > :global(.__wab_flex-container) > *,
-  .formRow > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-  .formRow > :global(.__wab_flex-container) > picture > img,
-  .formRow
-    > :global(.__wab_flex-container)
-    > :global(.__wab_slot)
-    > picture
-    > img {
-    margin-left: 0px;
-    margin-top: 24px;
-  }
-}
-.ctaText3 {
-  display: block;
-  flex-grow: 1;
-  font-size: 16px;
-  font-family: "TT Hoves Pro";
-  font-weight: 500;
-  letter-spacing: -0.01159999966621399em;
-  line-height: 1.75;
-  color: rgba(238, 236, 232, 1);
-  position: relative;
-  padding-bottom: 0px;
-}
-.submitButton:global(.__wab_instance) {
-  max-width: 100%;
 }

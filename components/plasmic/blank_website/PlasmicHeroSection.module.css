@@ -268,7 +268,6 @@
   margin-top: 10px;
 }
 .unit {
-  display: block;
   font-size: 13.329999923706055px;
   text-transform: uppercase;
   font-family: "JetBrains Mono";
@@ -278,6 +277,7 @@
   color: rgba(39, 37, 37, 1);
   align-self: stretch;
   position: relative;
+  display: none;
 }
 .gLayoutDivider2 {
   height: auto;
