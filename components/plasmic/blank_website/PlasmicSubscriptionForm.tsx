@@ -275,7 +275,7 @@ function PlasmicSubscriptionForm__RenderFunc(props: {
               data-plasmic-name={"textInput"}
               data-plasmic-override={overrides.textInput}
               autoComplete={["on"]}
-              autoFocus={true}
+              autoFocus={false}
               className={classNames("__wab_instance", sty.textInput)}
               defaultValue={``}
               inputMode={"email"}

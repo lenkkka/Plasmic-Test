@@ -9,11 +9,13 @@
   min-width: 100vh;
   overflow: visible;
   max-height: 80vh;
-  min-height: 0;
+  min-height: 400px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .heroSection {
     padding-top: 284px;
+    height: auto;
+    max-height: 100%;
   }
 }
 .homeHeroCard {
@@ -177,11 +179,14 @@
   flex-grow: 1;
   overflow: hidden;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
 }
 .overallFigureItem > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  min-width: 0;
   margin-top: calc(0px - 12px);
   height: calc(100% + 12px);
 }
@@ -411,11 +416,14 @@
   flex-grow: 1;
   overflow: hidden;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
 }
 .overallFigureItem2 > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  min-width: 0;
   margin-top: calc(0px - 12px);
   height: calc(100% + 12px);
 }
@@ -645,11 +653,14 @@
   flex-grow: 1;
   overflow: hidden;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
 }
 .overallFigureItem3 > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  min-width: 0;
   margin-top: calc(0px - 12px);
   height: calc(100% + 12px);
 }
@@ -880,11 +891,14 @@
   flex-grow: 1;
   overflow: hidden;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
 }
 .overallFigureItem4 > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  min-width: 0;
   margin-top: calc(0px - 12px);
   height: calc(100% + 12px);
 }
@@ -1216,6 +1230,11 @@
   height: 24px;
   flex-shrink: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox {
+    display: none;
+  }
+}
 .svg {
   object-fit: cover;
   max-width: 100%;
@@ -1243,4 +1262,10 @@
   right: 0;
   min-width: 0;
   min-height: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .htmlVideo:global(.__wab_instance) {
+    width: 100%;
+    min-width: 0;
+  }
 }

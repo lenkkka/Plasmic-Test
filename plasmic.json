@@ -252,19 +252,6 @@
           "path": "/"
         },
         {
-          "id": "69NJUKzLHrLz",
-          "name": "Hero",
-          "type": "managed",
-          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicHero.tsx",
-          "importSpec": {
-            "modulePath": "Hero.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicHero.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "hqMSQFDi-FEs",
           "name": "Button",
           "type": "managed",
@@ -534,19 +521,6 @@
             "modulePath": "SubscribeForm.tsx"
           },
           "cssFilePath": "plasmic/blank_website/PlasmicSubscribeForm.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "x-jnKWsTWmDQ",
-          "name": "NavbarTest",
-          "type": "managed",
-          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
-          "renderModuleFilePath": "plasmic/blank_website/PlasmicNavbarTest.tsx",
-          "importSpec": {
-            "modulePath": "NavbarTest.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website/PlasmicNavbarTest.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

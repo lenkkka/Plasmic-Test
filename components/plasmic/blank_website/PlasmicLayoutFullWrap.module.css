@@ -13,6 +13,12 @@
   padding-right: var(--token-6xrunugRy1SP);
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .layoutFullWrap {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 .layoutFullContain {
   width: 100%;
   height: auto;
@@ -25,6 +31,12 @@
   max-width: var(--token-cSWYeh4IK_rr);
   min-width: 0;
   border-radius: 4px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .layoutFullContain {
+    width: 100%;
+    min-width: 0;
+  }
 }
 .layoutFullContentWrap {
   background: rgba(238, 236, 232, 1);
@@ -99,6 +111,17 @@
   > img {
   margin-top: 24px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .layoutFullContent {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .layoutFullContent > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
 .textWrap {
   height: auto;
   display: flex;
@@ -109,6 +132,12 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding-right: 48px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .textWrap {
+    width: 100%;
+    min-width: 0;
+  }
 }
 .title {
   display: block;
@@ -184,6 +213,12 @@
   width: 777px;
   flex-shrink: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .text {
+    width: 100%;
+    min-width: 0;
+  }
+}
 .buttonMainOutline:global(.__wab_instance) {
   position: relative;
 }
@@ -193,6 +228,11 @@
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox {
+    display: none;
+  }
 }
 .svg {
   object-fit: cover;
