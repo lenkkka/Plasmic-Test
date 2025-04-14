@@ -68,7 +68,7 @@ import {
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
-import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
+import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__CloseStatesTabletMobile"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -222,7 +222,7 @@ function PlasmicHeroSection__RenderFunc(props: {
   }
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_19VDikmmmbc3()
+    closeStatesTabletMobile: useScreenVariants_19VDikmmmbc3()
   });
 
   return (

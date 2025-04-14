@@ -6,15 +6,15 @@
 import * as React from "react";
 import { createUseScreenVariants } from "@plasmicapp/react-web";
 
-export type ScreenValue = "mobileOnly" | "tablet";
-export const ScreenContext = React.createContext<ScreenValue[] | undefined>(
-  "PLEASE_RENDER_INSIDE_PROVIDER" as any
-);
+export type CloseStatesTabletMobileValue = "mobileOnly" | "tablet";
+export const CloseStatesTabletMobileContext = React.createContext<
+  CloseStatesTabletMobileValue[] | undefined
+>("PLEASE_RENDER_INSIDE_PROVIDER" as any);
 
 export const useScreenVariants = createUseScreenVariants(true, {
   mobileOnly: "(min-width:0px) and (max-width:768px)",
   tablet: "(max-width:1200px)",
 });
 
-export default ScreenContext;
+export default CloseStatesTabletMobileContext;
 /* prettier-ignore-end */

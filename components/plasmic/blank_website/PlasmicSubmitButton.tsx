@@ -65,8 +65,6 @@ import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: 6GgaEV8wA3NAjSPNQQE37W/projectcss
 import sty from "./PlasmicSubmitButton.module.css"; // plasmic-import: FfPpxlM_Ttcg/css
 
-import ArrowRightIconWrapIcon from "./icons/PlasmicIcon__ArrowRightIconWrap"; // plasmic-import: 4HIycwZWkq14/icon
-
 createPlasmicElementProxy;
 
 export type PlasmicSubmitButton__VariantMembers = {};
@@ -83,8 +81,6 @@ export type PlasmicSubmitButton__OverridesType = {
   btnMainWrap?: Flex__<"div">;
   btnMainList?: Flex__<"div">;
   btnMainText?: Flex__<"div">;
-  btnMainIcon?: Flex__<"div">;
-  svg?: Flex__<"svg">;
 };
 
 export interface DefaultSubmitButtonProps {
@@ -171,22 +167,6 @@ function PlasmicSubmitButton__RenderFunc(props: {
           >
             {"Submit"}
           </div>
-          {false ? (
-            <div
-              data-plasmic-name={"btnMainIcon"}
-              data-plasmic-override={overrides.btnMainIcon}
-              className={classNames(projectcss.all, sty.btnMainIcon)}
-            >
-              {false ? (
-                <ArrowRightIconWrapIcon
-                  data-plasmic-name={"svg"}
-                  data-plasmic-override={overrides.svg}
-                  className={classNames(projectcss.all, sty.svg)}
-                  role={"img"}
-                />
-              ) : null}
-            </div>
-          ) : null}
         </Stack__>
       </Stack__>
     </button>
@@ -194,25 +174,10 @@ function PlasmicSubmitButton__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "btnMainWrap",
-    "btnMainList",
-    "btnMainText",
-    "btnMainIcon",
-    "svg"
-  ],
-  btnMainWrap: [
-    "btnMainWrap",
-    "btnMainList",
-    "btnMainText",
-    "btnMainIcon",
-    "svg"
-  ],
-  btnMainList: ["btnMainList", "btnMainText", "btnMainIcon", "svg"],
-  btnMainText: ["btnMainText"],
-  btnMainIcon: ["btnMainIcon", "svg"],
-  svg: ["svg"]
+  root: ["root", "btnMainWrap", "btnMainList", "btnMainText"],
+  btnMainWrap: ["btnMainWrap", "btnMainList", "btnMainText"],
+  btnMainList: ["btnMainList", "btnMainText"],
+  btnMainText: ["btnMainText"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -222,8 +187,6 @@ type NodeDefaultElementType = {
   btnMainWrap: "div";
   btnMainList: "div";
   btnMainText: "div";
-  btnMainIcon: "div";
-  svg: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -289,8 +252,6 @@ export const PlasmicSubmitButton = Object.assign(
     btnMainWrap: makeNodeComponent("btnMainWrap"),
     btnMainList: makeNodeComponent("btnMainList"),
     btnMainText: makeNodeComponent("btnMainText"),
-    btnMainIcon: makeNodeComponent("btnMainIcon"),
-    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicSubmitButton
     internalVariantProps: PlasmicSubmitButton__VariantProps,

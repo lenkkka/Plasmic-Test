@@ -68,7 +68,7 @@ import TechnologyCard from "../../TechnologyCard"; // plasmic-import: Xv-_qi6rIv
 import FormWrap from "../../FormWrap"; // plasmic-import: xRTHJhz9VfiN/component
 import Footer from "../../Footer"; // plasmic-import: 4Ad_NJbeLZ66/component
 
-import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
+import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__CloseStatesTabletMobile"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -216,7 +216,7 @@ function PlasmicHomepage__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_19VDikmmmbc3()
+    closeStatesTabletMobile: useScreenVariants_19VDikmmmbc3()
   });
 
   return (
@@ -1077,7 +1077,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     cards={["marafw"]}
                     className={classNames(
                       "__wab_instance",
-                      sty.technologyCard__wa2Sa
+                      sty.technologyCard__o2Qu
                     )}
                   />
 

@@ -61,6 +61,8 @@ import {
 
 import ButtonMainOutline from "../../ButtonMainOutline"; // plasmic-import: pZPvFfGgHk8v/component
 
+import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__CloseStatesTabletMobile"; // plasmic-import: 19vDIKMMMBC3/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -148,6 +150,28 @@ function PlasmicLayoutFullWrap__RenderFunc(props: {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "side",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props.side
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
+
+  const globalVariants = ensureGlobalVariants({
+    closeStatesTabletMobile: useScreenVariants_19VDikmmmbc3()
+  });
 
   return (
     <div

@@ -61,7 +61,7 @@ import {
 
 import SubscriptionForm from "../../SubscriptionForm"; // plasmic-import: NXy1tI1D044n/component
 
-import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
+import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__CloseStatesTabletMobile"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -141,7 +141,7 @@ function PlasmicFormWrap__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_19VDikmmmbc3()
+    closeStatesTabletMobile: useScreenVariants_19VDikmmmbc3()
   });
 
   return (

@@ -59,6 +59,8 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__CloseStatesTabletMobile"; // plasmic-import: 19vDIKMMMBC3/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -199,6 +201,10 @@ function PlasmicFooter__RenderFunc(props: {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+
+  const globalVariants = ensureGlobalVariants({
+    closeStatesTabletMobile: useScreenVariants_19VDikmmmbc3()
+  });
 
   return (
     <Stack__
@@ -879,7 +885,15 @@ function PlasmicFooter__RenderFunc(props: {
             displayMaxWidth={"100%"}
             displayMinHeight={"0"}
             displayMinWidth={"0"}
-            displayWidth={"886px"}
+            displayWidth={
+              hasVariant(
+                globalVariants,
+                "closeStatesTabletMobile",
+                "mobileOnly"
+              )
+                ? "auto"
+                : "auto"
+            }
             loading={"lazy"}
             src={{
               src: "/plasmic/blank_website/images/frame101694.svg",

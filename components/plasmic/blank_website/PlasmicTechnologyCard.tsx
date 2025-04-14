@@ -68,11 +68,11 @@ import sty from "./PlasmicTechnologyCard.module.css"; // plasmic-import: Xv-_qi6
 createPlasmicElementProxy;
 
 export type PlasmicTechnologyCard__VariantMembers = {
-  cards: "_2Pic" | "marafw" | "slipstream" | "anduro" | "alys" | "coordinate";
+  cards: "_2Pic" | "slipstream" | "anduro" | "alys" | "coordinate" | "marafw";
 };
 export type PlasmicTechnologyCard__VariantsArgs = {
   cards?: MultiChoiceArg<
-    "_2Pic" | "marafw" | "slipstream" | "anduro" | "alys" | "coordinate"
+    "_2Pic" | "slipstream" | "anduro" | "alys" | "coordinate" | "marafw"
   >;
 };
 type VariantPropType = keyof PlasmicTechnologyCard__VariantsArgs;
@@ -91,7 +91,7 @@ export type PlasmicTechnologyCard__OverridesType = {
 
 export interface DefaultTechnologyCardProps {
   cards?: MultiChoiceArg<
-    "_2Pic" | "marafw" | "slipstream" | "anduro" | "alys" | "coordinate"
+    "_2Pic" | "slipstream" | "anduro" | "alys" | "coordinate" | "marafw"
   >;
   className?: string;
 }
@@ -181,21 +181,31 @@ function PlasmicTechnologyCard__RenderFunc(props: {
         data-plasmic-override={overrides.img}
         alt={""}
         className={classNames(sty.img, {
+          [sty.imgcards__2Pic]: hasVariant($state, "cards", "_2Pic"),
           [sty.imgcards_alys]: hasVariant($state, "cards", "alys"),
           [sty.imgcards_anduro]: hasVariant($state, "cards", "anduro"),
           [sty.imgcards_coordinate]: hasVariant($state, "cards", "coordinate"),
           [sty.imgcards_marafw]: hasVariant($state, "cards", "marafw"),
           [sty.imgcards_slipstream]: hasVariant($state, "cards", "slipstream")
         })}
-        displayHeight={"auto"}
-        displayMaxHeight={"none"}
+        displayHeight={hasVariant($state, "cards", "_2Pic") ? "auto" : "auto"}
+        displayMaxHeight={
+          hasVariant($state, "cards", "_2Pic") ? "100%" : "none"
+        }
         displayMaxWidth={"100%"}
         displayMinHeight={"0"}
         displayMinWidth={"0"}
         displayWidth={"auto"}
         loading={"lazy"}
         src={
-          hasVariant($state, "cards", "coordinate")
+          hasVariant($state, "cards", "marafw")
+            ? {
+                src: "/plasmic/blank_website/images/technologyPortraitImgPng2.png",
+                fullWidth: 423,
+                fullHeight: 650,
+                aspectRatio: undefined
+              }
+            : hasVariant($state, "cards", "coordinate")
             ? {
                 src: "/plasmic/blank_website/images/technologyPortraitImg5Png.png",
                 fullWidth: 423,
@@ -220,13 +230,6 @@ function PlasmicTechnologyCard__RenderFunc(props: {
             ? {
                 src: "/plasmic/blank_website/images/technologyPortraitImg2Png.png",
                 fullWidth: 423,
-                fullHeight: 651,
-                aspectRatio: undefined
-              }
-            : hasVariant($state, "cards", "marafw")
-            ? {
-                src: "/plasmic/blank_website/images/technologyPortraitImg1Png.png",
-                fullWidth: 415,
                 fullHeight: 651,
                 aspectRatio: undefined
               }

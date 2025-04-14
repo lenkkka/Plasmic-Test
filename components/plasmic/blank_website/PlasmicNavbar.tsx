@@ -61,7 +61,7 @@ import {
 
 import NavDropdown from "../../NavDropdown"; // plasmic-import: Fvwf7HKIWogb/component
 
-import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
+import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__CloseStatesTabletMobile"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -73,10 +73,16 @@ import ChevronDownIconWrapIcon from "./icons/PlasmicIcon__ChevronDownIconWrap"; 
 
 createPlasmicElementProxy;
 
-export type PlasmicNavbar__VariantMembers = {};
-export type PlasmicNavbar__VariantsArgs = {};
+export type PlasmicNavbar__VariantMembers = {
+  gamburgerMenuOpen: "open" | "close";
+};
+export type PlasmicNavbar__VariantsArgs = {
+  gamburgerMenuOpen?: MultiChoiceArg<"open" | "close">;
+};
 type VariantPropType = keyof PlasmicNavbar__VariantsArgs;
-export const PlasmicNavbar__VariantProps = new Array<VariantPropType>();
+export const PlasmicNavbar__VariantProps = new Array<VariantPropType>(
+  "gamburgerMenuOpen"
+);
 
 export type PlasmicNavbar__ArgsType = {};
 type ArgPropType = keyof PlasmicNavbar__ArgsType;
@@ -86,7 +92,6 @@ export type PlasmicNavbar__OverridesType = {
   navbar?: Flex__<"div">;
   navContain?: Flex__<"div">;
   navTopRow?: Flex__<"div">;
-  img?: Flex__<typeof PlasmicImg__>;
   menuList?: Flex__<"div">;
   menuItemsList?: Flex__<"div">;
   navDropdown?: Flex__<typeof NavDropdown>;
@@ -111,9 +116,114 @@ export type PlasmicNavbar__OverridesType = {
   btnMainList6?: Flex__<"div">;
   btnMainText6?: Flex__<"div">;
   navIconWrap6?: Flex__<"div">;
+  menuWrap?: Flex__<"div">;
+  menuContain?: Flex__<"div">;
+  column?: Flex__<"div">;
+  textWrap?: Flex__<"div">;
+  title?: Flex__<"div">;
+  v03Divider?: Flex__<"div">;
+  hr?: Flex__<"div">;
+  frame101695?: Flex__<"div">;
+  navLinkItem?: Flex__<"div">;
+  navLinkText?: Flex__<"div">;
+  navLinkItem2?: Flex__<"div">;
+  navLinkText2?: Flex__<"div">;
+  navLinkItem3?: Flex__<"div">;
+  navLinkText3?: Flex__<"div">;
+  navLinkItem4?: Flex__<"div">;
+  navLinkText4?: Flex__<"div">;
+  navLinkItem5?: Flex__<"div">;
+  navLinkText5?: Flex__<"div">;
+  navLinkItem6?: Flex__<"div">;
+  navLinkText6?: Flex__<"div">;
+  column2?: Flex__<"div">;
+  textWrap2?: Flex__<"div">;
+  title2?: Flex__<"div">;
+  v03Divider2?: Flex__<"div">;
+  hr2?: Flex__<"div">;
+  frame101697?: Flex__<"div">;
+  navLinkItem7?: Flex__<"div">;
+  navLinkText7?: Flex__<"div">;
+  navLinkItem8?: Flex__<"div">;
+  navLinkText8?: Flex__<"div">;
+  column3?: Flex__<"div">;
+  textWrap3?: Flex__<"div">;
+  title3?: Flex__<"div">;
+  v03Divider3?: Flex__<"div">;
+  hr3?: Flex__<"div">;
+  frame101698?: Flex__<"div">;
+  navLinkItem9?: Flex__<"div">;
+  navLinkText9?: Flex__<"div">;
+  navLinkItem10?: Flex__<"div">;
+  navLinkText10?: Flex__<"div">;
+  navLinkItem11?: Flex__<"div">;
+  navLinkText11?: Flex__<"div">;
+  navLinkItem12?: Flex__<"div">;
+  navLinkText12?: Flex__<"div">;
+  navLinkItem13?: Flex__<"div">;
+  navLinkText13?: Flex__<"div">;
+  navLinkItem14?: Flex__<"div">;
+  navLinkText14?: Flex__<"div">;
+  column4?: Flex__<"div">;
+  textWrap4?: Flex__<"div">;
+  title4?: Flex__<"div">;
+  v03Divider4?: Flex__<"div">;
+  hr4?: Flex__<"div">;
+  frame101699?: Flex__<"div">;
+  navLinkItem15?: Flex__<"div">;
+  navLinkText15?: Flex__<"div">;
+  navLinkItem16?: Flex__<"div">;
+  navLinkText16?: Flex__<"div">;
+  navLinkItem17?: Flex__<"div">;
+  navLinkText17?: Flex__<"div">;
+  navLinkItem18?: Flex__<"div">;
+  navLinkText18?: Flex__<"div">;
+  navLinkItem19?: Flex__<"div">;
+  navLinkText19?: Flex__<"div">;
+  navLinkItem20?: Flex__<"div">;
+  navLinkText20?: Flex__<"div">;
+  column5?: Flex__<"div">;
+  textWrap5?: Flex__<"div">;
+  title5?: Flex__<"div">;
+  v03Divider5?: Flex__<"div">;
+  hr5?: Flex__<"div">;
+  frame101700?: Flex__<"div">;
+  navLinkItem21?: Flex__<"div">;
+  navLinkText21?: Flex__<"div">;
+  navLinkItem22?: Flex__<"div">;
+  navLinkText22?: Flex__<"div">;
+  navLinkItem23?: Flex__<"div">;
+  navLinkText23?: Flex__<"div">;
+  navLinkItem24?: Flex__<"div">;
+  navLinkText24?: Flex__<"div">;
+  navLinkItem25?: Flex__<"div">;
+  navLinkText25?: Flex__<"div">;
+  column6?: Flex__<"div">;
+  textWrap6?: Flex__<"div">;
+  title6?: Flex__<"div">;
+  v03Divider6?: Flex__<"div">;
+  hr6?: Flex__<"div">;
+  frame101701?: Flex__<"div">;
+  navLinkItem26?: Flex__<"div">;
+  navLinkText26?: Flex__<"div">;
+  navLinkItem27?: Flex__<"div">;
+  navLinkText27?: Flex__<"div">;
+  navLinkItem28?: Flex__<"div">;
+  navLinkText28?: Flex__<"div">;
+  navLinkItem29?: Flex__<"div">;
+  navLinkText29?: Flex__<"div">;
+  navLinkItem30?: Flex__<"div">;
+  navLinkText30?: Flex__<"div">;
+  navLinkItem31?: Flex__<"div">;
+  navLinkText31?: Flex__<"div">;
+  navLinkItem32?: Flex__<"div">;
+  navLinkText32?: Flex__<"div">;
+  navLinkItem33?: Flex__<"div">;
+  navLinkText33?: Flex__<"div">;
 };
 
 export interface DefaultNavbarProps {
+  gamburgerMenuOpen?: MultiChoiceArg<"open" | "close">;
   className?: string;
 }
 
@@ -155,8 +265,33 @@ function PlasmicNavbar__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "gamburgerMenuOpen",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) =>
+          $props.gamburgerMenuOpen
+      },
+      {
+        path: "variable",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $refs
+  });
+
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_19VDikmmmbc3()
+    closeStatesTabletMobile: useScreenVariants_19VDikmmmbc3()
   });
 
   return (
@@ -172,7 +307,19 @@ function PlasmicNavbar__RenderFunc(props: {
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         plasmic_antd_5_hostless_css.plasmic_tokens,
-        sty.navbar
+        sty.navbar,
+        {
+          [sty.navbargamburgerMenuOpen_close]: hasVariant(
+            $state,
+            "gamburgerMenuOpen",
+            "close"
+          ),
+          [sty.navbargamburgerMenuOpen_open]: hasVariant(
+            $state,
+            "gamburgerMenuOpen",
+            "open"
+          )
+        }
       )}
     >
       <Stack__
@@ -180,20 +327,35 @@ function PlasmicNavbar__RenderFunc(props: {
         data-plasmic-name={"navContain"}
         data-plasmic-override={overrides.navContain}
         hasGap={true}
-        className={classNames(projectcss.all, sty.navContain)}
+        className={classNames(projectcss.all, sty.navContain, {
+          [sty.navContaingamburgerMenuOpen_open]: hasVariant(
+            $state,
+            "gamburgerMenuOpen",
+            "open"
+          )
+        })}
       >
         <Stack__
           as={"div"}
           data-plasmic-name={"navTopRow"}
           data-plasmic-override={overrides.navTopRow}
           hasGap={true}
-          className={classNames(projectcss.all, sty.navTopRow)}
+          className={classNames(projectcss.all, sty.navTopRow, {
+            [sty.navTopRowgamburgerMenuOpen_close]: hasVariant(
+              $state,
+              "gamburgerMenuOpen",
+              "close"
+            ),
+            [sty.navTopRowgamburgerMenuOpen_open]: hasVariant(
+              $state,
+              "gamburgerMenuOpen",
+              "open"
+            )
+          })}
         >
           <PlasmicImg__
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
             alt={""}
-            className={classNames(sty.img)}
+            className={classNames(sty.img__lgzIb)}
             displayHeight={"44.880001068115234px"}
             displayMaxHeight={"none"}
             displayMaxWidth={"100%"}
@@ -214,7 +376,18 @@ function PlasmicNavbar__RenderFunc(props: {
             data-plasmic-name={"menuList"}
             data-plasmic-override={overrides.menuList}
             hasGap={true}
-            className={classNames(projectcss.all, sty.menuList)}
+            className={classNames(projectcss.all, sty.menuList, {
+              [sty.menuListgamburgerMenuOpen_close]: hasVariant(
+                $state,
+                "gamburgerMenuOpen",
+                "close"
+              ),
+              [sty.menuListgamburgerMenuOpen_open]: hasVariant(
+                $state,
+                "gamburgerMenuOpen",
+                "open"
+              )
+            })}
           >
             <Stack__
               as={"div"}
@@ -442,11 +615,1086 @@ function PlasmicNavbar__RenderFunc(props: {
           <Stack__
             as={"div"}
             hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__cb3Z1)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__gbnyK)} />
+            className={classNames(projectcss.all, sty.freeBox__cb3Z1, {
+              [sty.freeBoxgamburgerMenuOpen_close__cb3Z1BcC2E]: hasVariant(
+                $state,
+                "gamburgerMenuOpen",
+                "close"
+              ),
+              [sty.freeBoxgamburgerMenuOpen_open__cb3Z1AqW5]: hasVariant(
+                $state,
+                "gamburgerMenuOpen",
+                "open"
+              )
+            })}
+            onClick={async event => {
+              const $steps = {};
 
-            <div className={classNames(projectcss.all, sty.freeBox__fjYdR)} />
+              $steps["updateGamburgerMenuOpen"] = true
+                ? (() => {
+                    const actionArgs = {
+                      vgroup: "gamburgerMenuOpen",
+                      operation: 0,
+                      value: "open"
+                    };
+                    return (({ vgroup, value }) => {
+                      if (typeof value === "string") {
+                        value = [value];
+                      }
+
+                      $stateSet($state, vgroup, value);
+                      return value;
+                    })?.apply(null, [actionArgs]);
+                  })()
+                : undefined;
+              if (
+                $steps["updateGamburgerMenuOpen"] != null &&
+                typeof $steps["updateGamburgerMenuOpen"] === "object" &&
+                typeof $steps["updateGamburgerMenuOpen"].then === "function"
+              ) {
+                $steps["updateGamburgerMenuOpen"] = await $steps[
+                  "updateGamburgerMenuOpen"
+                ];
+              }
+            }}
+          >
+            <div
+              className={classNames(projectcss.all, sty.freeBox__gbnyK, {
+                [sty.freeBoxgamburgerMenuOpen_open__gbnyKaqW5]: hasVariant(
+                  $state,
+                  "gamburgerMenuOpen",
+                  "open"
+                )
+              })}
+            />
+
+            <div
+              className={classNames(projectcss.all, sty.freeBox__fjYdR, {
+                [sty.freeBoxgamburgerMenuOpen_open__fjYdRaqW5]: hasVariant(
+                  $state,
+                  "gamburgerMenuOpen",
+                  "open"
+                )
+              })}
+            />
+          </Stack__>
+          <div
+            className={classNames(projectcss.all, sty.freeBox__ibTe4, {
+              [sty.freeBoxgamburgerMenuOpen_open__ibTe4AqW5]: hasVariant(
+                $state,
+                "gamburgerMenuOpen",
+                "open"
+              )
+            })}
+            onClick={async event => {
+              const $steps = {};
+
+              $steps["updateGamburgerMenuOpen"] = true
+                ? (() => {
+                    const actionArgs = {
+                      vgroup: "gamburgerMenuOpen",
+                      operation: 0,
+                      value: "close"
+                    };
+                    return (({ vgroup, value }) => {
+                      if (typeof value === "string") {
+                        value = [value];
+                      }
+
+                      $stateSet($state, vgroup, value);
+                      return value;
+                    })?.apply(null, [actionArgs]);
+                  })()
+                : undefined;
+              if (
+                $steps["updateGamburgerMenuOpen"] != null &&
+                typeof $steps["updateGamburgerMenuOpen"] === "object" &&
+                typeof $steps["updateGamburgerMenuOpen"].then === "function"
+              ) {
+                $steps["updateGamburgerMenuOpen"] = await $steps[
+                  "updateGamburgerMenuOpen"
+                ];
+              }
+            }}
+          >
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__lihSz, {
+                [sty.imggamburgerMenuOpen_open__lihSzaqW5]: hasVariant(
+                  $state,
+                  "gamburgerMenuOpen",
+                  "open"
+                )
+              })}
+              displayHeight={"32px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"32px"}
+              loading={"lazy"}
+              onClick={async event => {
+                const $steps = {};
+
+                $steps["updateStateVariable"] = true
+                  ? (() => {
+                      const actionArgs = {};
+                      return (({
+                        variable,
+                        value,
+                        startIndex,
+                        deleteCount
+                      }) => {
+                        if (!variable) {
+                          return;
+                        }
+                        const { objRoot, variablePath } = variable;
+                        undefined;
+                      })?.apply(null, [actionArgs]);
+                    })()
+                  : undefined;
+                if (
+                  $steps["updateStateVariable"] != null &&
+                  typeof $steps["updateStateVariable"] === "object" &&
+                  typeof $steps["updateStateVariable"].then === "function"
+                ) {
+                  $steps["updateStateVariable"] = await $steps[
+                    "updateStateVariable"
+                  ];
+                }
+              }}
+              src={{
+                src: "/plasmic/blank_website/images/close.svg",
+                fullWidth: 32,
+                fullHeight: 32,
+                aspectRatio: 1
+              }}
+            />
+          </div>
+        </Stack__>
+      </Stack__>
+      <Stack__
+        as={"div"}
+        data-plasmic-name={"menuWrap"}
+        data-plasmic-override={overrides.menuWrap}
+        hasGap={true}
+        className={classNames(projectcss.all, sty.menuWrap, {
+          [sty.menuWrapgamburgerMenuOpen_open]: hasVariant(
+            $state,
+            "gamburgerMenuOpen",
+            "open"
+          )
+        })}
+      >
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"menuContain"}
+          data-plasmic-override={overrides.menuContain}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.menuContain)}
+        >
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"column"}
+            data-plasmic-override={overrides.column}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.column)}
+          >
+            <div
+              data-plasmic-name={"textWrap"}
+              data-plasmic-override={overrides.textWrap}
+              className={classNames(projectcss.all, sty.textWrap)}
+            >
+              <div
+                data-plasmic-name={"title"}
+                data-plasmic-override={overrides.title}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.title
+                )}
+              >
+                {"About us"}
+              </div>
+            </div>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"v03Divider"}
+              data-plasmic-override={overrides.v03Divider}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.v03Divider)}
+            >
+              <div
+                data-plasmic-name={"hr"}
+                data-plasmic-override={overrides.hr}
+                className={classNames(projectcss.all, sty.hr)}
+              />
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"frame101695"}
+              data-plasmic-override={overrides.frame101695}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.frame101695)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem"}
+                data-plasmic-override={overrides.navLinkItem}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText"}
+                  data-plasmic-override={overrides.navLinkText}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText
+                  )}
+                >
+                  {"our pillars"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem2"}
+                data-plasmic-override={overrides.navLinkItem2}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem2)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText2"}
+                  data-plasmic-override={overrides.navLinkText2}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText2
+                  )}
+                >
+                  {"climate, culture & Community"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem3"}
+                data-plasmic-override={overrides.navLinkItem3}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem3)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText3"}
+                  data-plasmic-override={overrides.navLinkText3}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText3
+                  )}
+                >
+                  {"Executive Team"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem4"}
+                data-plasmic-override={overrides.navLinkItem4}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem4)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText4"}
+                  data-plasmic-override={overrides.navLinkText4}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText4
+                  )}
+                >
+                  {"Careers"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem5"}
+                data-plasmic-override={overrides.navLinkItem5}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem5)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText5"}
+                  data-plasmic-override={overrides.navLinkText5}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText5
+                  )}
+                >
+                  {"Contact"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem6"}
+                data-plasmic-override={overrides.navLinkItem6}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem6)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText6"}
+                  data-plasmic-override={overrides.navLinkText6}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText6
+                  )}
+                >
+                  {"media"}
+                </div>
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"column2"}
+            data-plasmic-override={overrides.column2}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.column2)}
+          >
+            <div
+              data-plasmic-name={"textWrap2"}
+              data-plasmic-override={overrides.textWrap2}
+              className={classNames(projectcss.all, sty.textWrap2)}
+            >
+              <div
+                data-plasmic-name={"title2"}
+                data-plasmic-override={overrides.title2}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.title2
+                )}
+              >
+                {"Operations"}
+              </div>
+            </div>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"v03Divider2"}
+              data-plasmic-override={overrides.v03Divider2}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.v03Divider2)}
+            >
+              <div
+                data-plasmic-name={"hr2"}
+                data-plasmic-override={overrides.hr2}
+                className={classNames(projectcss.all, sty.hr2)}
+              />
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"frame101697"}
+              data-plasmic-override={overrides.frame101697}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.frame101697)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem7"}
+                data-plasmic-override={overrides.navLinkItem7}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem7)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText7"}
+                  data-plasmic-override={overrides.navLinkText7}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText7
+                  )}
+                >
+                  {"Global Fleet"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem8"}
+                data-plasmic-override={overrides.navLinkItem8}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem8)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText8"}
+                  data-plasmic-override={overrides.navLinkText8}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText8
+                  )}
+                >
+                  {"Strategy"}
+                </div>
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"column3"}
+            data-plasmic-override={overrides.column3}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.column3)}
+          >
+            <div
+              data-plasmic-name={"textWrap3"}
+              data-plasmic-override={overrides.textWrap3}
+              className={classNames(projectcss.all, sty.textWrap3)}
+            >
+              <div
+                data-plasmic-name={"title3"}
+                data-plasmic-override={overrides.title3}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.title3
+                )}
+              >
+                {"Technology"}
+              </div>
+            </div>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"v03Divider3"}
+              data-plasmic-override={overrides.v03Divider3}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.v03Divider3)}
+            >
+              <div
+                data-plasmic-name={"hr3"}
+                data-plasmic-override={overrides.hr3}
+                className={classNames(projectcss.all, sty.hr3)}
+              />
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"frame101698"}
+              data-plasmic-override={overrides.frame101698}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.frame101698)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem9"}
+                data-plasmic-override={overrides.navLinkItem9}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem9)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText9"}
+                  data-plasmic-override={overrides.navLinkText9}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText9
+                  )}
+                >
+                  {"mara slipstream"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem10"}
+                data-plasmic-override={overrides.navLinkItem10}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem10)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText10"}
+                  data-plasmic-override={overrides.navLinkText10}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText10
+                  )}
+                >
+                  {"marafw"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem11"}
+                data-plasmic-override={overrides.navLinkItem11}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem11)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText11"}
+                  data-plasmic-override={overrides.navLinkText11}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText11
+                  )}
+                >
+                  {"2pic by mara"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem12"}
+                data-plasmic-override={overrides.navLinkItem12}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem12)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText12"}
+                  data-plasmic-override={overrides.navLinkText12}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText12
+                  )}
+                >
+                  {"coordinate"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem13"}
+                data-plasmic-override={overrides.navLinkItem13}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem13)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText13"}
+                  data-plasmic-override={overrides.navLinkText13}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText13
+                  )}
+                >
+                  {"Alys"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem14"}
+                data-plasmic-override={overrides.navLinkItem14}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem14)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText14"}
+                  data-plasmic-override={overrides.navLinkText14}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText14
+                  )}
+                >
+                  {"Anduro"}
+                </div>
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"column4"}
+            data-plasmic-override={overrides.column4}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.column4)}
+          >
+            <div
+              data-plasmic-name={"textWrap4"}
+              data-plasmic-override={overrides.textWrap4}
+              className={classNames(projectcss.all, sty.textWrap4)}
+            >
+              <div
+                data-plasmic-name={"title4"}
+                data-plasmic-override={overrides.title4}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.title4
+                )}
+              >
+                {"Investors"}
+              </div>
+            </div>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"v03Divider4"}
+              data-plasmic-override={overrides.v03Divider4}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.v03Divider4)}
+            >
+              <div
+                data-plasmic-name={"hr4"}
+                data-plasmic-override={overrides.hr4}
+                className={classNames(projectcss.all, sty.hr4)}
+              />
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"frame101699"}
+              data-plasmic-override={overrides.frame101699}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.frame101699)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem15"}
+                data-plasmic-override={overrides.navLinkItem15}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem15)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText15"}
+                  data-plasmic-override={overrides.navLinkText15}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText15
+                  )}
+                >
+                  {"NEWS & EVENTS"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem16"}
+                data-plasmic-override={overrides.navLinkItem16}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem16)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText16"}
+                  data-plasmic-override={overrides.navLinkText16}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText16
+                  )}
+                >
+                  {"COMPANY INFORMATION"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem17"}
+                data-plasmic-override={overrides.navLinkItem17}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem17)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText17"}
+                  data-plasmic-override={overrides.navLinkText17}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText17
+                  )}
+                >
+                  {"FINANCIAL INFORMATION"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem18"}
+                data-plasmic-override={overrides.navLinkItem18}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem18)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText18"}
+                  data-plasmic-override={overrides.navLinkText18}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText18
+                  )}
+                >
+                  {"STOCK DATA"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem19"}
+                data-plasmic-override={overrides.navLinkItem19}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem19)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText19"}
+                  data-plasmic-override={overrides.navLinkText19}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText19
+                  )}
+                >
+                  {"SEC FILINGS"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem20"}
+                data-plasmic-override={overrides.navLinkItem20}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem20)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText20"}
+                  data-plasmic-override={overrides.navLinkText20}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText20
+                  )}
+                >
+                  {"GOVERNANCE"}
+                </div>
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"column5"}
+            data-plasmic-override={overrides.column5}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.column5)}
+          >
+            <div
+              data-plasmic-name={"textWrap5"}
+              data-plasmic-override={overrides.textWrap5}
+              className={classNames(projectcss.all, sty.textWrap5)}
+            >
+              <div
+                data-plasmic-name={"title5"}
+                data-plasmic-override={overrides.title5}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.title5
+                )}
+              >
+                {"Partnerships"}
+              </div>
+            </div>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"v03Divider5"}
+              data-plasmic-override={overrides.v03Divider5}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.v03Divider5)}
+            >
+              <div
+                data-plasmic-name={"hr5"}
+                data-plasmic-override={overrides.hr5}
+                className={classNames(projectcss.all, sty.hr5)}
+              />
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"frame101700"}
+              data-plasmic-override={overrides.frame101700}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.frame101700)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem21"}
+                data-plasmic-override={overrides.navLinkItem21}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem21)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText21"}
+                  data-plasmic-override={overrides.navLinkText21}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText21
+                  )}
+                >
+                  {"SUPPORTING RENEWABLE ENERGY PROJECTS"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem22"}
+                data-plasmic-override={overrides.navLinkItem22}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem22)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText22"}
+                  data-plasmic-override={overrides.navLinkText22}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText22
+                  )}
+                >
+                  {"MITIGATE FLARING & METHANE EMISSIONS"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem23"}
+                data-plasmic-override={overrides.navLinkItem23}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem23)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText23"}
+                  data-plasmic-override={overrides.navLinkText23}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText23
+                  )}
+                >
+                  {"STRENGTHEN POWER GRIDS"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem24"}
+                data-plasmic-override={overrides.navLinkItem24}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem24)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText24"}
+                  data-plasmic-override={overrides.navLinkText24}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText24
+                  )}
+                >
+                  {"RECYCLE HEAT"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem25"}
+                data-plasmic-override={overrides.navLinkItem25}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem25)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText25"}
+                  data-plasmic-override={overrides.navLinkText25}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText25
+                  )}
+                >
+                  {"FUNDING & MENTORSHIP"}
+                </div>
+              </Stack__>
+            </Stack__>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"column6"}
+            data-plasmic-override={overrides.column6}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.column6)}
+          >
+            <div
+              data-plasmic-name={"textWrap6"}
+              data-plasmic-override={overrides.textWrap6}
+              className={classNames(projectcss.all, sty.textWrap6)}
+            >
+              <div
+                data-plasmic-name={"title6"}
+                data-plasmic-override={overrides.title6}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.title6
+                )}
+              >
+                {"Media"}
+              </div>
+            </div>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"v03Divider6"}
+              data-plasmic-override={overrides.v03Divider6}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.v03Divider6)}
+            >
+              <div
+                data-plasmic-name={"hr6"}
+                data-plasmic-override={overrides.hr6}
+                className={classNames(projectcss.all, sty.hr6)}
+              />
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"frame101701"}
+              data-plasmic-override={overrides.frame101701}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.frame101701)}
+            >
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem26"}
+                data-plasmic-override={overrides.navLinkItem26}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem26)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText26"}
+                  data-plasmic-override={overrides.navLinkText26}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText26
+                  )}
+                >
+                  {"PRODUCTION & OPERATION UPDATES"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem27"}
+                data-plasmic-override={overrides.navLinkItem27}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem27)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText27"}
+                  data-plasmic-override={overrides.navLinkText27}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText27
+                  )}
+                >
+                  {"EDUCATION"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem28"}
+                data-plasmic-override={overrides.navLinkItem28}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem28)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText28"}
+                  data-plasmic-override={overrides.navLinkText28}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText28
+                  )}
+                >
+                  {"CLIMATE, CULTURE & COMMUNITY"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem29"}
+                data-plasmic-override={overrides.navLinkItem29}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem29)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText29"}
+                  data-plasmic-override={overrides.navLinkText29}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText29
+                  )}
+                >
+                  {"POLICY"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem30"}
+                data-plasmic-override={overrides.navLinkItem30}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem30)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText30"}
+                  data-plasmic-override={overrides.navLinkText30}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText30
+                  )}
+                >
+                  {"TECHNOLOGY"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem31"}
+                data-plasmic-override={overrides.navLinkItem31}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem31)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText31"}
+                  data-plasmic-override={overrides.navLinkText31}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText31
+                  )}
+                >
+                  {"ENERGY"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem32"}
+                data-plasmic-override={overrides.navLinkItem32}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem32)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText32"}
+                  data-plasmic-override={overrides.navLinkText32}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText32
+                  )}
+                >
+                  {"ANNOUNCEMENTS"}
+                </div>
+              </Stack__>
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"navLinkItem33"}
+                data-plasmic-override={overrides.navLinkItem33}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.navLinkItem33)}
+              >
+                <div
+                  data-plasmic-name={"navLinkText33"}
+                  data-plasmic-override={overrides.navLinkText33}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.navLinkText33
+                  )}
+                >
+                  {"INTERVIEWS"}
+                </div>
+              </Stack__>
+            </Stack__>
           </Stack__>
         </Stack__>
       </Stack__>
@@ -459,7 +1707,6 @@ const PlasmicDescendants = {
     "navbar",
     "navContain",
     "navTopRow",
-    "img",
     "menuList",
     "menuItemsList",
     "navDropdown",
@@ -483,12 +1730,115 @@ const PlasmicDescendants = {
     "btnMainWrap6",
     "btnMainList6",
     "btnMainText6",
-    "navIconWrap6"
+    "navIconWrap6",
+    "menuWrap",
+    "menuContain",
+    "column",
+    "textWrap",
+    "title",
+    "v03Divider",
+    "hr",
+    "frame101695",
+    "navLinkItem",
+    "navLinkText",
+    "navLinkItem2",
+    "navLinkText2",
+    "navLinkItem3",
+    "navLinkText3",
+    "navLinkItem4",
+    "navLinkText4",
+    "navLinkItem5",
+    "navLinkText5",
+    "navLinkItem6",
+    "navLinkText6",
+    "column2",
+    "textWrap2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "frame101697",
+    "navLinkItem7",
+    "navLinkText7",
+    "navLinkItem8",
+    "navLinkText8",
+    "column3",
+    "textWrap3",
+    "title3",
+    "v03Divider3",
+    "hr3",
+    "frame101698",
+    "navLinkItem9",
+    "navLinkText9",
+    "navLinkItem10",
+    "navLinkText10",
+    "navLinkItem11",
+    "navLinkText11",
+    "navLinkItem12",
+    "navLinkText12",
+    "navLinkItem13",
+    "navLinkText13",
+    "navLinkItem14",
+    "navLinkText14",
+    "column4",
+    "textWrap4",
+    "title4",
+    "v03Divider4",
+    "hr4",
+    "frame101699",
+    "navLinkItem15",
+    "navLinkText15",
+    "navLinkItem16",
+    "navLinkText16",
+    "navLinkItem17",
+    "navLinkText17",
+    "navLinkItem18",
+    "navLinkText18",
+    "navLinkItem19",
+    "navLinkText19",
+    "navLinkItem20",
+    "navLinkText20",
+    "column5",
+    "textWrap5",
+    "title5",
+    "v03Divider5",
+    "hr5",
+    "frame101700",
+    "navLinkItem21",
+    "navLinkText21",
+    "navLinkItem22",
+    "navLinkText22",
+    "navLinkItem23",
+    "navLinkText23",
+    "navLinkItem24",
+    "navLinkText24",
+    "navLinkItem25",
+    "navLinkText25",
+    "column6",
+    "textWrap6",
+    "title6",
+    "v03Divider6",
+    "hr6",
+    "frame101701",
+    "navLinkItem26",
+    "navLinkText26",
+    "navLinkItem27",
+    "navLinkText27",
+    "navLinkItem28",
+    "navLinkText28",
+    "navLinkItem29",
+    "navLinkText29",
+    "navLinkItem30",
+    "navLinkText30",
+    "navLinkItem31",
+    "navLinkText31",
+    "navLinkItem32",
+    "navLinkText32",
+    "navLinkItem33",
+    "navLinkText33"
   ],
   navContain: [
     "navContain",
     "navTopRow",
-    "img",
     "menuList",
     "menuItemsList",
     "navDropdown",
@@ -516,7 +1866,6 @@ const PlasmicDescendants = {
   ],
   navTopRow: [
     "navTopRow",
-    "img",
     "menuList",
     "menuItemsList",
     "navDropdown",
@@ -542,7 +1891,6 @@ const PlasmicDescendants = {
     "btnMainText6",
     "navIconWrap6"
   ],
-  img: ["img"],
   menuList: [
     "menuList",
     "menuItemsList",
@@ -626,7 +1974,506 @@ const PlasmicDescendants = {
   ],
   btnMainList6: ["btnMainList6", "btnMainText6", "navIconWrap6"],
   btnMainText6: ["btnMainText6"],
-  navIconWrap6: ["navIconWrap6"]
+  navIconWrap6: ["navIconWrap6"],
+  menuWrap: [
+    "menuWrap",
+    "menuContain",
+    "column",
+    "textWrap",
+    "title",
+    "v03Divider",
+    "hr",
+    "frame101695",
+    "navLinkItem",
+    "navLinkText",
+    "navLinkItem2",
+    "navLinkText2",
+    "navLinkItem3",
+    "navLinkText3",
+    "navLinkItem4",
+    "navLinkText4",
+    "navLinkItem5",
+    "navLinkText5",
+    "navLinkItem6",
+    "navLinkText6",
+    "column2",
+    "textWrap2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "frame101697",
+    "navLinkItem7",
+    "navLinkText7",
+    "navLinkItem8",
+    "navLinkText8",
+    "column3",
+    "textWrap3",
+    "title3",
+    "v03Divider3",
+    "hr3",
+    "frame101698",
+    "navLinkItem9",
+    "navLinkText9",
+    "navLinkItem10",
+    "navLinkText10",
+    "navLinkItem11",
+    "navLinkText11",
+    "navLinkItem12",
+    "navLinkText12",
+    "navLinkItem13",
+    "navLinkText13",
+    "navLinkItem14",
+    "navLinkText14",
+    "column4",
+    "textWrap4",
+    "title4",
+    "v03Divider4",
+    "hr4",
+    "frame101699",
+    "navLinkItem15",
+    "navLinkText15",
+    "navLinkItem16",
+    "navLinkText16",
+    "navLinkItem17",
+    "navLinkText17",
+    "navLinkItem18",
+    "navLinkText18",
+    "navLinkItem19",
+    "navLinkText19",
+    "navLinkItem20",
+    "navLinkText20",
+    "column5",
+    "textWrap5",
+    "title5",
+    "v03Divider5",
+    "hr5",
+    "frame101700",
+    "navLinkItem21",
+    "navLinkText21",
+    "navLinkItem22",
+    "navLinkText22",
+    "navLinkItem23",
+    "navLinkText23",
+    "navLinkItem24",
+    "navLinkText24",
+    "navLinkItem25",
+    "navLinkText25",
+    "column6",
+    "textWrap6",
+    "title6",
+    "v03Divider6",
+    "hr6",
+    "frame101701",
+    "navLinkItem26",
+    "navLinkText26",
+    "navLinkItem27",
+    "navLinkText27",
+    "navLinkItem28",
+    "navLinkText28",
+    "navLinkItem29",
+    "navLinkText29",
+    "navLinkItem30",
+    "navLinkText30",
+    "navLinkItem31",
+    "navLinkText31",
+    "navLinkItem32",
+    "navLinkText32",
+    "navLinkItem33",
+    "navLinkText33"
+  ],
+  menuContain: [
+    "menuContain",
+    "column",
+    "textWrap",
+    "title",
+    "v03Divider",
+    "hr",
+    "frame101695",
+    "navLinkItem",
+    "navLinkText",
+    "navLinkItem2",
+    "navLinkText2",
+    "navLinkItem3",
+    "navLinkText3",
+    "navLinkItem4",
+    "navLinkText4",
+    "navLinkItem5",
+    "navLinkText5",
+    "navLinkItem6",
+    "navLinkText6",
+    "column2",
+    "textWrap2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "frame101697",
+    "navLinkItem7",
+    "navLinkText7",
+    "navLinkItem8",
+    "navLinkText8",
+    "column3",
+    "textWrap3",
+    "title3",
+    "v03Divider3",
+    "hr3",
+    "frame101698",
+    "navLinkItem9",
+    "navLinkText9",
+    "navLinkItem10",
+    "navLinkText10",
+    "navLinkItem11",
+    "navLinkText11",
+    "navLinkItem12",
+    "navLinkText12",
+    "navLinkItem13",
+    "navLinkText13",
+    "navLinkItem14",
+    "navLinkText14",
+    "column4",
+    "textWrap4",
+    "title4",
+    "v03Divider4",
+    "hr4",
+    "frame101699",
+    "navLinkItem15",
+    "navLinkText15",
+    "navLinkItem16",
+    "navLinkText16",
+    "navLinkItem17",
+    "navLinkText17",
+    "navLinkItem18",
+    "navLinkText18",
+    "navLinkItem19",
+    "navLinkText19",
+    "navLinkItem20",
+    "navLinkText20",
+    "column5",
+    "textWrap5",
+    "title5",
+    "v03Divider5",
+    "hr5",
+    "frame101700",
+    "navLinkItem21",
+    "navLinkText21",
+    "navLinkItem22",
+    "navLinkText22",
+    "navLinkItem23",
+    "navLinkText23",
+    "navLinkItem24",
+    "navLinkText24",
+    "navLinkItem25",
+    "navLinkText25",
+    "column6",
+    "textWrap6",
+    "title6",
+    "v03Divider6",
+    "hr6",
+    "frame101701",
+    "navLinkItem26",
+    "navLinkText26",
+    "navLinkItem27",
+    "navLinkText27",
+    "navLinkItem28",
+    "navLinkText28",
+    "navLinkItem29",
+    "navLinkText29",
+    "navLinkItem30",
+    "navLinkText30",
+    "navLinkItem31",
+    "navLinkText31",
+    "navLinkItem32",
+    "navLinkText32",
+    "navLinkItem33",
+    "navLinkText33"
+  ],
+  column: [
+    "column",
+    "textWrap",
+    "title",
+    "v03Divider",
+    "hr",
+    "frame101695",
+    "navLinkItem",
+    "navLinkText",
+    "navLinkItem2",
+    "navLinkText2",
+    "navLinkItem3",
+    "navLinkText3",
+    "navLinkItem4",
+    "navLinkText4",
+    "navLinkItem5",
+    "navLinkText5",
+    "navLinkItem6",
+    "navLinkText6"
+  ],
+  textWrap: ["textWrap", "title"],
+  title: ["title"],
+  v03Divider: ["v03Divider", "hr"],
+  hr: ["hr"],
+  frame101695: [
+    "frame101695",
+    "navLinkItem",
+    "navLinkText",
+    "navLinkItem2",
+    "navLinkText2",
+    "navLinkItem3",
+    "navLinkText3",
+    "navLinkItem4",
+    "navLinkText4",
+    "navLinkItem5",
+    "navLinkText5",
+    "navLinkItem6",
+    "navLinkText6"
+  ],
+  navLinkItem: ["navLinkItem", "navLinkText"],
+  navLinkText: ["navLinkText"],
+  navLinkItem2: ["navLinkItem2", "navLinkText2"],
+  navLinkText2: ["navLinkText2"],
+  navLinkItem3: ["navLinkItem3", "navLinkText3"],
+  navLinkText3: ["navLinkText3"],
+  navLinkItem4: ["navLinkItem4", "navLinkText4"],
+  navLinkText4: ["navLinkText4"],
+  navLinkItem5: ["navLinkItem5", "navLinkText5"],
+  navLinkText5: ["navLinkText5"],
+  navLinkItem6: ["navLinkItem6", "navLinkText6"],
+  navLinkText6: ["navLinkText6"],
+  column2: [
+    "column2",
+    "textWrap2",
+    "title2",
+    "v03Divider2",
+    "hr2",
+    "frame101697",
+    "navLinkItem7",
+    "navLinkText7",
+    "navLinkItem8",
+    "navLinkText8"
+  ],
+  textWrap2: ["textWrap2", "title2"],
+  title2: ["title2"],
+  v03Divider2: ["v03Divider2", "hr2"],
+  hr2: ["hr2"],
+  frame101697: [
+    "frame101697",
+    "navLinkItem7",
+    "navLinkText7",
+    "navLinkItem8",
+    "navLinkText8"
+  ],
+  navLinkItem7: ["navLinkItem7", "navLinkText7"],
+  navLinkText7: ["navLinkText7"],
+  navLinkItem8: ["navLinkItem8", "navLinkText8"],
+  navLinkText8: ["navLinkText8"],
+  column3: [
+    "column3",
+    "textWrap3",
+    "title3",
+    "v03Divider3",
+    "hr3",
+    "frame101698",
+    "navLinkItem9",
+    "navLinkText9",
+    "navLinkItem10",
+    "navLinkText10",
+    "navLinkItem11",
+    "navLinkText11",
+    "navLinkItem12",
+    "navLinkText12",
+    "navLinkItem13",
+    "navLinkText13",
+    "navLinkItem14",
+    "navLinkText14"
+  ],
+  textWrap3: ["textWrap3", "title3"],
+  title3: ["title3"],
+  v03Divider3: ["v03Divider3", "hr3"],
+  hr3: ["hr3"],
+  frame101698: [
+    "frame101698",
+    "navLinkItem9",
+    "navLinkText9",
+    "navLinkItem10",
+    "navLinkText10",
+    "navLinkItem11",
+    "navLinkText11",
+    "navLinkItem12",
+    "navLinkText12",
+    "navLinkItem13",
+    "navLinkText13",
+    "navLinkItem14",
+    "navLinkText14"
+  ],
+  navLinkItem9: ["navLinkItem9", "navLinkText9"],
+  navLinkText9: ["navLinkText9"],
+  navLinkItem10: ["navLinkItem10", "navLinkText10"],
+  navLinkText10: ["navLinkText10"],
+  navLinkItem11: ["navLinkItem11", "navLinkText11"],
+  navLinkText11: ["navLinkText11"],
+  navLinkItem12: ["navLinkItem12", "navLinkText12"],
+  navLinkText12: ["navLinkText12"],
+  navLinkItem13: ["navLinkItem13", "navLinkText13"],
+  navLinkText13: ["navLinkText13"],
+  navLinkItem14: ["navLinkItem14", "navLinkText14"],
+  navLinkText14: ["navLinkText14"],
+  column4: [
+    "column4",
+    "textWrap4",
+    "title4",
+    "v03Divider4",
+    "hr4",
+    "frame101699",
+    "navLinkItem15",
+    "navLinkText15",
+    "navLinkItem16",
+    "navLinkText16",
+    "navLinkItem17",
+    "navLinkText17",
+    "navLinkItem18",
+    "navLinkText18",
+    "navLinkItem19",
+    "navLinkText19",
+    "navLinkItem20",
+    "navLinkText20"
+  ],
+  textWrap4: ["textWrap4", "title4"],
+  title4: ["title4"],
+  v03Divider4: ["v03Divider4", "hr4"],
+  hr4: ["hr4"],
+  frame101699: [
+    "frame101699",
+    "navLinkItem15",
+    "navLinkText15",
+    "navLinkItem16",
+    "navLinkText16",
+    "navLinkItem17",
+    "navLinkText17",
+    "navLinkItem18",
+    "navLinkText18",
+    "navLinkItem19",
+    "navLinkText19",
+    "navLinkItem20",
+    "navLinkText20"
+  ],
+  navLinkItem15: ["navLinkItem15", "navLinkText15"],
+  navLinkText15: ["navLinkText15"],
+  navLinkItem16: ["navLinkItem16", "navLinkText16"],
+  navLinkText16: ["navLinkText16"],
+  navLinkItem17: ["navLinkItem17", "navLinkText17"],
+  navLinkText17: ["navLinkText17"],
+  navLinkItem18: ["navLinkItem18", "navLinkText18"],
+  navLinkText18: ["navLinkText18"],
+  navLinkItem19: ["navLinkItem19", "navLinkText19"],
+  navLinkText19: ["navLinkText19"],
+  navLinkItem20: ["navLinkItem20", "navLinkText20"],
+  navLinkText20: ["navLinkText20"],
+  column5: [
+    "column5",
+    "textWrap5",
+    "title5",
+    "v03Divider5",
+    "hr5",
+    "frame101700",
+    "navLinkItem21",
+    "navLinkText21",
+    "navLinkItem22",
+    "navLinkText22",
+    "navLinkItem23",
+    "navLinkText23",
+    "navLinkItem24",
+    "navLinkText24",
+    "navLinkItem25",
+    "navLinkText25"
+  ],
+  textWrap5: ["textWrap5", "title5"],
+  title5: ["title5"],
+  v03Divider5: ["v03Divider5", "hr5"],
+  hr5: ["hr5"],
+  frame101700: [
+    "frame101700",
+    "navLinkItem21",
+    "navLinkText21",
+    "navLinkItem22",
+    "navLinkText22",
+    "navLinkItem23",
+    "navLinkText23",
+    "navLinkItem24",
+    "navLinkText24",
+    "navLinkItem25",
+    "navLinkText25"
+  ],
+  navLinkItem21: ["navLinkItem21", "navLinkText21"],
+  navLinkText21: ["navLinkText21"],
+  navLinkItem22: ["navLinkItem22", "navLinkText22"],
+  navLinkText22: ["navLinkText22"],
+  navLinkItem23: ["navLinkItem23", "navLinkText23"],
+  navLinkText23: ["navLinkText23"],
+  navLinkItem24: ["navLinkItem24", "navLinkText24"],
+  navLinkText24: ["navLinkText24"],
+  navLinkItem25: ["navLinkItem25", "navLinkText25"],
+  navLinkText25: ["navLinkText25"],
+  column6: [
+    "column6",
+    "textWrap6",
+    "title6",
+    "v03Divider6",
+    "hr6",
+    "frame101701",
+    "navLinkItem26",
+    "navLinkText26",
+    "navLinkItem27",
+    "navLinkText27",
+    "navLinkItem28",
+    "navLinkText28",
+    "navLinkItem29",
+    "navLinkText29",
+    "navLinkItem30",
+    "navLinkText30",
+    "navLinkItem31",
+    "navLinkText31",
+    "navLinkItem32",
+    "navLinkText32",
+    "navLinkItem33",
+    "navLinkText33"
+  ],
+  textWrap6: ["textWrap6", "title6"],
+  title6: ["title6"],
+  v03Divider6: ["v03Divider6", "hr6"],
+  hr6: ["hr6"],
+  frame101701: [
+    "frame101701",
+    "navLinkItem26",
+    "navLinkText26",
+    "navLinkItem27",
+    "navLinkText27",
+    "navLinkItem28",
+    "navLinkText28",
+    "navLinkItem29",
+    "navLinkText29",
+    "navLinkItem30",
+    "navLinkText30",
+    "navLinkItem31",
+    "navLinkText31",
+    "navLinkItem32",
+    "navLinkText32",
+    "navLinkItem33",
+    "navLinkText33"
+  ],
+  navLinkItem26: ["navLinkItem26", "navLinkText26"],
+  navLinkText26: ["navLinkText26"],
+  navLinkItem27: ["navLinkItem27", "navLinkText27"],
+  navLinkText27: ["navLinkText27"],
+  navLinkItem28: ["navLinkItem28", "navLinkText28"],
+  navLinkText28: ["navLinkText28"],
+  navLinkItem29: ["navLinkItem29", "navLinkText29"],
+  navLinkText29: ["navLinkText29"],
+  navLinkItem30: ["navLinkItem30", "navLinkText30"],
+  navLinkText30: ["navLinkText30"],
+  navLinkItem31: ["navLinkItem31", "navLinkText31"],
+  navLinkText31: ["navLinkText31"],
+  navLinkItem32: ["navLinkItem32", "navLinkText32"],
+  navLinkText32: ["navLinkText32"],
+  navLinkItem33: ["navLinkItem33", "navLinkText33"],
+  navLinkText33: ["navLinkText33"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -635,7 +2482,6 @@ type NodeDefaultElementType = {
   navbar: "div";
   navContain: "div";
   navTopRow: "div";
-  img: typeof PlasmicImg__;
   menuList: "div";
   menuItemsList: "div";
   navDropdown: typeof NavDropdown;
@@ -660,6 +2506,110 @@ type NodeDefaultElementType = {
   btnMainList6: "div";
   btnMainText6: "div";
   navIconWrap6: "div";
+  menuWrap: "div";
+  menuContain: "div";
+  column: "div";
+  textWrap: "div";
+  title: "div";
+  v03Divider: "div";
+  hr: "div";
+  frame101695: "div";
+  navLinkItem: "div";
+  navLinkText: "div";
+  navLinkItem2: "div";
+  navLinkText2: "div";
+  navLinkItem3: "div";
+  navLinkText3: "div";
+  navLinkItem4: "div";
+  navLinkText4: "div";
+  navLinkItem5: "div";
+  navLinkText5: "div";
+  navLinkItem6: "div";
+  navLinkText6: "div";
+  column2: "div";
+  textWrap2: "div";
+  title2: "div";
+  v03Divider2: "div";
+  hr2: "div";
+  frame101697: "div";
+  navLinkItem7: "div";
+  navLinkText7: "div";
+  navLinkItem8: "div";
+  navLinkText8: "div";
+  column3: "div";
+  textWrap3: "div";
+  title3: "div";
+  v03Divider3: "div";
+  hr3: "div";
+  frame101698: "div";
+  navLinkItem9: "div";
+  navLinkText9: "div";
+  navLinkItem10: "div";
+  navLinkText10: "div";
+  navLinkItem11: "div";
+  navLinkText11: "div";
+  navLinkItem12: "div";
+  navLinkText12: "div";
+  navLinkItem13: "div";
+  navLinkText13: "div";
+  navLinkItem14: "div";
+  navLinkText14: "div";
+  column4: "div";
+  textWrap4: "div";
+  title4: "div";
+  v03Divider4: "div";
+  hr4: "div";
+  frame101699: "div";
+  navLinkItem15: "div";
+  navLinkText15: "div";
+  navLinkItem16: "div";
+  navLinkText16: "div";
+  navLinkItem17: "div";
+  navLinkText17: "div";
+  navLinkItem18: "div";
+  navLinkText18: "div";
+  navLinkItem19: "div";
+  navLinkText19: "div";
+  navLinkItem20: "div";
+  navLinkText20: "div";
+  column5: "div";
+  textWrap5: "div";
+  title5: "div";
+  v03Divider5: "div";
+  hr5: "div";
+  frame101700: "div";
+  navLinkItem21: "div";
+  navLinkText21: "div";
+  navLinkItem22: "div";
+  navLinkText22: "div";
+  navLinkItem23: "div";
+  navLinkText23: "div";
+  navLinkItem24: "div";
+  navLinkText24: "div";
+  navLinkItem25: "div";
+  navLinkText25: "div";
+  column6: "div";
+  textWrap6: "div";
+  title6: "div";
+  v03Divider6: "div";
+  hr6: "div";
+  frame101701: "div";
+  navLinkItem26: "div";
+  navLinkText26: "div";
+  navLinkItem27: "div";
+  navLinkText27: "div";
+  navLinkItem28: "div";
+  navLinkText28: "div";
+  navLinkItem29: "div";
+  navLinkText29: "div";
+  navLinkItem30: "div";
+  navLinkText30: "div";
+  navLinkItem31: "div";
+  navLinkText31: "div";
+  navLinkItem32: "div";
+  navLinkText32: "div";
+  navLinkItem33: "div";
+  navLinkText33: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -724,7 +2674,6 @@ export const PlasmicNavbar = Object.assign(
     // Helper components rendering sub-elements
     navContain: makeNodeComponent("navContain"),
     navTopRow: makeNodeComponent("navTopRow"),
-    img: makeNodeComponent("img"),
     menuList: makeNodeComponent("menuList"),
     menuItemsList: makeNodeComponent("menuItemsList"),
     navDropdown: makeNodeComponent("navDropdown"),
@@ -749,6 +2698,110 @@ export const PlasmicNavbar = Object.assign(
     btnMainList6: makeNodeComponent("btnMainList6"),
     btnMainText6: makeNodeComponent("btnMainText6"),
     navIconWrap6: makeNodeComponent("navIconWrap6"),
+    menuWrap: makeNodeComponent("menuWrap"),
+    menuContain: makeNodeComponent("menuContain"),
+    column: makeNodeComponent("column"),
+    textWrap: makeNodeComponent("textWrap"),
+    title: makeNodeComponent("title"),
+    v03Divider: makeNodeComponent("v03Divider"),
+    hr: makeNodeComponent("hr"),
+    frame101695: makeNodeComponent("frame101695"),
+    navLinkItem: makeNodeComponent("navLinkItem"),
+    navLinkText: makeNodeComponent("navLinkText"),
+    navLinkItem2: makeNodeComponent("navLinkItem2"),
+    navLinkText2: makeNodeComponent("navLinkText2"),
+    navLinkItem3: makeNodeComponent("navLinkItem3"),
+    navLinkText3: makeNodeComponent("navLinkText3"),
+    navLinkItem4: makeNodeComponent("navLinkItem4"),
+    navLinkText4: makeNodeComponent("navLinkText4"),
+    navLinkItem5: makeNodeComponent("navLinkItem5"),
+    navLinkText5: makeNodeComponent("navLinkText5"),
+    navLinkItem6: makeNodeComponent("navLinkItem6"),
+    navLinkText6: makeNodeComponent("navLinkText6"),
+    column2: makeNodeComponent("column2"),
+    textWrap2: makeNodeComponent("textWrap2"),
+    title2: makeNodeComponent("title2"),
+    v03Divider2: makeNodeComponent("v03Divider2"),
+    hr2: makeNodeComponent("hr2"),
+    frame101697: makeNodeComponent("frame101697"),
+    navLinkItem7: makeNodeComponent("navLinkItem7"),
+    navLinkText7: makeNodeComponent("navLinkText7"),
+    navLinkItem8: makeNodeComponent("navLinkItem8"),
+    navLinkText8: makeNodeComponent("navLinkText8"),
+    column3: makeNodeComponent("column3"),
+    textWrap3: makeNodeComponent("textWrap3"),
+    title3: makeNodeComponent("title3"),
+    v03Divider3: makeNodeComponent("v03Divider3"),
+    hr3: makeNodeComponent("hr3"),
+    frame101698: makeNodeComponent("frame101698"),
+    navLinkItem9: makeNodeComponent("navLinkItem9"),
+    navLinkText9: makeNodeComponent("navLinkText9"),
+    navLinkItem10: makeNodeComponent("navLinkItem10"),
+    navLinkText10: makeNodeComponent("navLinkText10"),
+    navLinkItem11: makeNodeComponent("navLinkItem11"),
+    navLinkText11: makeNodeComponent("navLinkText11"),
+    navLinkItem12: makeNodeComponent("navLinkItem12"),
+    navLinkText12: makeNodeComponent("navLinkText12"),
+    navLinkItem13: makeNodeComponent("navLinkItem13"),
+    navLinkText13: makeNodeComponent("navLinkText13"),
+    navLinkItem14: makeNodeComponent("navLinkItem14"),
+    navLinkText14: makeNodeComponent("navLinkText14"),
+    column4: makeNodeComponent("column4"),
+    textWrap4: makeNodeComponent("textWrap4"),
+    title4: makeNodeComponent("title4"),
+    v03Divider4: makeNodeComponent("v03Divider4"),
+    hr4: makeNodeComponent("hr4"),
+    frame101699: makeNodeComponent("frame101699"),
+    navLinkItem15: makeNodeComponent("navLinkItem15"),
+    navLinkText15: makeNodeComponent("navLinkText15"),
+    navLinkItem16: makeNodeComponent("navLinkItem16"),
+    navLinkText16: makeNodeComponent("navLinkText16"),
+    navLinkItem17: makeNodeComponent("navLinkItem17"),
+    navLinkText17: makeNodeComponent("navLinkText17"),
+    navLinkItem18: makeNodeComponent("navLinkItem18"),
+    navLinkText18: makeNodeComponent("navLinkText18"),
+    navLinkItem19: makeNodeComponent("navLinkItem19"),
+    navLinkText19: makeNodeComponent("navLinkText19"),
+    navLinkItem20: makeNodeComponent("navLinkItem20"),
+    navLinkText20: makeNodeComponent("navLinkText20"),
+    column5: makeNodeComponent("column5"),
+    textWrap5: makeNodeComponent("textWrap5"),
+    title5: makeNodeComponent("title5"),
+    v03Divider5: makeNodeComponent("v03Divider5"),
+    hr5: makeNodeComponent("hr5"),
+    frame101700: makeNodeComponent("frame101700"),
+    navLinkItem21: makeNodeComponent("navLinkItem21"),
+    navLinkText21: makeNodeComponent("navLinkText21"),
+    navLinkItem22: makeNodeComponent("navLinkItem22"),
+    navLinkText22: makeNodeComponent("navLinkText22"),
+    navLinkItem23: makeNodeComponent("navLinkItem23"),
+    navLinkText23: makeNodeComponent("navLinkText23"),
+    navLinkItem24: makeNodeComponent("navLinkItem24"),
+    navLinkText24: makeNodeComponent("navLinkText24"),
+    navLinkItem25: makeNodeComponent("navLinkItem25"),
+    navLinkText25: makeNodeComponent("navLinkText25"),
+    column6: makeNodeComponent("column6"),
+    textWrap6: makeNodeComponent("textWrap6"),
+    title6: makeNodeComponent("title6"),
+    v03Divider6: makeNodeComponent("v03Divider6"),
+    hr6: makeNodeComponent("hr6"),
+    frame101701: makeNodeComponent("frame101701"),
+    navLinkItem26: makeNodeComponent("navLinkItem26"),
+    navLinkText26: makeNodeComponent("navLinkText26"),
+    navLinkItem27: makeNodeComponent("navLinkItem27"),
+    navLinkText27: makeNodeComponent("navLinkText27"),
+    navLinkItem28: makeNodeComponent("navLinkItem28"),
+    navLinkText28: makeNodeComponent("navLinkText28"),
+    navLinkItem29: makeNodeComponent("navLinkItem29"),
+    navLinkText29: makeNodeComponent("navLinkText29"),
+    navLinkItem30: makeNodeComponent("navLinkItem30"),
+    navLinkText30: makeNodeComponent("navLinkText30"),
+    navLinkItem31: makeNodeComponent("navLinkItem31"),
+    navLinkText31: makeNodeComponent("navLinkText31"),
+    navLinkItem32: makeNodeComponent("navLinkItem32"),
+    navLinkText32: makeNodeComponent("navLinkText32"),
+    navLinkItem33: makeNodeComponent("navLinkItem33"),
+    navLinkText33: makeNodeComponent("navLinkText33"),
 
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,

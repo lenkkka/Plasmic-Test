@@ -5,8 +5,9 @@
   max-width: 100%;
   position: relative;
   background: none;
-  min-height: 350px;
+  overflow: hidden;
   min-width: 0;
+  border-radius: 8px;
   padding: 0px;
 }
 .img {
@@ -18,4 +19,8 @@
 }
 .img > picture > img {
   object-fit: cover;
+}
+.imgcards__2Pic {
+  height: auto;
+  max-height: 100%;
 }

@@ -62,7 +62,7 @@ import {
 import TextInput from "../../TextInput"; // plasmic-import: WFxcD-A0CuVm/component
 import SubmitButton from "../../SubmitButton"; // plasmic-import: FfPpxlM_Ttcg/component
 
-import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 19vDIKMMMBC3/globalVariant
+import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__CloseStatesTabletMobile"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -170,7 +170,7 @@ function PlasmicSubscriptionForm__RenderFunc(props: {
   });
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants_19VDikmmmbc3()
+    closeStatesTabletMobile: useScreenVariants_19VDikmmmbc3()
   });
 
   return (

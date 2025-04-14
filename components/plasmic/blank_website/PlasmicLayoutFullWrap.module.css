@@ -1,5 +1,5 @@
 .layoutFullWrap {
-  background: url("/plasmic/blank_website/images/layoutFullWrap2.jpg") bottom -182px left 0px / cover no-repeat,
+  background: url("/plasmic/blank_website/images/layoutFullWrap2.jpg") left 0px top 0px / cover no-repeat,
     url("/plasmic/blank_website/images/layoutFullWrap.jpg") center center / cover no-repeat;
   height: auto;
   display: flex;
@@ -9,6 +9,8 @@
   position: relative;
   width: 100%;
   min-height: 768px;
+  padding-left: var(--token-6xrunugRy1SP);
+  padding-right: var(--token-6xrunugRy1SP);
   min-width: 0;
 }
 .layoutFullContain {
@@ -62,7 +64,10 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .layoutFullContentWrap {
     width: 100%;
+    padding-left: var(--token-UqDwXiVu5nZZ);
+    padding-right: var(--token-UqDwXiVu5nZZ);
     min-width: 0;
+    border-radius: 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {

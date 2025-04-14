@@ -1,7 +1,7 @@
 .ariaInput:global(.__wab_instance) {
   box-sizing: border-box;
   box-shadow: none;
-  color: var(--token-Yq556PvPjGii);
+  color: #eeece8;
   font-family: var(--token-1CMwVYlTJcYT);
   font-size: var(--token-QSZS433F2dsA);
   line-height: var(--token-lSslBbC9VRDX);
@@ -16,15 +16,15 @@
 }
 .ariaInput[data-disabled]:global(.__wab_instance) {
   cursor: not-allowed;
-  color: var(--token-jgohepLVeKvh);
+  color: #eeece8;
 }
 .ariaInput[data-hovered]:global(.__wab_instance) {
-  color: var(--token-zy6xhYnWF8Y7);
+  color: #eeece8;
 }
 .ariaInput[data-focused]:global(.__wab_instance) {
   border-bottom-color: var(--token-Qr9qriADXjcU);
   border-bottom-width: 1px;
-  color: var(--token-zy6xhYnWF8Y7);
+  color: #eeece8;
 }
 .ariaInputtype_soft:global(.__wab_instance) {
   background: var(--token-u5B_FcpaOq3q);

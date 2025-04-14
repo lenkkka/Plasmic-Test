@@ -41,7 +41,7 @@
   margin-left: 12px;
 }
 .root:hover .btnMainWrap {
-  background: var(--token-Yq556PvPjGii);
+  background: #eeece8;
 }
 .btnMainList {
   width: auto;
@@ -78,25 +78,4 @@
   line-height: 1.5;
   color: rgba(53, 50, 51, 1);
   position: relative;
-}
-.btnMainIcon {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.svg {
-  object-fit: cover;
-  max-width: 100%;
-  color: #353233;
-  width: 24px;
-  height: 24px;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
 }

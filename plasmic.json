@@ -523,6 +523,32 @@
           "cssFilePath": "plasmic/blank_website/PlasmicSubscriptionForm.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "WPBAsHXcfkl9",
+          "name": "SubscribeForm",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicSubscribeForm.tsx",
+          "importSpec": {
+            "modulePath": "SubscribeForm.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicSubscribeForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "x-jnKWsTWmDQ",
+          "name": "NavbarTest",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/blank_website/PlasmicNavbarTest.tsx",
+          "importSpec": {
+            "modulePath": "NavbarTest.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website/PlasmicNavbarTest.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -827,6 +853,16 @@
           "id": "efzJVq6YnMH4",
           "name": "technology_portrait_img-5.png",
           "filePath": "../public/plasmic/blank_website/images/technologyPortraitImg5Png.png"
+        },
+        {
+          "id": "XRk6Xjc_YkCE",
+          "name": "technology_portrait_img.png 2",
+          "filePath": "../public/plasmic/blank_website/images/technologyPortraitImgPng2.png"
+        },
+        {
+          "id": "XR2nNEcDglDD",
+          "name": "Close",
+          "filePath": "../public/plasmic/blank_website/images/close.svg"
         }
       ],
       "indirect": false,
@@ -1321,16 +1357,76 @@
       "globalContextsFilePath": "",
       "splitsProviderFilePath": "",
       "codeComponents": [],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
+    },
+    {
+      "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
+      "projectApiToken": "L5kqyh9xqKCqpdc8gqCglVcLZTxdkkP1Dt9pLUlWpyKVItIbbXr5272ePgMpZZiezhSe0AIOuQB353jQnw",
+      "projectName": "plasmic-cms",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_cms/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_cms/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "w6HdOz-Pcn",
+          "name": "CmsRowField",
+          "displayName": "hostless-plasmic-cms-row-field",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "Ds6UdKRHmq",
+          "name": "CmsRowLink",
+          "displayName": "hostless-plasmic-cms-row-link",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "dj_Vc2QmFA",
+          "name": "CmsRowImage",
+          "displayName": "hostless-plasmic-cms-row-image",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "r3UO4W-xcR",
+          "name": "CmsRowFieldValue",
+          "displayName": "hostless-plasmic-cms-row-value",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "OREVbGCcgN",
+          "name": "CmsCredentialsProvider",
+          "displayName": "hostless-plasmic-cms-credentials-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "8N9-WfZSaq",
+          "name": "CmsQueryRepeater",
+          "displayName": "hostless-plasmic-cms-query-repeater",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        },
+        {
+          "id": "8uEaibqi6348",
+          "name": "CmsCount",
+          "displayName": "hostless-plasmic-cms-count",
+          "componentImportPath": "@plasmicpkgs/plasmic-cms"
+        }
+      ],
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
     "variantGroups": [
       {
         "id": "19vDIKMMMBC3",
-        "name": "Screen",
+        "name": "CloseStatesTabletMobile",
         "projectId": "6GgaEV8wA3NAjSPNQQE37W",
-        "contextFilePath": "plasmic/blank_website/PlasmicGlobalVariant__Screen.tsx"
+        "contextFilePath": "plasmic/blank_website/PlasmicGlobalVariant__CloseStatesTabletMobile.tsx"
       }
     ]
   },
