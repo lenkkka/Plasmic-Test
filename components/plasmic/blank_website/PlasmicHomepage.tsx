@@ -63,8 +63,6 @@ import Navbar from "../../Navbar"; // plasmic-import: PAg8waIYOX54/component
 import HeroSection from "../../HeroSection"; // plasmic-import: mbkly9G2X3L1/component
 import LayoutFullWrap from "../../LayoutFullWrap"; // plasmic-import: _V8L3SCxePZg/component
 import ButtonMainOutline from "../../ButtonMainOutline"; // plasmic-import: pZPvFfGgHk8v/component
-import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io";
-import { SanityField } from "@plasmicpkgs/plasmic-sanity-io";
 import ArrowBtn from "../../ArrowBtn"; // plasmic-import: sQwZRK4CPdyK/component
 import TechnologyCard from "../../TechnologyCard"; // plasmic-import: Xv-_qi6rIvF7/component
 import FormWrap from "../../FormWrap"; // plasmic-import: xRTHJhz9VfiN/component
@@ -96,6 +94,7 @@ export type PlasmicHomepage__OverridesType = {
   homeDevelopmentComponents?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
   heroSection?: Flex__<typeof HeroSection>;
+  freeBox?: Flex__<"div">;
   layoutFullWrap?: Flex__<typeof LayoutFullWrap>;
   layoutSplitWrap?: Flex__<"div">;
   layoutContain?: Flex__<"div">;
@@ -132,7 +131,6 @@ export type PlasmicHomepage__OverridesType = {
   gEyebrowWrap?: Flex__<"div">;
   frame101692?: Flex__<"div">;
   eyebrowText?: Flex__<"div">;
-  sanityFetcher?: Flex__<typeof SanityFetcher>;
   mediaList?: Flex__<"div">;
   cardMedia?: Flex__<"div">;
   cardMediaVisualWrap?: Flex__<"div">;
@@ -270,7 +268,11 @@ function PlasmicHomepage__RenderFunc(props: {
               }
             />
 
-            <div className={classNames(projectcss.all, sty.freeBox___0VSyX)} />
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
+            />
 
             <LayoutFullWrap
               data-plasmic-name={"layoutFullWrap"}
@@ -620,99 +622,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     {"media"}
                   </div>
                 </Stack__>
-                <SanityFetcher
-                  data-plasmic-name={"sanityFetcher"}
-                  data-plasmic-override={overrides.sanityFetcher}
-                  className={classNames("__wab_instance", sty.sanityFetcher)}
-                  docType={"post"}
-                  noAutoRepeat={false}
-                  noLayout={false}
-                >
-                  <DataCtxReader__>
-                    {$ctx => (
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__xdShM
-                        )}
-                      >
-                        <SanityField
-                          className={classNames(
-                            "__wab_instance",
-                            sty.sanityField___3RRr
-                          )}
-                          field={"mainImage"}
-                        />
-
-                        <SanityField
-                          className={classNames(
-                            "__wab_instance",
-                            sty.sanityField__zqSY
-                          )}
-                          field={"title"}
-                        />
-
-                        <SanityField
-                          className={classNames(
-                            "__wab_instance",
-                            sty.sanityField__jmPs9
-                          )}
-                          field={(() => {
-                            try {
-                              return $ctx.sanityItems[0].body[0].children[0]
-                                .text;
-                            } catch (e) {
-                              if (
-                                e instanceof TypeError ||
-                                e?.plasmicType === "PlasmicUndefinedDataError"
-                              ) {
-                                return undefined;
-                              }
-                              throw e;
-                            }
-                          })()}
-                          path={(() => {
-                            try {
-                              return $ctx.sanityItems[0].body[0].children[0]
-                                .text;
-                            } catch (e) {
-                              if (
-                                e instanceof TypeError ||
-                                e?.plasmicType === "PlasmicUndefinedDataError"
-                              ) {
-                                return undefined;
-                              }
-                              throw e;
-                            }
-                          })()}
-                        />
-
-                        <SanityField
-                          className={classNames(
-                            "__wab_instance",
-                            sty.sanityField__ugLRh
-                          )}
-                          field={(() => {
-                            try {
-                              return $ctx.sanityItems[0].categories[0]
-                                ._strengthenOnPublish.type;
-                            } catch (e) {
-                              if (
-                                e instanceof TypeError ||
-                                e?.plasmicType === "PlasmicUndefinedDataError"
-                              ) {
-                                return "_updatedAt";
-                              }
-                              throw e;
-                            }
-                          })()}
-                        />
-                      </Stack__>
-                    )}
-                  </DataCtxReader__>
-                </SanityFetcher>
                 <Stack__
                   as={"div"}
                   data-plasmic-name={"mediaList"}
@@ -1234,6 +1143,7 @@ const PlasmicDescendants = {
     "homeDevelopmentComponents",
     "navbar",
     "heroSection",
+    "freeBox",
     "layoutFullWrap",
     "layoutSplitWrap",
     "layoutContain",
@@ -1270,7 +1180,6 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
-    "sanityFetcher",
     "mediaList",
     "cardMedia",
     "cardMediaVisualWrap",
@@ -1318,6 +1227,7 @@ const PlasmicDescendants = {
     "homeDevelopmentComponents",
     "navbar",
     "heroSection",
+    "freeBox",
     "layoutFullWrap",
     "layoutSplitWrap",
     "layoutContain",
@@ -1354,7 +1264,6 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
-    "sanityFetcher",
     "mediaList",
     "cardMedia",
     "cardMediaVisualWrap",
@@ -1400,6 +1309,7 @@ const PlasmicDescendants = {
   ],
   navbar: ["navbar"],
   heroSection: ["heroSection"],
+  freeBox: ["freeBox"],
   layoutFullWrap: ["layoutFullWrap"],
   layoutSplitWrap: [
     "layoutSplitWrap",
@@ -1582,7 +1492,6 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
-    "sanityFetcher",
     "mediaList",
     "cardMedia",
     "cardMediaVisualWrap",
@@ -1623,7 +1532,6 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
-    "sanityFetcher",
     "mediaList",
     "cardMedia",
     "cardMediaVisualWrap",
@@ -1662,7 +1570,6 @@ const PlasmicDescendants = {
   gEyebrowWrap: ["gEyebrowWrap", "frame101692", "eyebrowText"],
   frame101692: ["frame101692"],
   eyebrowText: ["eyebrowText"],
-  sanityFetcher: ["sanityFetcher"],
   mediaList: [
     "mediaList",
     "cardMedia",
@@ -1846,6 +1753,7 @@ type NodeDefaultElementType = {
   homeDevelopmentComponents: "div";
   navbar: typeof Navbar;
   heroSection: typeof HeroSection;
+  freeBox: "div";
   layoutFullWrap: typeof LayoutFullWrap;
   layoutSplitWrap: "div";
   layoutContain: "div";
@@ -1882,7 +1790,6 @@ type NodeDefaultElementType = {
   gEyebrowWrap: "div";
   frame101692: "div";
   eyebrowText: "div";
-  sanityFetcher: typeof SanityFetcher;
   mediaList: "div";
   cardMedia: "div";
   cardMediaVisualWrap: "div";
@@ -1990,6 +1897,7 @@ export const PlasmicHomepage = Object.assign(
     homeDevelopmentComponents: makeNodeComponent("homeDevelopmentComponents"),
     navbar: makeNodeComponent("navbar"),
     heroSection: makeNodeComponent("heroSection"),
+    freeBox: makeNodeComponent("freeBox"),
     layoutFullWrap: makeNodeComponent("layoutFullWrap"),
     layoutSplitWrap: makeNodeComponent("layoutSplitWrap"),
     layoutContain: makeNodeComponent("layoutContain"),
@@ -2026,7 +1934,6 @@ export const PlasmicHomepage = Object.assign(
     gEyebrowWrap: makeNodeComponent("gEyebrowWrap"),
     frame101692: makeNodeComponent("frame101692"),
     eyebrowText: makeNodeComponent("eyebrowText"),
-    sanityFetcher: makeNodeComponent("sanityFetcher"),
     mediaList: makeNodeComponent("mediaList"),
     cardMedia: makeNodeComponent("cardMedia"),
     cardMediaVisualWrap: makeNodeComponent("cardMediaVisualWrap"),
