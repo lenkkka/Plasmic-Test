@@ -8,23 +8,30 @@ import * as React from "react";
 import { hasVariant, ensureGlobalVariants } from "@plasmicapp/react-web";
 import { AntdConfigProvider } from "@plasmicpkgs/antd5/skinny/registerConfigProvider";
 import { CmsCredentialsProvider } from "@plasmicpkgs/plasmic-cms";
+import { SanityCredentialsProvider } from "@plasmicpkgs/plasmic-sanity-io";
 
 export interface GlobalContextsProviderProps {
   children?: React.ReactElement;
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
-
   cmsCredentialsProviderProps?: Partial<
     Omit<React.ComponentProps<typeof CmsCredentialsProvider>, "children">
+  >;
+  sanityCredentialsProviderProps?: Partial<
+    Omit<React.ComponentProps<typeof SanityCredentialsProvider>, "children">
   >;
 }
 
 export default function GlobalContextsProvider(
   props: GlobalContextsProviderProps
 ) {
-  const { children, antdConfigProviderProps, cmsCredentialsProviderProps } =
-    props;
+  const {
+    children,
+    antdConfigProviderProps,
+    cmsCredentialsProviderProps,
+    sanityCredentialsProviderProps
+  } = props;
 
   return (
     <AntdConfigProvider
@@ -144,7 +151,41 @@ export default function GlobalContextsProvider(
             : undefined
         }
       >
-        {children}
+        <SanityCredentialsProvider
+          {...sanityCredentialsProviderProps}
+          apiVersion={
+            sanityCredentialsProviderProps &&
+            "apiVersion" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.apiVersion!
+              : "v1"
+          }
+          dataset={
+            sanityCredentialsProviderProps &&
+            "dataset" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.dataset!
+              : "production"
+          }
+          projectId={
+            sanityCredentialsProviderProps &&
+            "projectId" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.projectId!
+              : "6vilc4xb"
+          }
+          token={
+            sanityCredentialsProviderProps &&
+            "token" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.token!
+              : "sk1zvh1ABp0HaK9HK6jvqtaI0GkRRNFy0iUVqui2Gf00dSXJk0e2ac2dDNFWRuueBayyKkFVD3FuGspO4uIwsAsMihHi2ZJm90AE4FRuhJl5TXCJBYw28L9W0F9LG269czYuLlae3N1OxtGFLljrMBqO1u1FYqiElFx9bxHPMpzU2VAopOuT"
+          }
+          useCdn={
+            sanityCredentialsProviderProps &&
+            "useCdn" in sanityCredentialsProviderProps
+              ? sanityCredentialsProviderProps.useCdn!
+              : undefined
+          }
+        >
+          {children}
+        </SanityCredentialsProvider>
       </CmsCredentialsProvider>
     </AntdConfigProvider>
   );

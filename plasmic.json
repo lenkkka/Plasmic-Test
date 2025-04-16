@@ -233,7 +233,7 @@
     {
       "projectId": "6GgaEV8wA3NAjSPNQQE37W",
       "projectApiToken": "NvaohyudrMDh8yzkUZ3sidWEuhPL1nmd2gd0heyk1LnyCifBz2ngMEvkEeSpcAY3OV9lWMyixSAkCH0Zhwg",
-      "projectName": "Blank website",
+      "projectName": "MARA",
       "version": "latest",
       "cssFilePath": "plasmic/blank_website/plasmic.module.css",
       "components": [
@@ -521,6 +521,19 @@
             "modulePath": "SubscribeForm.tsx"
           },
           "cssFilePath": "plasmic/blank_website/PlasmicSubscribeForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "-2e7Z4uIVPNy",
+          "name": "NavDropdonList",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/mara/PlasmicNavDropdonList.tsx",
+          "importSpec": {
+            "modulePath": "NavDropdonList.tsx"
+          },
+          "cssFilePath": "plasmic/mara/PlasmicNavDropdonList.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }
@@ -1392,6 +1405,40 @@
       ],
       "customFunctions": [],
       "jsBundleThemes": []
+    },
+    {
+      "projectId": "GTgVzsUHzMuCMexkxJk8C",
+      "projectApiToken": "1G7p9CRfRqoVA2FoUWW7jq7l6dnhLYhEGxFZBtm916KmPLvtWhOxDVtqvQ65NRsvjNRcH4R7UlEhJJkj6AQ",
+      "projectName": "plasmic-sanity-io",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_sanity_io/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_sanity_io/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "9KPt6XktlFK",
+          "name": "SanityFetcher",
+          "displayName": "SanityFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
+        },
+        {
+          "id": "7avTLOjB-zZ",
+          "name": "SanityField",
+          "displayName": "SanityField",
+          "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
+        },
+        {
+          "id": "XenoJpDQeDb",
+          "name": "SanityCredentialsProvider",
+          "displayName": "SanityCredentialsProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
+        }
+      ],
+      "customFunctions": []
     }
   ],
   "globalVariants": {

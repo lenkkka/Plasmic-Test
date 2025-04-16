@@ -94,28 +94,12 @@ export type PlasmicNavbar__OverridesType = {
   navTopRow?: Flex__<"div">;
   menuList?: Flex__<"div">;
   menuItemsList?: Flex__<"div">;
-  navDropdown?: Flex__<typeof NavDropdown>;
-  rollover2?: Flex__<"div">;
-  navItemDropdownList2?: Flex__<"div">;
-  navText2?: Flex__<"div">;
-  navIconWrap2?: Flex__<"div">;
-  rollover3?: Flex__<"div">;
-  navItemDropdownList3?: Flex__<"div">;
-  navText3?: Flex__<"div">;
-  navIconWrap3?: Flex__<"div">;
-  rollover4?: Flex__<"div">;
-  navItemDropdownList4?: Flex__<"div">;
-  navText4?: Flex__<"div">;
-  navIconWrap4?: Flex__<"div">;
-  rollover5?: Flex__<"div">;
-  navItemDropdownList5?: Flex__<"div">;
-  navText5?: Flex__<"div">;
-  navIconWrap5?: Flex__<"div">;
   rollover6?: Flex__<"div">;
   btnMainWrap6?: Flex__<"div">;
   btnMainList6?: Flex__<"div">;
   btnMainText6?: Flex__<"div">;
   navIconWrap6?: Flex__<"div">;
+  svg?: Flex__<"svg">;
   menuWrap?: Flex__<"div">;
   menuContain?: Flex__<"div">;
   column?: Flex__<"div">;
@@ -397,172 +381,33 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, sty.menuItemsList)}
             >
               <NavDropdown
-                data-plasmic-name={"navDropdown"}
-                data-plasmic-override={overrides.navDropdown}
-                className={classNames("__wab_instance", sty.navDropdown)}
+                className={classNames("__wab_instance", sty.navDropdown__zFIz)}
                 navLinkContent={"About us"}
               />
 
-              <div
-                data-plasmic-name={"rollover2"}
-                data-plasmic-override={overrides.rollover2}
-                className={classNames(projectcss.all, sty.rollover2)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"navItemDropdownList2"}
-                  data-plasmic-override={overrides.navItemDropdownList2}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.navItemDropdownList2
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"navText2"}
-                    data-plasmic-override={overrides.navText2}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.navText2
-                    )}
-                  >
-                    {"operations"}
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"navIconWrap2"}
-                    data-plasmic-override={overrides.navIconWrap2}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.navIconWrap2)}
-                  >
-                    <ChevronDownIconWrapIcon
-                      className={classNames(projectcss.all, sty.svg__c28HP)}
-                      role={"img"}
-                    />
-                  </Stack__>
-                </Stack__>
-              </div>
-              <div
-                data-plasmic-name={"rollover3"}
-                data-plasmic-override={overrides.rollover3}
-                className={classNames(projectcss.all, sty.rollover3)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"navItemDropdownList3"}
-                  data-plasmic-override={overrides.navItemDropdownList3}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.navItemDropdownList3
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"navText3"}
-                    data-plasmic-override={overrides.navText3}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.navText3
-                    )}
-                  >
-                    {"Technology"}
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"navIconWrap3"}
-                    data-plasmic-override={overrides.navIconWrap3}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.navIconWrap3)}
-                  >
-                    <ChevronDownIconWrapIcon
-                      className={classNames(projectcss.all, sty.svg__g7AL5)}
-                      role={"img"}
-                    />
-                  </Stack__>
-                </Stack__>
-              </div>
-              <div
-                data-plasmic-name={"rollover4"}
-                data-plasmic-override={overrides.rollover4}
-                className={classNames(projectcss.all, sty.rollover4)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"navItemDropdownList4"}
-                  data-plasmic-override={overrides.navItemDropdownList4}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.navItemDropdownList4
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"navText4"}
-                    data-plasmic-override={overrides.navText4}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.navText4
-                    )}
-                  >
-                    {"Investors"}
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"navIconWrap4"}
-                    data-plasmic-override={overrides.navIconWrap4}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.navIconWrap4)}
-                  >
-                    <ChevronDownIconWrapIcon
-                      className={classNames(projectcss.all, sty.svg__nTd92)}
-                      role={"img"}
-                    />
-                  </Stack__>
-                </Stack__>
-              </div>
-              <div
-                data-plasmic-name={"rollover5"}
-                data-plasmic-override={overrides.rollover5}
-                className={classNames(projectcss.all, sty.rollover5)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"navItemDropdownList5"}
-                  data-plasmic-override={overrides.navItemDropdownList5}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.navItemDropdownList5
-                  )}
-                >
-                  <div
-                    data-plasmic-name={"navText5"}
-                    data-plasmic-override={overrides.navText5}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.navText5
-                    )}
-                  >
-                    {"partnerships"}
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"navIconWrap5"}
-                    data-plasmic-override={overrides.navIconWrap5}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.navIconWrap5)}
-                  >
-                    <ChevronDownIconWrapIcon
-                      className={classNames(projectcss.all, sty.svg__wyULc)}
-                      role={"img"}
-                    />
-                  </Stack__>
-                </Stack__>
-              </div>
+              <NavDropdown
+                className={classNames("__wab_instance", sty.navDropdown__zaIac)}
+                navLinkContent={"Operations"}
+              />
+
+              <NavDropdown
+                className={classNames("__wab_instance", sty.navDropdown__aBfkv)}
+                navLinkContent={"Technology"}
+              />
+
+              <NavDropdown
+                className={classNames("__wab_instance", sty.navDropdown__baoY)}
+                navLinkContent={"Investors"}
+              />
+
+              <NavDropdown
+                className={classNames(
+                  "__wab_instance",
+                  sty.navDropdown___2Eq64
+                )}
+                navLinkContent={"partnerships"}
+              />
+
               <Stack__
                 as={"div"}
                 data-plasmic-name={"rollover6"}
@@ -603,7 +448,9 @@ function PlasmicNavbar__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.navIconWrap6)}
                     >
                       <ChevronDownIconWrapIcon
-                        className={classNames(projectcss.all, sty.svg__ezJf)}
+                        data-plasmic-name={"svg"}
+                        data-plasmic-override={overrides.svg}
+                        className={classNames(projectcss.all, sty.svg)}
                         role={"img"}
                       />
                     </Stack__>
@@ -1709,28 +1556,12 @@ const PlasmicDescendants = {
     "navTopRow",
     "menuList",
     "menuItemsList",
-    "navDropdown",
-    "rollover2",
-    "navItemDropdownList2",
-    "navText2",
-    "navIconWrap2",
-    "rollover3",
-    "navItemDropdownList3",
-    "navText3",
-    "navIconWrap3",
-    "rollover4",
-    "navItemDropdownList4",
-    "navText4",
-    "navIconWrap4",
-    "rollover5",
-    "navItemDropdownList5",
-    "navText5",
-    "navIconWrap5",
     "rollover6",
     "btnMainWrap6",
     "btnMainList6",
     "btnMainText6",
     "navIconWrap6",
+    "svg",
     "menuWrap",
     "menuContain",
     "column",
@@ -1841,140 +1672,62 @@ const PlasmicDescendants = {
     "navTopRow",
     "menuList",
     "menuItemsList",
-    "navDropdown",
-    "rollover2",
-    "navItemDropdownList2",
-    "navText2",
-    "navIconWrap2",
-    "rollover3",
-    "navItemDropdownList3",
-    "navText3",
-    "navIconWrap3",
-    "rollover4",
-    "navItemDropdownList4",
-    "navText4",
-    "navIconWrap4",
-    "rollover5",
-    "navItemDropdownList5",
-    "navText5",
-    "navIconWrap5",
     "rollover6",
     "btnMainWrap6",
     "btnMainList6",
     "btnMainText6",
-    "navIconWrap6"
+    "navIconWrap6",
+    "svg"
   ],
   navTopRow: [
     "navTopRow",
     "menuList",
     "menuItemsList",
-    "navDropdown",
-    "rollover2",
-    "navItemDropdownList2",
-    "navText2",
-    "navIconWrap2",
-    "rollover3",
-    "navItemDropdownList3",
-    "navText3",
-    "navIconWrap3",
-    "rollover4",
-    "navItemDropdownList4",
-    "navText4",
-    "navIconWrap4",
-    "rollover5",
-    "navItemDropdownList5",
-    "navText5",
-    "navIconWrap5",
     "rollover6",
     "btnMainWrap6",
     "btnMainList6",
     "btnMainText6",
-    "navIconWrap6"
+    "navIconWrap6",
+    "svg"
   ],
   menuList: [
     "menuList",
     "menuItemsList",
-    "navDropdown",
-    "rollover2",
-    "navItemDropdownList2",
-    "navText2",
-    "navIconWrap2",
-    "rollover3",
-    "navItemDropdownList3",
-    "navText3",
-    "navIconWrap3",
-    "rollover4",
-    "navItemDropdownList4",
-    "navText4",
-    "navIconWrap4",
-    "rollover5",
-    "navItemDropdownList5",
-    "navText5",
-    "navIconWrap5",
     "rollover6",
     "btnMainWrap6",
     "btnMainList6",
     "btnMainText6",
-    "navIconWrap6"
+    "navIconWrap6",
+    "svg"
   ],
   menuItemsList: [
     "menuItemsList",
-    "navDropdown",
-    "rollover2",
-    "navItemDropdownList2",
-    "navText2",
-    "navIconWrap2",
-    "rollover3",
-    "navItemDropdownList3",
-    "navText3",
-    "navIconWrap3",
-    "rollover4",
-    "navItemDropdownList4",
-    "navText4",
-    "navIconWrap4",
-    "rollover5",
-    "navItemDropdownList5",
-    "navText5",
-    "navIconWrap5",
     "rollover6",
     "btnMainWrap6",
     "btnMainList6",
     "btnMainText6",
-    "navIconWrap6"
+    "navIconWrap6",
+    "svg"
   ],
-  navDropdown: ["navDropdown"],
-  rollover2: ["rollover2", "navItemDropdownList2", "navText2", "navIconWrap2"],
-  navItemDropdownList2: ["navItemDropdownList2", "navText2", "navIconWrap2"],
-  navText2: ["navText2"],
-  navIconWrap2: ["navIconWrap2"],
-  rollover3: ["rollover3", "navItemDropdownList3", "navText3", "navIconWrap3"],
-  navItemDropdownList3: ["navItemDropdownList3", "navText3", "navIconWrap3"],
-  navText3: ["navText3"],
-  navIconWrap3: ["navIconWrap3"],
-  rollover4: ["rollover4", "navItemDropdownList4", "navText4", "navIconWrap4"],
-  navItemDropdownList4: ["navItemDropdownList4", "navText4", "navIconWrap4"],
-  navText4: ["navText4"],
-  navIconWrap4: ["navIconWrap4"],
-  rollover5: ["rollover5", "navItemDropdownList5", "navText5", "navIconWrap5"],
-  navItemDropdownList5: ["navItemDropdownList5", "navText5", "navIconWrap5"],
-  navText5: ["navText5"],
-  navIconWrap5: ["navIconWrap5"],
   rollover6: [
     "rollover6",
     "btnMainWrap6",
     "btnMainList6",
     "btnMainText6",
-    "navIconWrap6"
+    "navIconWrap6",
+    "svg"
   ],
   btnMainWrap6: [
     "btnMainWrap6",
     "btnMainList6",
     "btnMainText6",
-    "navIconWrap6"
+    "navIconWrap6",
+    "svg"
   ],
-  btnMainList6: ["btnMainList6", "btnMainText6", "navIconWrap6"],
+  btnMainList6: ["btnMainList6", "btnMainText6", "navIconWrap6", "svg"],
   btnMainText6: ["btnMainText6"],
-  navIconWrap6: ["navIconWrap6"],
+  navIconWrap6: ["navIconWrap6", "svg"],
+  svg: ["svg"],
   menuWrap: [
     "menuWrap",
     "menuContain",
@@ -2484,28 +2237,12 @@ type NodeDefaultElementType = {
   navTopRow: "div";
   menuList: "div";
   menuItemsList: "div";
-  navDropdown: typeof NavDropdown;
-  rollover2: "div";
-  navItemDropdownList2: "div";
-  navText2: "div";
-  navIconWrap2: "div";
-  rollover3: "div";
-  navItemDropdownList3: "div";
-  navText3: "div";
-  navIconWrap3: "div";
-  rollover4: "div";
-  navItemDropdownList4: "div";
-  navText4: "div";
-  navIconWrap4: "div";
-  rollover5: "div";
-  navItemDropdownList5: "div";
-  navText5: "div";
-  navIconWrap5: "div";
   rollover6: "div";
   btnMainWrap6: "div";
   btnMainList6: "div";
   btnMainText6: "div";
   navIconWrap6: "div";
+  svg: "svg";
   menuWrap: "div";
   menuContain: "div";
   column: "div";
@@ -2676,28 +2413,12 @@ export const PlasmicNavbar = Object.assign(
     navTopRow: makeNodeComponent("navTopRow"),
     menuList: makeNodeComponent("menuList"),
     menuItemsList: makeNodeComponent("menuItemsList"),
-    navDropdown: makeNodeComponent("navDropdown"),
-    rollover2: makeNodeComponent("rollover2"),
-    navItemDropdownList2: makeNodeComponent("navItemDropdownList2"),
-    navText2: makeNodeComponent("navText2"),
-    navIconWrap2: makeNodeComponent("navIconWrap2"),
-    rollover3: makeNodeComponent("rollover3"),
-    navItemDropdownList3: makeNodeComponent("navItemDropdownList3"),
-    navText3: makeNodeComponent("navText3"),
-    navIconWrap3: makeNodeComponent("navIconWrap3"),
-    rollover4: makeNodeComponent("rollover4"),
-    navItemDropdownList4: makeNodeComponent("navItemDropdownList4"),
-    navText4: makeNodeComponent("navText4"),
-    navIconWrap4: makeNodeComponent("navIconWrap4"),
-    rollover5: makeNodeComponent("rollover5"),
-    navItemDropdownList5: makeNodeComponent("navItemDropdownList5"),
-    navText5: makeNodeComponent("navText5"),
-    navIconWrap5: makeNodeComponent("navIconWrap5"),
     rollover6: makeNodeComponent("rollover6"),
     btnMainWrap6: makeNodeComponent("btnMainWrap6"),
     btnMainList6: makeNodeComponent("btnMainList6"),
     btnMainText6: makeNodeComponent("btnMainText6"),
     navIconWrap6: makeNodeComponent("navIconWrap6"),
+    svg: makeNodeComponent("svg"),
     menuWrap: makeNodeComponent("menuWrap"),
     menuContain: makeNodeComponent("menuContain"),
     column: makeNodeComponent("column"),

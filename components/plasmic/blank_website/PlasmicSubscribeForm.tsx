@@ -227,14 +227,14 @@ function PlasmicSubscribeForm__RenderFunc(props: {
         {...child$Props}
       >
         <FormItemWrapper
-          className={classNames("__wab_instance", sty.formField__wEchb)}
+          className={classNames("__wab_instance", sty.formField__hKfyO)}
           label={"Name"}
           name={"name"}
         >
           <AntdInput className={classNames("__wab_instance", sty.input)} />
         </FormItemWrapper>
         <FormItemWrapper
-          className={classNames("__wab_instance", sty.formField__imaR7)}
+          className={classNames("__wab_instance", sty.formField__hYkYh)}
           label={"Message"}
           name={"message"}
         >

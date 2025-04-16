@@ -59,7 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import NavBarLink from "../../NavBarLink"; // plasmic-import: uq5Q3NstJD05/component
+import NavDropdonList from "../../NavDropdonList"; // plasmic-import: -2e7Z4uIVPNy/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -88,7 +88,7 @@ export type PlasmicNavDropdown__OverridesType = {
   navText?: Flex__<"div">;
   navIconWrap?: Flex__<"div">;
   svg?: Flex__<"svg">;
-  navItemDropdownList6?: Flex__<"div">;
+  navDropdonList?: Flex__<typeof NavDropdonList>;
 };
 
 export interface DefaultNavDropdownProps {
@@ -140,8 +140,13 @@ function PlasmicNavDropdown__RenderFunc(props: {
     "useHover",
     {}
   );
+  const [isRolloverNotHover, triggerRolloverNotHoverProps] = useTrigger(
+    "useHover",
+    {}
+  );
   const triggers = {
-    hover_rollover: isRolloverHover
+    hover_rollover: isRolloverHover,
+    notHover_rollover: !isRolloverNotHover
   };
 
   return (
@@ -178,7 +183,10 @@ function PlasmicNavDropdown__RenderFunc(props: {
           $steps["runElementAction"] = await $steps["runElementAction"];
         }
       }}
-      data-plasmic-trigger-props={[triggerRolloverHoverProps]}
+      data-plasmic-trigger-props={[
+        triggerRolloverHoverProps,
+        triggerRolloverNotHoverProps
+      ]}
     >
       <Stack__
         as={"div"}
@@ -227,38 +235,24 @@ function PlasmicNavDropdown__RenderFunc(props: {
           />
         </Stack__>
       </Stack__>
-      <Stack__
-        as={"div"}
-        data-plasmic-name={"navItemDropdownList6"}
-        data-plasmic-override={overrides.navItemDropdownList6}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.navItemDropdownList6)}
-      >
-        <NavBarLink
-          className={classNames("__wab_instance", sty.navBarLink__xkxIc)}
-          linktext={"OUR PILLARS "}
-        />
-
-        <NavBarLink
-          className={classNames("__wab_instance", sty.navBarLink___1DWea)}
-          linktext={"CLIMATE, CULTURE, & COMMUNITY  "}
-        />
-
-        <NavBarLink
-          className={classNames("__wab_instance", sty.navBarLink__nsK68)}
-          linktext={"EXECUTIVE TEAM "}
-        />
-
-        <NavBarLink
-          className={classNames("__wab_instance", sty.navBarLink__iXxLj)}
-          linktext={"CAREERS"}
-        />
-
-        <NavBarLink
-          className={classNames("__wab_instance", sty.navBarLink___0Qe9G)}
-          linktext={"CONTACT"}
-        />
-      </Stack__>
+      <NavDropdonList
+        data-plasmic-name={"navDropdonList"}
+        data-plasmic-override={overrides.navDropdonList}
+        className={classNames("__wab_instance", sty.navDropdonList)}
+        link={(() => {
+          try {
+            return $props.navLinkContent;
+          } catch (e) {
+            if (
+              e instanceof TypeError ||
+              e?.plasmicType === "PlasmicUndefinedDataError"
+            ) {
+              return [];
+            }
+            throw e;
+          }
+        })()}
+      />
     </div>
   ) as React.ReactElement | null;
 }
@@ -270,13 +264,13 @@ const PlasmicDescendants = {
     "navText",
     "navIconWrap",
     "svg",
-    "navItemDropdownList6"
+    "navDropdonList"
   ],
   navItemDropdownList: ["navItemDropdownList", "navText", "navIconWrap", "svg"],
   navText: ["navText"],
   navIconWrap: ["navIconWrap", "svg"],
   svg: ["svg"],
-  navItemDropdownList6: ["navItemDropdownList6"]
+  navDropdonList: ["navDropdonList"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -287,7 +281,7 @@ type NodeDefaultElementType = {
   navText: "div";
   navIconWrap: "div";
   svg: "svg";
-  navItemDropdownList6: "div";
+  navDropdonList: typeof NavDropdonList;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -354,7 +348,7 @@ export const PlasmicNavDropdown = Object.assign(
     navText: makeNodeComponent("navText"),
     navIconWrap: makeNodeComponent("navIconWrap"),
     svg: makeNodeComponent("svg"),
-    navItemDropdownList6: makeNodeComponent("navItemDropdownList6"),
+    navDropdonList: makeNodeComponent("navDropdonList"),
 
     // Metadata about props expected for PlasmicNavDropdown
     internalVariantProps: PlasmicNavDropdown__VariantProps,
