@@ -64,6 +64,9 @@ import HeroSection from "../../HeroSection"; // plasmic-import: mbkly9G2X3L1/com
 import LayoutFullWrap from "../../LayoutFullWrap"; // plasmic-import: _V8L3SCxePZg/component
 import ButtonMainOutline from "../../ButtonMainOutline"; // plasmic-import: pZPvFfGgHk8v/component
 import ArrowBtn from "../../ArrowBtn"; // plasmic-import: sQwZRK4CPdyK/component
+import { SanityCredentialsProvider } from "@plasmicpkgs/plasmic-sanity-io";
+import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io";
+import { SanityField } from "@plasmicpkgs/plasmic-sanity-io";
 import TechnologyCard from "../../TechnologyCard"; // plasmic-import: Xv-_qi6rIvF7/component
 import FormWrap from "../../FormWrap"; // plasmic-import: xRTHJhz9VfiN/component
 import Footer from "../../Footer"; // plasmic-import: 4Ad_NJbeLZ66/component
@@ -94,7 +97,6 @@ export type PlasmicHomepage__OverridesType = {
   homeDevelopmentComponents?: Flex__<"div">;
   navbar?: Flex__<typeof Navbar>;
   heroSection?: Flex__<typeof HeroSection>;
-  freeBox?: Flex__<"div">;
   layoutFullWrap?: Flex__<typeof LayoutFullWrap>;
   layoutSplitWrap?: Flex__<"div">;
   layoutContain?: Flex__<"div">;
@@ -165,6 +167,7 @@ export type PlasmicHomepage__OverridesType = {
   metaWrap3?: Flex__<"div">;
   gChip3?: Flex__<"div">;
   gChipText3?: Flex__<"div">;
+  sanityFetcher?: Flex__<typeof SanityFetcher>;
   solutionsWrap?: Flex__<"div">;
   solutionsContain?: Flex__<"div">;
   gEyebrowWrap2?: Flex__<"div">;
@@ -268,11 +271,7 @@ function PlasmicHomepage__RenderFunc(props: {
               }
             />
 
-            <div
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              className={classNames(projectcss.all, sty.freeBox)}
-            />
+            <div className={classNames(projectcss.all, sty.freeBox___0VSyX)} />
 
             <LayoutFullWrap
               data-plasmic-name={"layoutFullWrap"}
@@ -1018,6 +1017,52 @@ function PlasmicHomepage__RenderFunc(props: {
                       </Stack__>
                     </Stack__>
                   </Stack__>
+                  <SanityCredentialsProvider
+  projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
+  dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
+  apiVersion={process.env.NEXT_PUBLIC_SANITY_API_VERSION}
+  token={process.env.NEXT_PUBLIC_SANITY_TOKEN}
+  useCdn={false} 
+>
+  <SanityFetcher
+    data-plasmic-name={"sanityFetcher"}
+    data-plasmic-override={overrides.sanityFetcher}
+    className={classNames("__wab_instance", sty.sanityFetcher)}
+    docType={"post"}
+    limit={"3"}
+    noAutoRepeat={false}
+    noLayout={false}
+  >
+    <DataCtxReader__>
+      {$ctx => (
+        <Stack__
+          as={"div"}
+          hasGap={true}
+          className={classNames(
+            projectcss.all,
+            sty.freeBox__hilGh
+          )}
+        >
+          <SanityField
+            className={classNames(
+              "__wab_instance",
+              sty.sanityField__tGaJq
+            )}
+            field={"mainImage"}
+          />
+
+          <SanityField
+            className={classNames(
+              "__wab_instance",
+              sty.sanityField__wov8
+            )}
+            field={"title"}
+          />
+        </Stack__>
+      )}
+    </DataCtxReader__>
+  </SanityFetcher>
+</SanityCredentialsProvider>
                 </Stack__>
               </Stack__>
             </div>
@@ -1143,7 +1188,6 @@ const PlasmicDescendants = {
     "homeDevelopmentComponents",
     "navbar",
     "heroSection",
-    "freeBox",
     "layoutFullWrap",
     "layoutSplitWrap",
     "layoutContain",
@@ -1214,6 +1258,7 @@ const PlasmicDescendants = {
     "metaWrap3",
     "gChip3",
     "gChipText3",
+    "sanityFetcher",
     "solutionsWrap",
     "solutionsContain",
     "gEyebrowWrap2",
@@ -1227,7 +1272,6 @@ const PlasmicDescendants = {
     "homeDevelopmentComponents",
     "navbar",
     "heroSection",
-    "freeBox",
     "layoutFullWrap",
     "layoutSplitWrap",
     "layoutContain",
@@ -1298,6 +1342,7 @@ const PlasmicDescendants = {
     "metaWrap3",
     "gChip3",
     "gChipText3",
+    "sanityFetcher",
     "solutionsWrap",
     "solutionsContain",
     "gEyebrowWrap2",
@@ -1309,7 +1354,6 @@ const PlasmicDescendants = {
   ],
   navbar: ["navbar"],
   heroSection: ["heroSection"],
-  freeBox: ["freeBox"],
   layoutFullWrap: ["layoutFullWrap"],
   layoutSplitWrap: [
     "layoutSplitWrap",
@@ -1525,7 +1569,8 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3"
+    "gChipText3",
+    "sanityFetcher"
   ],
   mediaContain: [
     "mediaContain",
@@ -1565,7 +1610,8 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3"
+    "gChipText3",
+    "sanityFetcher"
   ],
   gEyebrowWrap: ["gEyebrowWrap", "frame101692", "eyebrowText"],
   frame101692: ["frame101692"],
@@ -1604,7 +1650,8 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3"
+    "gChipText3",
+    "sanityFetcher"
   ],
   cardMedia: [
     "cardMedia",
@@ -1723,6 +1770,7 @@ const PlasmicDescendants = {
   metaWrap3: ["metaWrap3", "gChip3", "gChipText3"],
   gChip3: ["gChip3", "gChipText3"],
   gChipText3: ["gChipText3"],
+  sanityFetcher: ["sanityFetcher"],
   solutionsWrap: [
     "solutionsWrap",
     "solutionsContain",
@@ -1753,7 +1801,6 @@ type NodeDefaultElementType = {
   homeDevelopmentComponents: "div";
   navbar: typeof Navbar;
   heroSection: typeof HeroSection;
-  freeBox: "div";
   layoutFullWrap: typeof LayoutFullWrap;
   layoutSplitWrap: "div";
   layoutContain: "div";
@@ -1824,6 +1871,7 @@ type NodeDefaultElementType = {
   metaWrap3: "div";
   gChip3: "div";
   gChipText3: "div";
+  sanityFetcher: typeof SanityFetcher;
   solutionsWrap: "div";
   solutionsContain: "div";
   gEyebrowWrap2: "div";
@@ -1897,7 +1945,6 @@ export const PlasmicHomepage = Object.assign(
     homeDevelopmentComponents: makeNodeComponent("homeDevelopmentComponents"),
     navbar: makeNodeComponent("navbar"),
     heroSection: makeNodeComponent("heroSection"),
-    freeBox: makeNodeComponent("freeBox"),
     layoutFullWrap: makeNodeComponent("layoutFullWrap"),
     layoutSplitWrap: makeNodeComponent("layoutSplitWrap"),
     layoutContain: makeNodeComponent("layoutContain"),
@@ -1977,6 +2024,7 @@ export const PlasmicHomepage = Object.assign(
     metaWrap3: makeNodeComponent("metaWrap3"),
     gChip3: makeNodeComponent("gChip3"),
     gChipText3: makeNodeComponent("gChipText3"),
+    sanityFetcher: makeNodeComponent("sanityFetcher"),
     solutionsWrap: makeNodeComponent("solutionsWrap"),
     solutionsContain: makeNodeComponent("solutionsContain"),
     gEyebrowWrap2: makeNodeComponent("gEyebrowWrap2"),
@@ -2002,3 +2050,9 @@ export const PlasmicHomepage = Object.assign(
 
 export default PlasmicHomepage;
 /* prettier-ignore-end */
+
+console.log("Sanity ENV", {
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  token: process.env.NEXT_PUBLIC_SANITY_TOKEN
+});

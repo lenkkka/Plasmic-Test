@@ -64,7 +64,7 @@
     height: auto;
   }
 }
-.freeBox {
+.freeBox___0VSyX {
   display: block;
   position: relative;
   width: 100%;
@@ -1546,6 +1546,64 @@
 .arrowBtn__qNg32:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
+}
+.sanityFetcher:global(.__wab_instance) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 8px;
+  grid-column-gap: 8px;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__hilGh {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 300px;
+  padding: 0px;
+}
+.freeBox__hilGh > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.freeBox__hilGh > :global(.__wab_flex-container) > *,
+.freeBox__hilGh > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__hilGh > :global(.__wab_flex-container) > picture > img,
+.freeBox__hilGh
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.sanityField__tGaJq:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.sanityField__wov8:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  font-size: 33px;
+  font-weight: 500;
+  color: #272525;
+  line-height: 1.15;
+}
+.sanityField__oyTzn:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  font-size: 33px;
+  font-weight: 500;
+  color: #272525;
+  line-height: 1.15;
 }
 .solutionsWrap {
   background: rgba(238, 236, 232, 1);
