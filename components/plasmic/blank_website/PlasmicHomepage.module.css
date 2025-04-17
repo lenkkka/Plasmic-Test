@@ -753,6 +753,76 @@
   color: rgba(39, 37, 37, 1);
   position: relative;
 }
+.sanityFetcher:global(.__wab_instance) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 8px;
+  grid-column-gap: 8px;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .sanityFetcher:global(.__wab_instance) {
+    width: 374px;
+  }
+}
+.freeBox__hilGh {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 300px;
+  flex-shrink: 1;
+  padding: 0px;
+}
+.freeBox__hilGh > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.freeBox__hilGh > :global(.__wab_flex-container) > *,
+.freeBox__hilGh > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__hilGh > :global(.__wab_flex-container) > picture > img,
+.freeBox__hilGh
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__hilGh {
+    width: auto;
+  }
+}
+.sanityField__tGaJq:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .sanityField__tGaJq:global(.__wab_instance) {
+    width: 352px;
+  }
+}
+.sanityField__wov8:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  font-size: 33px;
+  font-weight: 500;
+  color: #272525;
+  line-height: 1.15;
+}
+.sanityField__ay46O:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
 .mediaList {
   height: auto;
   display: flex;
@@ -808,248 +878,6 @@
     margin-left: 0px;
     margin-top: 20px;
   }
-}
-.cardMedia {
-  background: rgba(255, 255, 255, 0);
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  overflow: hidden;
-  flex-direction: column;
-  width: auto;
-  border-radius: 8px;
-  padding: 12px;
-}
-.cardMedia > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: calc(0px - 48px);
-  height: calc(100% + 48px);
-}
-.cardMedia > :global(.__wab_flex-container) > *,
-.cardMedia > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.cardMedia > :global(.__wab_flex-container) > picture > img,
-.cardMedia
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 48px;
-}
-.cardMediaVisualWrap {
-  height: 360px;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  overflow: hidden;
-  flex-direction: column;
-  flex-shrink: 0;
-  border-radius: 8px;
-}
-.cardMediaVisualWrap > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: calc(0px - 10px);
-  height: calc(100% + 10px);
-}
-.cardMediaVisualWrap > :global(.__wab_flex-container) > *,
-.cardMediaVisualWrap
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > *,
-.cardMediaVisualWrap > :global(.__wab_flex-container) > picture > img,
-.cardMediaVisualWrap
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 10px;
-}
-.placeholder3 {
-  background: url("/plasmic/blank_website/images/placeholder3.png") center center / cover no-repeat,
-    rgba(205, 203, 200, 1);
-  height: 360px;
-  display: block;
-  position: relative;
-  align-self: stretch;
-  flex-shrink: 0;
-}
-.cardMediaContentWrap {
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-grow: 1;
-  overflow: hidden;
-  flex-direction: column;
-  height: auto;
-}
-.cardMediaContentWrap > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: calc(0px - 48px);
-  height: calc(100% + 48px);
-}
-.cardMediaContentWrap > :global(.__wab_flex-container) > *,
-.cardMediaContentWrap
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > *,
-.cardMediaContentWrap > :global(.__wab_flex-container) > picture > img,
-.cardMediaContentWrap
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 48px;
-}
-.cardMediaContent {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-}
-.cardMediaContent > :global(.__wab_flex-container) {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: calc(0px - 24px);
-  height: calc(100% + 24px);
-}
-.cardMediaContent > :global(.__wab_flex-container) > *,
-.cardMediaContent > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.cardMediaContent > :global(.__wab_flex-container) > picture > img,
-.cardMediaContent
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 24px;
-}
-.mediumHeadlineGoesHere {
-  display: block;
-  font-size: 33.18000030517578px;
-  font-family: "TT Hoves Pro";
-  font-weight: 500;
-  letter-spacing: -0.01159999966621399em;
-  line-height: 1.149999976158142;
-  color: rgba(39, 37, 37, 1);
-  align-self: stretch;
-  position: relative;
-}
-.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique {
-  display: block;
-  font-size: 16px;
-  font-family: "TT Hoves Pro";
-  font-weight: 500;
-  letter-spacing: -0.01159999966621399em;
-  line-height: 1.75;
-  color: rgba(39, 37, 37, 1);
-  align-self: stretch;
-  position: relative;
-}
-.cardMediaFooter {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  padding-top: 24px;
-}
-.cardMediaFooter > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: calc(0px - 20px);
-  width: calc(100% + 20px);
-}
-.cardMediaFooter > :global(.__wab_flex-container) > *,
-.cardMediaFooter > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.cardMediaFooter > :global(.__wab_flex-container) > picture > img,
-.cardMediaFooter
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 20px;
-}
-.metaWrap {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-}
-.metaWrap > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  margin-left: calc(0px - 12px);
-  width: calc(100% + 12px);
-}
-.metaWrap > :global(.__wab_flex-container) > *,
-.metaWrap > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.metaWrap > :global(.__wab_flex-container) > picture > img,
-.metaWrap
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 12px;
-}
-.text__ti9XY {
-  display: block;
-  font-size: 13.329999923706055px;
-  text-transform: uppercase;
-  font-family: "JetBrains Mono";
-  font-weight: 700;
-  letter-spacing: 0px;
-  line-height: 1.75;
-  color: rgba(39, 37, 37, 1);
-  position: relative;
-}
-.gChip {
-  background: rgba(205, 203, 200, 1);
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  border-radius: 4px;
-  padding: 4px 8px;
-}
-.gChip > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-left: calc(0px - 10px);
-  width: calc(100% + 10px);
-}
-.gChip > :global(.__wab_flex-container) > *,
-.gChip > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.gChip > :global(.__wab_flex-container) > picture > img,
-.gChip > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
-  margin-left: 10px;
-}
-.gChipText {
-  display: block;
-  font-size: 11.109999656677246px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "JetBrains Mono";
-  font-weight: 700;
-  letter-spacing: 0px;
-  line-height: 1.149999976158142;
-  color: rgba(39, 37, 37, 1);
-  position: relative;
-}
-.arrowBtn__qpDMo:global(.__wab_instance) {
-  position: relative;
-  flex-shrink: 0;
 }
 .cardMedia2 {
   background: rgba(255, 255, 255, 0);
@@ -1546,64 +1374,6 @@
 .arrowBtn__qNg32:global(.__wab_instance) {
   position: relative;
   flex-shrink: 0;
-}
-.sanityFetcher:global(.__wab_instance) {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 8px;
-  grid-column-gap: 8px;
-  max-width: 100%;
-  object-fit: cover;
-  width: 100%;
-  min-width: 0;
-  padding: 8px;
-}
-.freeBox__hilGh {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 300px;
-  padding: 0px;
-}
-.freeBox__hilGh > :global(.__wab_flex-container) {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: calc(0px - 16px);
-  height: calc(100% + 16px);
-}
-.freeBox__hilGh > :global(.__wab_flex-container) > *,
-.freeBox__hilGh > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.freeBox__hilGh > :global(.__wab_flex-container) > picture > img,
-.freeBox__hilGh
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-top: 16px;
-}
-.sanityField__tGaJq:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.sanityField__wov8:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  font-size: 33px;
-  font-weight: 500;
-  color: #272525;
-  line-height: 1.15;
-}
-.sanityField__oyTzn:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  font-size: 33px;
-  font-weight: 500;
-  color: #272525;
-  line-height: 1.15;
 }
 .solutionsWrap {
   background: rgba(238, 236, 232, 1);

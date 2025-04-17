@@ -63,10 +63,9 @@ import Navbar from "../../Navbar"; // plasmic-import: PAg8waIYOX54/component
 import HeroSection from "../../HeroSection"; // plasmic-import: mbkly9G2X3L1/component
 import LayoutFullWrap from "../../LayoutFullWrap"; // plasmic-import: _V8L3SCxePZg/component
 import ButtonMainOutline from "../../ButtonMainOutline"; // plasmic-import: pZPvFfGgHk8v/component
-import ArrowBtn from "../../ArrowBtn"; // plasmic-import: sQwZRK4CPdyK/component
-import { SanityCredentialsProvider } from "@plasmicpkgs/plasmic-sanity-io";
 import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io";
 import { SanityField } from "@plasmicpkgs/plasmic-sanity-io";
+import ArrowBtn from "../../ArrowBtn"; // plasmic-import: sQwZRK4CPdyK/component
 import TechnologyCard from "../../TechnologyCard"; // plasmic-import: Xv-_qi6rIvF7/component
 import FormWrap from "../../FormWrap"; // plasmic-import: xRTHJhz9VfiN/component
 import Footer from "../../Footer"; // plasmic-import: 4Ad_NJbeLZ66/component
@@ -133,18 +132,8 @@ export type PlasmicHomepage__OverridesType = {
   gEyebrowWrap?: Flex__<"div">;
   frame101692?: Flex__<"div">;
   eyebrowText?: Flex__<"div">;
+  sanityFetcher?: Flex__<typeof SanityFetcher>;
   mediaList?: Flex__<"div">;
-  cardMedia?: Flex__<"div">;
-  cardMediaVisualWrap?: Flex__<"div">;
-  placeholder3?: Flex__<"div">;
-  cardMediaContentWrap?: Flex__<"div">;
-  cardMediaContent?: Flex__<"div">;
-  mediumHeadlineGoesHere?: Flex__<"div">;
-  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique?: Flex__<"div">;
-  cardMediaFooter?: Flex__<"div">;
-  metaWrap?: Flex__<"div">;
-  gChip?: Flex__<"div">;
-  gChipText?: Flex__<"div">;
   cardMedia2?: Flex__<"div">;
   cardMediaVisualWrap2?: Flex__<"div">;
   placeholder4?: Flex__<"div">;
@@ -167,7 +156,6 @@ export type PlasmicHomepage__OverridesType = {
   metaWrap3?: Flex__<"div">;
   gChip3?: Flex__<"div">;
   gChipText3?: Flex__<"div">;
-  sanityFetcher?: Flex__<typeof SanityFetcher>;
   solutionsWrap?: Flex__<"div">;
   solutionsContain?: Flex__<"div">;
   gEyebrowWrap2?: Flex__<"div">;
@@ -621,6 +609,79 @@ function PlasmicHomepage__RenderFunc(props: {
                     {"media"}
                   </div>
                 </Stack__>
+                <SanityFetcher
+                  data-plasmic-name={"sanityFetcher"}
+                  data-plasmic-override={overrides.sanityFetcher}
+                  className={classNames("__wab_instance", sty.sanityFetcher)}
+                  docType={"post"}
+                  limit={"3"}
+                  noAutoRepeat={false}
+                  noLayout={false}
+                >
+                  <DataCtxReader__>
+                    {$ctx => (
+                      <Stack__
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__hilGh
+                        )}
+                      >
+                        <SanityField
+                          className={classNames(
+                            "__wab_instance",
+                            sty.sanityField__tGaJq
+                          )}
+                          field={"mainImage"}
+                        />
+
+                        <SanityField
+                          className={classNames(
+                            "__wab_instance",
+                            sty.sanityField__wov8
+                          )}
+                          field={"title"}
+                        />
+
+                        <SanityField
+                          className={classNames(
+                            "__wab_instance",
+                            sty.sanityField__ay46O
+                          )}
+                          field={(() => {
+                            try {
+                              return $ctx.sanityItems[0].body[0].children[0]
+                                .text;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                          path={(() => {
+                            try {
+                              return $ctx.sanityItems[0].body[0].children[0]
+                                ._key;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return undefined;
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </Stack__>
+                    )}
+                  </DataCtxReader__>
+                </SanityFetcher>
                 <Stack__
                   as={"div"}
                   data-plasmic-name={"mediaList"}
@@ -628,137 +689,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.mediaList)}
                 >
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"cardMedia"}
-                    data-plasmic-override={overrides.cardMedia}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.cardMedia)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"cardMediaVisualWrap"}
-                      data-plasmic-override={overrides.cardMediaVisualWrap}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.cardMediaVisualWrap
-                      )}
-                    >
-                      <div
-                        data-plasmic-name={"placeholder3"}
-                        data-plasmic-override={overrides.placeholder3}
-                        className={classNames(projectcss.all, sty.placeholder3)}
-                      />
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"cardMediaContentWrap"}
-                      data-plasmic-override={overrides.cardMediaContentWrap}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.cardMediaContentWrap
-                      )}
-                    >
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"cardMediaContent"}
-                        data-plasmic-override={overrides.cardMediaContent}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.cardMediaContent
-                        )}
-                      >
-                        <div
-                          data-plasmic-name={"mediumHeadlineGoesHere"}
-                          data-plasmic-override={
-                            overrides.mediumHeadlineGoesHere
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.mediumHeadlineGoesHere
-                          )}
-                        >
-                          {
-                            "MARA Stock: Bitcoin Miner Marathon Digital's Solutions to the World's Energy Problems | Adam Swick"
-                          }
-                        </div>
-                        <div
-                          data-plasmic-name={
-                            "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique"
-                          }
-                          data-plasmic-override={
-                            overrides.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique
-                          )}
-                        >
-                          {
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. "
-                          }
-                        </div>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"cardMediaFooter"}
-                        data-plasmic-override={overrides.cardMediaFooter}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.cardMediaFooter
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"metaWrap"}
-                          data-plasmic-override={overrides.metaWrap}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.metaWrap)}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__ti9XY
-                            )}
-                          >
-                            {"XX.XX.XXXX"}
-                          </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"gChip"}
-                            data-plasmic-override={overrides.gChip}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.gChip)}
-                          >
-                            <div
-                              data-plasmic-name={"gChipText"}
-                              data-plasmic-override={overrides.gChipText}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.gChipText
-                              )}
-                            >
-                              {"Chip"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                        <ArrowBtn
-                          className={classNames(
-                            "__wab_instance",
-                            sty.arrowBtn__qpDMo
-                          )}
-                        />
-                      </Stack__>
-                    </Stack__>
-                  </Stack__>
                   <Stack__
                     as={"div"}
                     data-plasmic-name={"cardMedia2"}
@@ -1017,52 +947,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       </Stack__>
                     </Stack__>
                   </Stack__>
-                  <SanityCredentialsProvider
-  projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
-  dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
-  apiVersion={process.env.NEXT_PUBLIC_SANITY_API_VERSION}
-  token={process.env.NEXT_PUBLIC_SANITY_TOKEN}
-  useCdn={false} 
->
-  <SanityFetcher
-    data-plasmic-name={"sanityFetcher"}
-    data-plasmic-override={overrides.sanityFetcher}
-    className={classNames("__wab_instance", sty.sanityFetcher)}
-    docType={"post"}
-    limit={"3"}
-    noAutoRepeat={false}
-    noLayout={false}
-  >
-    <DataCtxReader__>
-      {$ctx => (
-        <Stack__
-          as={"div"}
-          hasGap={true}
-          className={classNames(
-            projectcss.all,
-            sty.freeBox__hilGh
-          )}
-        >
-          <SanityField
-            className={classNames(
-              "__wab_instance",
-              sty.sanityField__tGaJq
-            )}
-            field={"mainImage"}
-          />
-
-          <SanityField
-            className={classNames(
-              "__wab_instance",
-              sty.sanityField__wov8
-            )}
-            field={"title"}
-          />
-        </Stack__>
-      )}
-    </DataCtxReader__>
-  </SanityFetcher>
-</SanityCredentialsProvider>
                 </Stack__>
               </Stack__>
             </div>
@@ -1224,18 +1108,8 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
+    "sanityFetcher",
     "mediaList",
-    "cardMedia",
-    "cardMediaVisualWrap",
-    "placeholder3",
-    "cardMediaContentWrap",
-    "cardMediaContent",
-    "mediumHeadlineGoesHere",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
-    "cardMediaFooter",
-    "metaWrap",
-    "gChip",
-    "gChipText",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1258,7 +1132,6 @@ const PlasmicDescendants = {
     "metaWrap3",
     "gChip3",
     "gChipText3",
-    "sanityFetcher",
     "solutionsWrap",
     "solutionsContain",
     "gEyebrowWrap2",
@@ -1308,18 +1181,8 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
+    "sanityFetcher",
     "mediaList",
-    "cardMedia",
-    "cardMediaVisualWrap",
-    "placeholder3",
-    "cardMediaContentWrap",
-    "cardMediaContent",
-    "mediumHeadlineGoesHere",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
-    "cardMediaFooter",
-    "metaWrap",
-    "gChip",
-    "gChipText",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1342,7 +1205,6 @@ const PlasmicDescendants = {
     "metaWrap3",
     "gChip3",
     "gChipText3",
-    "sanityFetcher",
     "solutionsWrap",
     "solutionsContain",
     "gEyebrowWrap2",
@@ -1536,18 +1398,8 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
+    "sanityFetcher",
     "mediaList",
-    "cardMedia",
-    "cardMediaVisualWrap",
-    "placeholder3",
-    "cardMediaContentWrap",
-    "cardMediaContent",
-    "mediumHeadlineGoesHere",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
-    "cardMediaFooter",
-    "metaWrap",
-    "gChip",
-    "gChipText",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1569,26 +1421,15 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3",
-    "sanityFetcher"
+    "gChipText3"
   ],
   mediaContain: [
     "mediaContain",
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
+    "sanityFetcher",
     "mediaList",
-    "cardMedia",
-    "cardMediaVisualWrap",
-    "placeholder3",
-    "cardMediaContentWrap",
-    "cardMediaContent",
-    "mediumHeadlineGoesHere",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
-    "cardMediaFooter",
-    "metaWrap",
-    "gChip",
-    "gChipText",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1610,25 +1451,14 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3",
-    "sanityFetcher"
+    "gChipText3"
   ],
   gEyebrowWrap: ["gEyebrowWrap", "frame101692", "eyebrowText"],
   frame101692: ["frame101692"],
   eyebrowText: ["eyebrowText"],
+  sanityFetcher: ["sanityFetcher"],
   mediaList: [
     "mediaList",
-    "cardMedia",
-    "cardMediaVisualWrap",
-    "placeholder3",
-    "cardMediaContentWrap",
-    "cardMediaContent",
-    "mediumHeadlineGoesHere",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
-    "cardMediaFooter",
-    "metaWrap",
-    "gChip",
-    "gChipText",
     "cardMedia2",
     "cardMediaVisualWrap2",
     "placeholder4",
@@ -1650,48 +1480,8 @@ const PlasmicDescendants = {
     "cardMediaFooter3",
     "metaWrap3",
     "gChip3",
-    "gChipText3",
-    "sanityFetcher"
+    "gChipText3"
   ],
-  cardMedia: [
-    "cardMedia",
-    "cardMediaVisualWrap",
-    "placeholder3",
-    "cardMediaContentWrap",
-    "cardMediaContent",
-    "mediumHeadlineGoesHere",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
-    "cardMediaFooter",
-    "metaWrap",
-    "gChip",
-    "gChipText"
-  ],
-  cardMediaVisualWrap: ["cardMediaVisualWrap", "placeholder3"],
-  placeholder3: ["placeholder3"],
-  cardMediaContentWrap: [
-    "cardMediaContentWrap",
-    "cardMediaContent",
-    "mediumHeadlineGoesHere",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique",
-    "cardMediaFooter",
-    "metaWrap",
-    "gChip",
-    "gChipText"
-  ],
-  cardMediaContent: [
-    "cardMediaContent",
-    "mediumHeadlineGoesHere",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique"
-  ],
-  mediumHeadlineGoesHere: ["mediumHeadlineGoesHere"],
-  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique:
-    [
-      "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique"
-    ],
-  cardMediaFooter: ["cardMediaFooter", "metaWrap", "gChip", "gChipText"],
-  metaWrap: ["metaWrap", "gChip", "gChipText"],
-  gChip: ["gChip", "gChipText"],
-  gChipText: ["gChipText"],
   cardMedia2: [
     "cardMedia2",
     "cardMediaVisualWrap2",
@@ -1770,7 +1560,6 @@ const PlasmicDescendants = {
   metaWrap3: ["metaWrap3", "gChip3", "gChipText3"],
   gChip3: ["gChip3", "gChipText3"],
   gChipText3: ["gChipText3"],
-  sanityFetcher: ["sanityFetcher"],
   solutionsWrap: [
     "solutionsWrap",
     "solutionsContain",
@@ -1837,18 +1626,8 @@ type NodeDefaultElementType = {
   gEyebrowWrap: "div";
   frame101692: "div";
   eyebrowText: "div";
+  sanityFetcher: typeof SanityFetcher;
   mediaList: "div";
-  cardMedia: "div";
-  cardMediaVisualWrap: "div";
-  placeholder3: "div";
-  cardMediaContentWrap: "div";
-  cardMediaContent: "div";
-  mediumHeadlineGoesHere: "div";
-  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique: "div";
-  cardMediaFooter: "div";
-  metaWrap: "div";
-  gChip: "div";
-  gChipText: "div";
   cardMedia2: "div";
   cardMediaVisualWrap2: "div";
   placeholder4: "div";
@@ -1871,7 +1650,6 @@ type NodeDefaultElementType = {
   metaWrap3: "div";
   gChip3: "div";
   gChipText3: "div";
-  sanityFetcher: typeof SanityFetcher;
   solutionsWrap: "div";
   solutionsContain: "div";
   gEyebrowWrap2: "div";
@@ -1981,21 +1759,8 @@ export const PlasmicHomepage = Object.assign(
     gEyebrowWrap: makeNodeComponent("gEyebrowWrap"),
     frame101692: makeNodeComponent("frame101692"),
     eyebrowText: makeNodeComponent("eyebrowText"),
+    sanityFetcher: makeNodeComponent("sanityFetcher"),
     mediaList: makeNodeComponent("mediaList"),
-    cardMedia: makeNodeComponent("cardMedia"),
-    cardMediaVisualWrap: makeNodeComponent("cardMediaVisualWrap"),
-    placeholder3: makeNodeComponent("placeholder3"),
-    cardMediaContentWrap: makeNodeComponent("cardMediaContentWrap"),
-    cardMediaContent: makeNodeComponent("cardMediaContent"),
-    mediumHeadlineGoesHere: makeNodeComponent("mediumHeadlineGoesHere"),
-    loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique:
-      makeNodeComponent(
-        "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique"
-      ),
-    cardMediaFooter: makeNodeComponent("cardMediaFooter"),
-    metaWrap: makeNodeComponent("metaWrap"),
-    gChip: makeNodeComponent("gChip"),
-    gChipText: makeNodeComponent("gChipText"),
     cardMedia2: makeNodeComponent("cardMedia2"),
     cardMediaVisualWrap2: makeNodeComponent("cardMediaVisualWrap2"),
     placeholder4: makeNodeComponent("placeholder4"),
@@ -2024,7 +1789,6 @@ export const PlasmicHomepage = Object.assign(
     metaWrap3: makeNodeComponent("metaWrap3"),
     gChip3: makeNodeComponent("gChip3"),
     gChipText3: makeNodeComponent("gChipText3"),
-    sanityFetcher: makeNodeComponent("sanityFetcher"),
     solutionsWrap: makeNodeComponent("solutionsWrap"),
     solutionsContain: makeNodeComponent("solutionsContain"),
     gEyebrowWrap2: makeNodeComponent("gEyebrowWrap2"),
@@ -2050,9 +1814,3 @@ export const PlasmicHomepage = Object.assign(
 
 export default PlasmicHomepage;
 /* prettier-ignore-end */
-
-console.log("Sanity ENV", {
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
-  token: process.env.NEXT_PUBLIC_SANITY_TOKEN
-});
