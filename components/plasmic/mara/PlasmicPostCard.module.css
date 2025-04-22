@@ -1,0 +1,79 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  min-width: 0;
+  padding: 8px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 16px;
+}
+.cmsEntryField__eIkJ:global(.__wab_instance) {
+  object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.cmsEntryField__gSpYk:global(.__wab_instance) {
+  object-fit: cover;
+  max-width: 100%;
+  font-family: "TT Hoves Pro";
+  font-size: 33px;
+  line-height: 1.15;
+  font-weight: 500;
+}
+.cmsEntryField__qv65Z:global(.__wab_instance) {
+  object-fit: cover;
+  max-width: 100%;
+  font-weight: 500;
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 48px;
+  flex-shrink: 0;
+}
+.cardMediaFooter4 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  padding-top: 24px;
+}
+.cardMediaFooter4 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+}
+.cardMediaFooter4 > :global(.__wab_flex-container) > *,
+.cardMediaFooter4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.cardMediaFooter4 > :global(.__wab_flex-container) > picture > img,
+.cardMediaFooter4
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 20px;
+}
+.arrowBtn:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}

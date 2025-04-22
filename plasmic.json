@@ -536,6 +536,19 @@
           "cssFilePath": "plasmic/mara/PlasmicNavDropdonList.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "MM70zhLV8m-d",
+          "name": "PostCard",
+          "type": "managed",
+          "projectId": "6GgaEV8wA3NAjSPNQQE37W",
+          "renderModuleFilePath": "plasmic/mara/PlasmicPostCard.tsx",
+          "importSpec": {
+            "modulePath": "PostCard.tsx"
+          },
+          "cssFilePath": "plasmic/mara/PlasmicPostCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

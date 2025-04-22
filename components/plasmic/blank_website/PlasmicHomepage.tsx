@@ -63,12 +63,14 @@ import Navbar from "../../Navbar"; // plasmic-import: PAg8waIYOX54/component
 import HeroSection from "../../HeroSection"; // plasmic-import: mbkly9G2X3L1/component
 import LayoutFullWrap from "../../LayoutFullWrap"; // plasmic-import: _V8L3SCxePZg/component
 import ButtonMainOutline from "../../ButtonMainOutline"; // plasmic-import: pZPvFfGgHk8v/component
+import { CmsQueryRepeater } from "@plasmicpkgs/plasmic-cms";
+import PostCard from "../../PostCard"; // plasmic-import: MM70zhLV8m-d/component
 import { SanityFetcher } from "@plasmicpkgs/plasmic-sanity-io";
 import { SanityField } from "@plasmicpkgs/plasmic-sanity-io";
-import ArrowBtn from "../../ArrowBtn"; // plasmic-import: sQwZRK4CPdyK/component
 import TechnologyCard from "../../TechnologyCard"; // plasmic-import: Xv-_qi6rIvF7/component
 import FormWrap from "../../FormWrap"; // plasmic-import: xRTHJhz9VfiN/component
 import Footer from "../../Footer"; // plasmic-import: 4Ad_NJbeLZ66/component
+import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariants_19VDikmmmbc3 } from "./PlasmicGlobalVariant__CloseStatesTabletMobile"; // plasmic-import: 19vDIKMMMBC3/globalVariant
 
@@ -132,30 +134,10 @@ export type PlasmicHomepage__OverridesType = {
   gEyebrowWrap?: Flex__<"div">;
   frame101692?: Flex__<"div">;
   eyebrowText?: Flex__<"div">;
-  sanityFetcher?: Flex__<typeof SanityFetcher>;
   mediaList?: Flex__<"div">;
-  cardMedia2?: Flex__<"div">;
-  cardMediaVisualWrap2?: Flex__<"div">;
-  placeholder4?: Flex__<"div">;
-  cardMediaContentWrap2?: Flex__<"div">;
-  cardMediaContent2?: Flex__<"div">;
-  mediumHeadlineGoesHere2?: Flex__<"div">;
-  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2?: Flex__<"div">;
-  cardMediaFooter2?: Flex__<"div">;
-  metaWrap2?: Flex__<"div">;
-  gChip2?: Flex__<"div">;
-  gChipText2?: Flex__<"div">;
-  cardMedia3?: Flex__<"div">;
-  cardMediaVisualWrap3?: Flex__<"div">;
-  placeholder5?: Flex__<"div">;
-  cardMediaContentWrap3?: Flex__<"div">;
-  cardMediaContent3?: Flex__<"div">;
-  mediumHeadlineGoesHere3?: Flex__<"div">;
-  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3?: Flex__<"div">;
-  cardMediaFooter3?: Flex__<"div">;
-  metaWrap3?: Flex__<"div">;
-  gChip3?: Flex__<"div">;
-  gChipText3?: Flex__<"div">;
+  cmsDataFetcher?: Flex__<typeof CmsQueryRepeater>;
+  postCard?: Flex__<typeof PostCard>;
+  sanityFetcher?: Flex__<typeof SanityFetcher>;
   solutionsWrap?: Flex__<"div">;
   solutionsContain?: Flex__<"div">;
   gEyebrowWrap2?: Flex__<"div">;
@@ -609,79 +591,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     {"media"}
                   </div>
                 </Stack__>
-                <SanityFetcher
-                  data-plasmic-name={"sanityFetcher"}
-                  data-plasmic-override={overrides.sanityFetcher}
-                  className={classNames("__wab_instance", sty.sanityFetcher)}
-                  docType={"post"}
-                  limit={"3"}
-                  noAutoRepeat={false}
-                  noLayout={false}
-                >
-                  <DataCtxReader__>
-                    {$ctx => (
-                      <Stack__
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__hilGh
-                        )}
-                      >
-                        <SanityField
-                          className={classNames(
-                            "__wab_instance",
-                            sty.sanityField__tGaJq
-                          )}
-                          field={"mainImage"}
-                        />
-
-                        <SanityField
-                          className={classNames(
-                            "__wab_instance",
-                            sty.sanityField__wov8
-                          )}
-                          field={"title"}
-                        />
-
-                        <SanityField
-                          className={classNames(
-                            "__wab_instance",
-                            sty.sanityField__ay46O
-                          )}
-                          field={(() => {
-                            try {
-                              return $ctx.sanityItems[0].body[0].children[0]
-                                .text;
-                            } catch (e) {
-                              if (
-                                e instanceof TypeError ||
-                                e?.plasmicType === "PlasmicUndefinedDataError"
-                              ) {
-                                return undefined;
-                              }
-                              throw e;
-                            }
-                          })()}
-                          path={(() => {
-                            try {
-                              return $ctx.sanityItems[0].body[0].children[0]
-                                ._key;
-                            } catch (e) {
-                              if (
-                                e instanceof TypeError ||
-                                e?.plasmicType === "PlasmicUndefinedDataError"
-                              ) {
-                                return undefined;
-                              }
-                              throw e;
-                            }
-                          })()}
-                        />
-                      </Stack__>
-                    )}
-                  </DataCtxReader__>
-                </SanityFetcher>
                 <Stack__
                   as={"div"}
                   data-plasmic-name={"mediaList"}
@@ -689,264 +598,96 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.mediaList)}
                 >
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"cardMedia2"}
-                    data-plasmic-override={overrides.cardMedia2}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.cardMedia2)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"cardMediaVisualWrap2"}
-                      data-plasmic-override={overrides.cardMediaVisualWrap2}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.cardMediaVisualWrap2
-                      )}
-                    >
-                      <div
-                        data-plasmic-name={"placeholder4"}
-                        data-plasmic-override={overrides.placeholder4}
-                        className={classNames(projectcss.all, sty.placeholder4)}
-                      />
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"cardMediaContentWrap2"}
-                      data-plasmic-override={overrides.cardMediaContentWrap2}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.cardMediaContentWrap2
-                      )}
-                    >
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"cardMediaContent2"}
-                        data-plasmic-override={overrides.cardMediaContent2}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.cardMediaContent2
-                        )}
-                      >
-                        <div
-                          data-plasmic-name={"mediumHeadlineGoesHere2"}
-                          data-plasmic-override={
-                            overrides.mediumHeadlineGoesHere2
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.mediumHeadlineGoesHere2
-                          )}
-                        >
-                          {"Heating with Hashes: Digital Asset Compute..."}
-                        </div>
-                        <div
-                          data-plasmic-name={
-                            "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2"
-                          }
-                          data-plasmic-override={
-                            overrides.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2
-                          )}
-                        >
-                          {
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. "
-                          }
-                        </div>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"cardMediaFooter2"}
-                        data-plasmic-override={overrides.cardMediaFooter2}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.cardMediaFooter2
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"metaWrap2"}
-                          data-plasmic-override={overrides.metaWrap2}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.metaWrap2)}
-                        >
+                  <CmsQueryRepeater
+                    data-plasmic-name={"cmsDataFetcher"}
+                    data-plasmic-override={overrides.cmsDataFetcher}
+                    className={classNames("__wab_instance", sty.cmsDataFetcher)}
+                    desc={false}
+                    emptyMessage={
+                      <DataCtxReader__>
+                        {$ctx => (
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__ni8Mf
+                              sty.text__qli0D
                             )}
                           >
-                            {"XX.XX.XXXX"}
+                            {"No matching published entries found."}
                           </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"gChip2"}
-                            data-plasmic-override={overrides.gChip2}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.gChip2)}
-                          >
-                            <div
-                              data-plasmic-name={"gChipText2"}
-                              data-plasmic-override={overrides.gChipText2}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.gChipText2
-                              )}
-                            >
-                              {"Chip"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                        <ArrowBtn
-                          className={classNames(
-                            "__wab_instance",
-                            sty.arrowBtn__lswuY
-                          )}
-                        />
-                      </Stack__>
-                    </Stack__>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    data-plasmic-name={"cardMedia3"}
-                    data-plasmic-override={overrides.cardMedia3}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.cardMedia3)}
-                  >
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"cardMediaVisualWrap3"}
-                      data-plasmic-override={overrides.cardMediaVisualWrap3}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.cardMediaVisualWrap3
-                      )}
-                    >
-                      <div
-                        data-plasmic-name={"placeholder5"}
-                        data-plasmic-override={overrides.placeholder5}
-                        className={classNames(projectcss.all, sty.placeholder5)}
-                      />
-                    </Stack__>
-                    <Stack__
-                      as={"div"}
-                      data-plasmic-name={"cardMediaContentWrap3"}
-                      data-plasmic-override={overrides.cardMediaContentWrap3}
-                      hasGap={true}
-                      className={classNames(
-                        projectcss.all,
-                        sty.cardMediaContentWrap3
-                      )}
-                    >
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"cardMediaContent3"}
-                        data-plasmic-override={overrides.cardMediaContent3}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.cardMediaContent3
                         )}
-                      >
-                        <div
-                          data-plasmic-name={"mediumHeadlineGoesHere3"}
-                          data-plasmic-override={
-                            overrides.mediumHeadlineGoesHere3
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.mediumHeadlineGoesHere3
-                          )}
-                        >
-                          {"Fred Thiel on The Future Convergence..."}
-                        </div>
-                        <div
-                          data-plasmic-name={
-                            "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3"
-                          }
-                          data-plasmic-override={
-                            overrides.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3
-                          }
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3
-                          )}
-                        >
-                          {
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. "
-                          }
-                        </div>
-                      </Stack__>
-                      <Stack__
-                        as={"div"}
-                        data-plasmic-name={"cardMediaFooter3"}
-                        data-plasmic-override={overrides.cardMediaFooter3}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.cardMediaFooter3
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          data-plasmic-name={"metaWrap3"}
-                          data-plasmic-override={overrides.metaWrap3}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.metaWrap3)}
-                        >
+                      </DataCtxReader__>
+                    }
+                    forceEmptyState={false}
+                    forceLoadingState={false}
+                    limit={0}
+                    loadingMessage={
+                      <DataCtxReader__>
+                        {$ctx => (
                           <div
                             className={classNames(
                               projectcss.all,
                               projectcss.__wab_text,
-                              sty.text__oiXkD
+                              sty.text__j84Qr
                             )}
                           >
-                            {"XX.XX.XXXX"}
+                            {"Loading..."}
                           </div>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"gChip3"}
-                            data-plasmic-override={overrides.gChip3}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.gChip3)}
-                          >
-                            <div
-                              data-plasmic-name={"gChipText3"}
-                              data-plasmic-override={overrides.gChipText3}
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.gChipText3
-                              )}
-                            >
-                              {"Chip"}
-                            </div>
-                          </Stack__>
-                        </Stack__>
-                        <ArrowBtn
-                          className={classNames(
-                            "__wab_instance",
-                            sty.arrowBtn__qNg32
-                          )}
+                        )}
+                      </DataCtxReader__>
+                    }
+                    noAutoRepeat={false}
+                    noLayout={false}
+                    table={"maraPostItems"}
+                    useDraft={false}
+                  >
+                    <DataCtxReader__>
+                      {$ctx => (
+                        <PostCard
+                          data-plasmic-name={"postCard"}
+                          data-plasmic-override={overrides.postCard}
+                          className={classNames("__wab_instance", sty.postCard)}
                         />
-                      </Stack__>
-                    </Stack__>
-                  </Stack__>
+                      )}
+                    </DataCtxReader__>
+                  </CmsQueryRepeater>
+                  <SanityFetcher
+                    data-plasmic-name={"sanityFetcher"}
+                    data-plasmic-override={overrides.sanityFetcher}
+                    className={classNames("__wab_instance", sty.sanityFetcher)}
+                    docType={"post"}
+                    noAutoRepeat={false}
+                    noLayout={false}
+                  >
+                    <DataCtxReader__>
+                      {$ctx => (
+                        <Stack__
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__b1Cbb
+                          )}
+                        >
+                          <SanityField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.sanityField__e1Oo3
+                            )}
+                            field={"mainImage"}
+                          />
+
+                          <SanityField
+                            className={classNames(
+                              "__wab_instance",
+                              sty.sanityField___2Qvx
+                            )}
+                            field={"title"}
+                          />
+                        </Stack__>
+                      )}
+                    </DataCtxReader__>
+                  </SanityFetcher>
                 </Stack__>
               </Stack__>
             </div>
@@ -1108,30 +849,10 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
-    "sanityFetcher",
     "mediaList",
-    "cardMedia2",
-    "cardMediaVisualWrap2",
-    "placeholder4",
-    "cardMediaContentWrap2",
-    "cardMediaContent2",
-    "mediumHeadlineGoesHere2",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
-    "cardMediaFooter2",
-    "metaWrap2",
-    "gChip2",
-    "gChipText2",
-    "cardMedia3",
-    "cardMediaVisualWrap3",
-    "placeholder5",
-    "cardMediaContentWrap3",
-    "cardMediaContent3",
-    "mediumHeadlineGoesHere3",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
-    "cardMediaFooter3",
-    "metaWrap3",
-    "gChip3",
-    "gChipText3",
+    "cmsDataFetcher",
+    "postCard",
+    "sanityFetcher",
     "solutionsWrap",
     "solutionsContain",
     "gEyebrowWrap2",
@@ -1181,30 +902,10 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
-    "sanityFetcher",
     "mediaList",
-    "cardMedia2",
-    "cardMediaVisualWrap2",
-    "placeholder4",
-    "cardMediaContentWrap2",
-    "cardMediaContent2",
-    "mediumHeadlineGoesHere2",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
-    "cardMediaFooter2",
-    "metaWrap2",
-    "gChip2",
-    "gChipText2",
-    "cardMedia3",
-    "cardMediaVisualWrap3",
-    "placeholder5",
-    "cardMediaContentWrap3",
-    "cardMediaContent3",
-    "mediumHeadlineGoesHere3",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
-    "cardMediaFooter3",
-    "metaWrap3",
-    "gChip3",
-    "gChipText3",
+    "cmsDataFetcher",
+    "postCard",
+    "sanityFetcher",
     "solutionsWrap",
     "solutionsContain",
     "gEyebrowWrap2",
@@ -1398,168 +1099,28 @@ const PlasmicDescendants = {
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
-    "sanityFetcher",
     "mediaList",
-    "cardMedia2",
-    "cardMediaVisualWrap2",
-    "placeholder4",
-    "cardMediaContentWrap2",
-    "cardMediaContent2",
-    "mediumHeadlineGoesHere2",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
-    "cardMediaFooter2",
-    "metaWrap2",
-    "gChip2",
-    "gChipText2",
-    "cardMedia3",
-    "cardMediaVisualWrap3",
-    "placeholder5",
-    "cardMediaContentWrap3",
-    "cardMediaContent3",
-    "mediumHeadlineGoesHere3",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
-    "cardMediaFooter3",
-    "metaWrap3",
-    "gChip3",
-    "gChipText3"
+    "cmsDataFetcher",
+    "postCard",
+    "sanityFetcher"
   ],
   mediaContain: [
     "mediaContain",
     "gEyebrowWrap",
     "frame101692",
     "eyebrowText",
-    "sanityFetcher",
     "mediaList",
-    "cardMedia2",
-    "cardMediaVisualWrap2",
-    "placeholder4",
-    "cardMediaContentWrap2",
-    "cardMediaContent2",
-    "mediumHeadlineGoesHere2",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
-    "cardMediaFooter2",
-    "metaWrap2",
-    "gChip2",
-    "gChipText2",
-    "cardMedia3",
-    "cardMediaVisualWrap3",
-    "placeholder5",
-    "cardMediaContentWrap3",
-    "cardMediaContent3",
-    "mediumHeadlineGoesHere3",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
-    "cardMediaFooter3",
-    "metaWrap3",
-    "gChip3",
-    "gChipText3"
+    "cmsDataFetcher",
+    "postCard",
+    "sanityFetcher"
   ],
   gEyebrowWrap: ["gEyebrowWrap", "frame101692", "eyebrowText"],
   frame101692: ["frame101692"],
   eyebrowText: ["eyebrowText"],
+  mediaList: ["mediaList", "cmsDataFetcher", "postCard", "sanityFetcher"],
+  cmsDataFetcher: ["cmsDataFetcher", "postCard"],
+  postCard: ["postCard"],
   sanityFetcher: ["sanityFetcher"],
-  mediaList: [
-    "mediaList",
-    "cardMedia2",
-    "cardMediaVisualWrap2",
-    "placeholder4",
-    "cardMediaContentWrap2",
-    "cardMediaContent2",
-    "mediumHeadlineGoesHere2",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
-    "cardMediaFooter2",
-    "metaWrap2",
-    "gChip2",
-    "gChipText2",
-    "cardMedia3",
-    "cardMediaVisualWrap3",
-    "placeholder5",
-    "cardMediaContentWrap3",
-    "cardMediaContent3",
-    "mediumHeadlineGoesHere3",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
-    "cardMediaFooter3",
-    "metaWrap3",
-    "gChip3",
-    "gChipText3"
-  ],
-  cardMedia2: [
-    "cardMedia2",
-    "cardMediaVisualWrap2",
-    "placeholder4",
-    "cardMediaContentWrap2",
-    "cardMediaContent2",
-    "mediumHeadlineGoesHere2",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
-    "cardMediaFooter2",
-    "metaWrap2",
-    "gChip2",
-    "gChipText2"
-  ],
-  cardMediaVisualWrap2: ["cardMediaVisualWrap2", "placeholder4"],
-  placeholder4: ["placeholder4"],
-  cardMediaContentWrap2: [
-    "cardMediaContentWrap2",
-    "cardMediaContent2",
-    "mediumHeadlineGoesHere2",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2",
-    "cardMediaFooter2",
-    "metaWrap2",
-    "gChip2",
-    "gChipText2"
-  ],
-  cardMediaContent2: [
-    "cardMediaContent2",
-    "mediumHeadlineGoesHere2",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2"
-  ],
-  mediumHeadlineGoesHere2: ["mediumHeadlineGoesHere2"],
-  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2:
-    [
-      "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2"
-    ],
-  cardMediaFooter2: ["cardMediaFooter2", "metaWrap2", "gChip2", "gChipText2"],
-  metaWrap2: ["metaWrap2", "gChip2", "gChipText2"],
-  gChip2: ["gChip2", "gChipText2"],
-  gChipText2: ["gChipText2"],
-  cardMedia3: [
-    "cardMedia3",
-    "cardMediaVisualWrap3",
-    "placeholder5",
-    "cardMediaContentWrap3",
-    "cardMediaContent3",
-    "mediumHeadlineGoesHere3",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
-    "cardMediaFooter3",
-    "metaWrap3",
-    "gChip3",
-    "gChipText3"
-  ],
-  cardMediaVisualWrap3: ["cardMediaVisualWrap3", "placeholder5"],
-  placeholder5: ["placeholder5"],
-  cardMediaContentWrap3: [
-    "cardMediaContentWrap3",
-    "cardMediaContent3",
-    "mediumHeadlineGoesHere3",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3",
-    "cardMediaFooter3",
-    "metaWrap3",
-    "gChip3",
-    "gChipText3"
-  ],
-  cardMediaContent3: [
-    "cardMediaContent3",
-    "mediumHeadlineGoesHere3",
-    "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3"
-  ],
-  mediumHeadlineGoesHere3: ["mediumHeadlineGoesHere3"],
-  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3:
-    [
-      "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3"
-    ],
-  cardMediaFooter3: ["cardMediaFooter3", "metaWrap3", "gChip3", "gChipText3"],
-  metaWrap3: ["metaWrap3", "gChip3", "gChipText3"],
-  gChip3: ["gChip3", "gChipText3"],
-  gChipText3: ["gChipText3"],
   solutionsWrap: [
     "solutionsWrap",
     "solutionsContain",
@@ -1626,30 +1187,10 @@ type NodeDefaultElementType = {
   gEyebrowWrap: "div";
   frame101692: "div";
   eyebrowText: "div";
-  sanityFetcher: typeof SanityFetcher;
   mediaList: "div";
-  cardMedia2: "div";
-  cardMediaVisualWrap2: "div";
-  placeholder4: "div";
-  cardMediaContentWrap2: "div";
-  cardMediaContent2: "div";
-  mediumHeadlineGoesHere2: "div";
-  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2: "div";
-  cardMediaFooter2: "div";
-  metaWrap2: "div";
-  gChip2: "div";
-  gChipText2: "div";
-  cardMedia3: "div";
-  cardMediaVisualWrap3: "div";
-  placeholder5: "div";
-  cardMediaContentWrap3: "div";
-  cardMediaContent3: "div";
-  mediumHeadlineGoesHere3: "div";
-  loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3: "div";
-  cardMediaFooter3: "div";
-  metaWrap3: "div";
-  gChip3: "div";
-  gChipText3: "div";
+  cmsDataFetcher: typeof CmsQueryRepeater;
+  postCard: typeof PostCard;
+  sanityFetcher: typeof SanityFetcher;
   solutionsWrap: "div";
   solutionsContain: "div";
   gEyebrowWrap2: "div";
@@ -1759,36 +1300,10 @@ export const PlasmicHomepage = Object.assign(
     gEyebrowWrap: makeNodeComponent("gEyebrowWrap"),
     frame101692: makeNodeComponent("frame101692"),
     eyebrowText: makeNodeComponent("eyebrowText"),
-    sanityFetcher: makeNodeComponent("sanityFetcher"),
     mediaList: makeNodeComponent("mediaList"),
-    cardMedia2: makeNodeComponent("cardMedia2"),
-    cardMediaVisualWrap2: makeNodeComponent("cardMediaVisualWrap2"),
-    placeholder4: makeNodeComponent("placeholder4"),
-    cardMediaContentWrap2: makeNodeComponent("cardMediaContentWrap2"),
-    cardMediaContent2: makeNodeComponent("cardMediaContent2"),
-    mediumHeadlineGoesHere2: makeNodeComponent("mediumHeadlineGoesHere2"),
-    loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2:
-      makeNodeComponent(
-        "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique2"
-      ),
-    cardMediaFooter2: makeNodeComponent("cardMediaFooter2"),
-    metaWrap2: makeNodeComponent("metaWrap2"),
-    gChip2: makeNodeComponent("gChip2"),
-    gChipText2: makeNodeComponent("gChipText2"),
-    cardMedia3: makeNodeComponent("cardMedia3"),
-    cardMediaVisualWrap3: makeNodeComponent("cardMediaVisualWrap3"),
-    placeholder5: makeNodeComponent("placeholder5"),
-    cardMediaContentWrap3: makeNodeComponent("cardMediaContentWrap3"),
-    cardMediaContent3: makeNodeComponent("cardMediaContent3"),
-    mediumHeadlineGoesHere3: makeNodeComponent("mediumHeadlineGoesHere3"),
-    loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3:
-      makeNodeComponent(
-        "loremIpsumDolorSitAmetConsecteturAdipiscingElitSuspendisseVariusEnimInErosElementumTristique3"
-      ),
-    cardMediaFooter3: makeNodeComponent("cardMediaFooter3"),
-    metaWrap3: makeNodeComponent("metaWrap3"),
-    gChip3: makeNodeComponent("gChip3"),
-    gChipText3: makeNodeComponent("gChipText3"),
+    cmsDataFetcher: makeNodeComponent("cmsDataFetcher"),
+    postCard: makeNodeComponent("postCard"),
+    sanityFetcher: makeNodeComponent("sanityFetcher"),
     solutionsWrap: makeNodeComponent("solutionsWrap"),
     solutionsContain: makeNodeComponent("solutionsContain"),
     gEyebrowWrap2: makeNodeComponent("gEyebrowWrap2"),

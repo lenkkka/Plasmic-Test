@@ -15,11 +15,9 @@ export interface GlobalContextsProviderProps {
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
-
   cmsCredentialsProviderProps?: Partial<
     Omit<React.ComponentProps<typeof CmsCredentialsProvider>, "children">
   >;
-
   sanityCredentialsProviderProps?: Partial<
     Omit<React.ComponentProps<typeof SanityCredentialsProvider>, "children">
   >;
@@ -134,13 +132,13 @@ export default function GlobalContextsProvider(
           cmsCredentialsProviderProps &&
           "databaseId" in cmsCredentialsProviderProps
             ? cmsCredentialsProviderProps.databaseId!
-            : undefined
+            : "4Ya6FbtK2czurYbjq9gm8G"
         }
         databaseToken={
           cmsCredentialsProviderProps &&
           "databaseToken" in cmsCredentialsProviderProps
             ? cmsCredentialsProviderProps.databaseToken!
-            : undefined
+            : "mkNkyV4c22aLFqiSsCs5vsDu7r7Mfo2LGw9q8WdK0geEyz9JjBkBGRRXe1JV4Q36yfG8PWwKdtS7LSH1X7gjOA"
         }
         host={
           cmsCredentialsProviderProps && "host" in cmsCredentialsProviderProps
